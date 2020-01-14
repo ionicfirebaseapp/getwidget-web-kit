@@ -203,7 +203,7 @@ SizedBox(
                       ),
                       Expanded(child: GFButton(
                         onPressed:null,
-                        text: 'danger',
+                        text: 'Danger',
                         color: GFColor.danger,
                       )),
                        SizedBox(
