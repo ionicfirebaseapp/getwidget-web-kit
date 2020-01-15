@@ -18,28 +18,63 @@ class _HeaderState extends State<Header> {
 //          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Flexible(
-                fit: FlexFit.tight,
-                flex: 6,
-//                child: Image.asset('lib/assets/logo.png')
-            child: Image.network('https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png', height: 40.0,),
-            ),
-          Flexible(
               fit: FlexFit.tight,
-              flex: 6,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text('Home', style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600),),
-              Text('Features', style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600),),
-              Text('Docs', style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600),),
-              Text('Blog', style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600),),
-              Text('Contact', style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600),)
-            ],
-          ))
+              flex: 1,
+//                child: Image.asset('lib/assets/logo.png')
+              child: Image.network(
+                'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
+                height: 40.0,
+              ),
+            ),
+            Flexible(
+                fit: FlexFit.loose,
+                flex: 1,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(left: 300),
+                      child: Text(
+                        'Home',
+                        style: TextStyle(
+                            fontSize: 17,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                    Text(
+                      'Features',
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      'Docs',
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      'Blogs',
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      'Contact',
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ))
           ],
         ),
-
       ),
     );
   }
