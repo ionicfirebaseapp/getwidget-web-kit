@@ -17,6 +17,7 @@ class _StandardButtonsState extends State<StandardButtons> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/standard-buttons.gif',
         body: ListView(
           children: <Widget>[
             Text('Standard Buttons', style: hintStyleTextblackbolder(),),

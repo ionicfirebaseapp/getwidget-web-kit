@@ -19,32 +19,44 @@ class _PillButtonsState extends State<PillButtons> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/pills-button.gif',
         body: ListView(
           children: <Widget>[
-            Text('Pills Buttons', style: hintStyleTextblackbolder(),),
+            Text(
+              'Pills Buttons',
+              style: hintStyleTextblackbolder(),
+            ),
             SizedBox(
               height: 20,
             ),
-            Text('Buttons of type pills which comes in different sizes that can be used in forms, alerts, and more...', style: hintStyleTextblackdull(),),
+            Text(
+              'Buttons of type pills which comes in different sizes that can be used in forms, alerts, and more...',
+              style: hintStyleTextblackdull(),
+            ),
             SizedBox(
               height: 30,
             ),
-            Text('Solid Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Solid Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Primary',
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
                         color: GFColor.secondary,
@@ -52,8 +64,9 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         text: 'Success',
                         shape: GFButtonShape.pills,
                         color: GFColor.success,
@@ -78,13 +91,14 @@ class _PillButtonsState extends State<PillButtons> {
                       // ))
                     ],
                   ),
-SizedBox(
-  height: 20,
-),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Row(
                     children: <Widget>[
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         text: 'Warning',
                         shape: GFButtonShape.pills,
                         color: GFColor.warning,
@@ -92,33 +106,33 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Danger',
                         color: GFColor.danger,
                       )),
-                       SizedBox(
+                      SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Info',
                         color: GFColor.info,
                       )),
-                     
                       SizedBox(
                         width: 10,
                       ),
-
                     ],
                   ),
-                     Row(
+                  Row(
                     children: <Widget>[
-                   
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Light',
                         color: GFColor.light,
@@ -126,8 +140,9 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Dark',
                         color: GFColor.dark,
@@ -135,8 +150,9 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Link',
                         color: GFColor.transparent,
@@ -144,10 +160,8 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -155,22 +169,27 @@ SizedBox(
               height: 20,
             ),
 
-            Text('Disabled Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Disabled Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child: GFButton(
+                      Expanded(
+                          child: GFButton(
                         shape: GFButtonShape.pills,
-                        onPressed:null,
+                        onPressed: null,
                         text: 'Primary',
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
                         color: GFColor.secondary,
@@ -178,8 +197,9 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Success',
                         color: GFColor.success,
@@ -187,7 +207,6 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                    
                     ],
                   ),
                   SizedBox(
@@ -195,8 +214,9 @@ SizedBox(
                   ),
                   Row(
                     children: <Widget>[
-                        Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Warning',
                         color: GFColor.warning,
@@ -204,17 +224,19 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Danger',
                         color: GFColor.danger,
                       )),
-                       SizedBox(
+                      SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Info',
                         color: GFColor.info,
@@ -222,18 +244,16 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                 
-
                     ],
                   ),
-                                    SizedBox(
+                  SizedBox(
                     height: 20,
                   ),
                   Row(
                     children: <Widget>[
-                      
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Light',
                         color: GFColor.light,
@@ -241,8 +261,9 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Dark',
                         color: GFColor.dark,
@@ -250,8 +271,9 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Link',
                         color: GFColor.transparent,
@@ -259,10 +281,8 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -373,48 +393,53 @@ SizedBox(
             //   height: 20,
             // ),
 
-            Text(' Button Sizes',  style: hintStyleTextblackbold(),),
+            Text(
+              ' Button Sizes',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child:GFButton(
-                        shape: GFButtonShape.pills,
-                              onPressed: (){},
-                              child: Text("Large",
-                                  ),
-
-                              size: GFSize.large,
-                            ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          onPressed: () {},
+                          child: Text(
+                            "Large",
+                          ),
+                          size: GFSize.large,
+                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
-                        shape: GFButtonShape.pills,
-                        onPressed: (){},
-                        child: Text("Medium",
-                            ),
-                        size: GFSize.medium,
-                      ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          onPressed: () {},
+                          child: Text(
+                            "Medium",
+                          ),
+                          size: GFSize.medium,
+                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
-                        shape: GFButtonShape.pills,
-                        onPressed: (){},
-                        child: Text("Small",
-                            ),
-                        size: GFSize.small,
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          onPressed: () {},
+                          child: Text(
+                            "Small",
+                          ),
+                          size: GFSize.small,
+                        ),
                       ),
-                      ),
-
                     ],
                   ),
-
-
                 ],
               ),
             ),
@@ -423,83 +448,81 @@ SizedBox(
               height: 20,
             ),
 
-            Text(' Block Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              ' Block Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
-              content:  Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        SizedBox(
-                          height: 10,
-                        ),
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                          blockButton: true,
-                          child: Text("Large",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.white))),
-                          color: GFColor.primary,
-                          size: GFSize.large,
-                        ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                          blockButton: true,
-                          child: Text("Normal",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.white))),
-                          color: GFColor.primary,
-                          size: GFSize.medium,
-                        ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                          blockButton: true,
-                          child: Text("Small",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.white))),
-                          color: GFColor.primary,
-                          size: GFSize.small,
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-
-                      ],
-                    ),
-
+              content: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    blockButton: true,
+                    child: Text("Large",
+                        style: TextStyle(color: getGFColor(GFColor.white))),
+                    color: GFColor.primary,
+                    size: GFSize.large,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    blockButton: true,
+                    child: Text("Normal",
+                        style: TextStyle(color: getGFColor(GFColor.white))),
+                    color: GFColor.primary,
+                    size: GFSize.medium,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    blockButton: true,
+                    child: Text("Small",
+                        style: TextStyle(color: getGFColor(GFColor.white))),
+                    color: GFColor.primary,
+                    size: GFSize.small,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
             ),
 //  outline buttons
- Text('Outline Solid Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Outline Solid Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Primary',
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
                         color: GFColor.secondary,
@@ -507,9 +530,10 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                                    type: GFType.outline,
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        type: GFType.outline,
+                        onPressed: () {},
                         text: 'Success',
                         shape: GFButtonShape.pills,
                         color: GFColor.success,
@@ -517,128 +541,6 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-
-                    ],
-                  ),
-SizedBox(
-  height: 20,
-),
-                  Row(
-                    children: <Widget>[
-                                            Expanded(child: GFButton(
-                        onPressed: (){},
-                        text: 'Warning',
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        color: GFColor.warning,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        text: 'Danger',
-                        color: GFColor.danger,
-                      )),
-                       SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        text: 'Info',
-                        color: GFColor.info,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                    
-
-                    ],
-                  ),
-                      Row(
-                    children: <Widget>[
-                     
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        text: 'Light',
-                        color: GFColor.light,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        text: 'Dark',
-                        color: GFColor.dark,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        shape: GFButtonShape.pills,
-                        text: 'Link',
-                        color: GFColor.transparent,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-
-                    ],
-                  ),
-
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-
-            Text('Outline Disabled Buttons',  style: hintStyleTextblackbold(),),
-            GFCard(
-              content: Column(
-                children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Expanded(child: GFButton(
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                        onPressed:null,
-                        text: 'Primary',
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                        text: 'Secondary',
-                        color: GFColor.secondary,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                        text: 'Success',
-                        color: GFColor.success,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                     
                     ],
                   ),
                   SizedBox(
@@ -646,49 +548,47 @@ SizedBox(
                   ),
                   Row(
                     children: <Widget>[
-                       Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         text: 'Warning',
+                        type: GFType.outline,
+                        shape: GFButtonShape.pills,
                         color: GFColor.warning,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline,
                         text: 'Danger',
                         color: GFColor.danger,
                       )),
-                       SizedBox(
+                      SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline,
                         text: 'Info',
                         color: GFColor.info,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-              
-
                     ],
-                  ),
-                   SizedBox(
-                    height: 20,
                   ),
                   Row(
                     children: <Widget>[
-                     
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                                    type: GFType.outline,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Light',
                         color: GFColor.light,
@@ -696,9 +596,10 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                                    type: GFType.outline,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Dark',
                         color: GFColor.dark,
@@ -706,75 +607,149 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFType.outline,
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline,
                         text: 'Link',
                         color: GFColor.transparent,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-
                     ],
                   ),
-
-
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
 
-
-            Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
+            Text(
+              'Outline Disabled Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                              onPressed: (){},
-                              child: Text("Large",
-                                  ),
-
-                              size: GFSize.large,
-                            ),
-                      ),
+                        type: GFType.outline,
+                        onPressed: null,
+                        text: 'Primary',
+                      )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        child: Text("Medium",
-                            ),
-                        size: GFSize.medium,
-                      ),
-                      ),
+                        type: GFType.outline,
+                        text: 'Secondary',
+                        color: GFColor.secondary,
+                      )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
-                        onPressed: (){},
-                                    type: GFType.outline,
-                        child: Text("Small",
-                            ),
-                        size: GFSize.small,
+                        type: GFType.outline,
+                        text: 'Success',
+                        color: GFColor.success,
+                      )),
+                      SizedBox(
+                        width: 10,
                       ),
-                      ),
-
                     ],
                   ),
-
-
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline,
+                        text: 'Warning',
+                        color: GFColor.warning,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline,
+                        text: 'Danger',
+                        color: GFColor.danger,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline,
+                        text: 'Info',
+                        color: GFColor.info,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        type: GFType.outline,
+                        shape: GFButtonShape.pills,
+                        text: 'Light',
+                        color: GFColor.light,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        type: GFType.outline,
+                        shape: GFButtonShape.pills,
+                        text: 'Dark',
+                        color: GFColor.dark,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline,
+                        text: 'Link',
+                        color: GFColor.transparent,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -783,227 +758,160 @@ SizedBox(
               height: 20,
             ),
 
-            Text('Outline Block Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Outline Button Sizes',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
-              content:  Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        SizedBox(
-                          height: 10,
-                        ),
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                          blockButton: true,
-                                    type: GFType.outline,
-                          child: Text("Large",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+              content: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          type: GFType.outline,
+                          onPressed: () {},
+                          child: Text(
+                            "Large",
+                          ),
                           size: GFSize.large,
                         ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                          blockButton: true,
-                          child: Text("Normal",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          onPressed: () {},
+                          type: GFType.outline,
+                          child: Text(
+                            "Medium",
+                          ),
                           size: GFSize.medium,
                         ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline,
-                          blockButton: true,
-                          child: Text("Small",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          onPressed: () {},
+                          type: GFType.outline,
+                          child: Text(
+                            "Small",
+                          ),
                           size: GFSize.small,
                         ),
-                        SizedBox(
-                          height: 10,
-                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
 
-                      ],
-                    ),
+            SizedBox(
+              height: 20,
+            ),
 
+            Text(
+              'Outline Block Buttons',
+              style: hintStyleTextblackbold(),
+            ),
+            GFCard(
+              content: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    blockButton: true,
+                    type: GFType.outline,
+                    child: Text("Large",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.large,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    type: GFType.outline,
+                    blockButton: true,
+                    child: Text("Normal",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.medium,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    type: GFType.outline,
+                    blockButton: true,
+                    child: Text("Small",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.small,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
             ),
 //outline 2x buttons
- Text('Outline2x Solid Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Outline2x Solid Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Primary',
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Secondary',
                         color: GFColor.secondary,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         text: 'Success',
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         shape: GFButtonShape.pills,
                         color: GFColor.success,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                     
-                    ],
-                  ),
-SizedBox(
-  height: 20,
-),
-                  Row(
-                    children: <Widget>[
-                       Expanded(child: GFButton(
-                        onPressed: (){},
-                        text: 'Warning',
-                                    type: GFType.outline2x,
-                        shape: GFButtonShape.pills,
-                        color: GFColor.warning,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Danger',
-                        color: GFColor.danger,
-                      )),
-                       SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Info',
-                        color: GFColor.info,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                     
-                    ],
-                  ),
-                  SizedBox(
-  height: 20,
-),
-                  Row(
-                    children: <Widget>[
-                       
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Light',
-                        color: GFColor.light,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Dark',
-                        color: GFColor.dark,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Link',
-                        color: GFColor.transparent,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-
-                    ],
-                  ),
-
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-
-            Text('Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
-            GFCard(
-              content: Column(
-                children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Expanded(child: GFButton(
-                        shape: GFButtonShape.pills,
-                        onPressed:null,
-                                    type: GFType.outline2x,
-                        text: 'Primary',
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Secondary',
-                        color: GFColor.secondary,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        text: 'Success',
-                        color: GFColor.success,
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-
                     ],
                   ),
                   SizedBox(
@@ -1011,135 +919,211 @@ SizedBox(
                   ),
                   Row(
                     children: <Widget>[
-                                            Expanded(child: GFButton(
-                        onPressed:null,
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         text: 'Warning',
+                        type: GFType.outline2x,
+                        shape: GFButtonShape.pills,
                         color: GFColor.warning,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Danger',
                         color: GFColor.danger,
                       )),
-                       SizedBox(
+                      SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Info',
                         color: GFColor.info,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                    
-
                     ],
                   ),
- SizedBox(
+                  SizedBox(
                     height: 20,
                   ),
                   Row(
                     children: <Widget>[
-                      
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Light',
                         color: GFColor.light,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed:null,
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Dark',
                         color: GFColor.dark,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
-                        onPressed: (){},
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
+                        type: GFType.outline2x,
                         text: 'Link',
                         color: GFColor.transparent,
                       )),
                       SizedBox(
                         width: 10,
                       ),
-
                     ],
                   ),
-
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
 
-           
-
-            Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
+            Text(
+              'Disabled Outline Buttons',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
               content: Column(
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                              onPressed: (){},
-                              child: Text("Large",
-                                  ),
-
-                              size: GFSize.large,
-                            ),
-                      ),
+                        onPressed: null,
+                        type: GFType.outline2x,
+                        text: 'Primary',
+                      )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        onPressed: (){},
-                        child: Text("Medium",
-                            ),
-                        size: GFSize.medium,
-                      ),
-                      ),
+                        type: GFType.outline2x,
+                        text: 'Secondary',
+                        color: GFColor.secondary,
+                      )),
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child:GFButton(
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
                         shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                        onPressed: (){},
-                        child: Text("Small",
-                            ),
-                        size: GFSize.small,
+                        type: GFType.outline2x,
+                        text: 'Success',
+                        color: GFColor.success,
+                      )),
+                      SizedBox(
+                        width: 10,
                       ),
-                      ),
-
                     ],
                   ),
-
-
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Warning',
+                        color: GFColor.warning,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Danger',
+                        color: GFColor.danger,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Info',
+                        color: GFColor.info,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Light',
+                        color: GFColor.light,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: null,
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Dark',
+                        color: GFColor.dark,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        shape: GFButtonShape.pills,
+                        type: GFType.outline2x,
+                        text: 'Link',
+                        color: GFColor.transparent,
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -1148,67 +1132,118 @@ SizedBox(
               height: 20,
             ),
 
-            Text('Outline Block Buttons',  style: hintStyleTextblackbold(),),
+            Text(
+              'Outline Button Sizes',
+              style: hintStyleTextblackbold(),
+            ),
             GFCard(
-              content:  Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        SizedBox(
-                          height: 10,
-                        ),
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                          blockButton: true,
-                          child: Text("Large",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+              content: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          type: GFType.outline2x,
+                          onPressed: () {},
+                          child: Text(
+                            "Large",
+                          ),
                           size: GFSize.large,
                         ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                          blockButton: true,
-                          child: Text("Normal",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          type: GFType.outline2x,
+                          onPressed: () {},
+                          child: Text(
+                            "Medium",
+                          ),
                           size: GFSize.medium,
                         ),
-
-                        SizedBox(
-                          height: 10,
-                        ),
-
-
-                        GFButton(
-                          onPressed: (){},
-                        shape: GFButtonShape.pills,
-                                    type: GFType.outline2x,
-                          blockButton: true,
-                          child: Text("Small",
-                              style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
-                          color: GFColor.primary,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: GFButton(
+                          shape: GFButtonShape.pills,
+                          type: GFType.outline2x,
+                          onPressed: () {},
+                          child: Text(
+                            "Small",
+                          ),
                           size: GFSize.small,
                         ),
-                        SizedBox(
-                          height: 10,
-                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
 
-                      ],
-                    ),
+            SizedBox(
+              height: 20,
+            ),
 
-            )                       
+            Text(
+              'Outline Block Buttons',
+              style: hintStyleTextblackbold(),
+            ),
+            GFCard(
+              content: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    type: GFType.outline2x,
+                    blockButton: true,
+                    child: Text("Large",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.large,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    type: GFType.outline2x,
+                    blockButton: true,
+                    child: Text("Normal",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.medium,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  GFButton(
+                    onPressed: () {},
+                    shape: GFButtonShape.pills,
+                    type: GFType.outline2x,
+                    blockButton: true,
+                    child: Text("Small",
+                        style: TextStyle(color: getGFColor(GFColor.primary))),
+                    color: GFColor.primary,
+                    size: GFSize.small,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
