@@ -22,6 +22,7 @@ class _IconButtonsState extends State<IconButtons> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/icons-button.gif',
         body: ListView(
           children: <Widget>[
             Text(

@@ -6,9 +6,11 @@ import 'package:getflutter/colors/gf_color.dart';
 
 class Layout extends StatefulWidget {
   final Widget body;
+  final String demoImageUrl;
   const Layout({
     Key key,
     this.body,
+    this.demoImageUrl,
   }) : super(key: key);
 
   @override
@@ -45,8 +47,9 @@ class _LayoutState extends State<Layout> {
                         height: 50,
                         child: Padding(
                           padding:
-                              EdgeInsets.only(left: 10, right: 10, top: 15),
-                          child: Text('Info:',
+                              EdgeInsets.only(left: 40, right: 10, top: 15),
+                          child: Text(
+                              "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
                               style: TextStyle(
                                   color: getGFColor(GFColor.primary))),
                         ),
@@ -65,7 +68,7 @@ class _LayoutState extends State<Layout> {
                 width: 430,
 //                color: Colors.red,
                 height: 600,
-                child: MobileDemo(),
+                child: MobileDemo(demoImageUrl: widget.demoImageUrl),
               )
             ],
           )

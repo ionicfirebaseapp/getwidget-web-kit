@@ -13,8 +13,6 @@ import 'package:getflutter/components/badge/gf_button_badge.dart';
 import 'package:getflutter/components/badge/gf_icon_badge.dart';
 import 'package:getflutter/components/button/gf_icon_button.dart';
 
-
-
 class Badges extends StatefulWidget {
   @override
   _BadgesState createState() => _BadgesState();
@@ -25,257 +23,268 @@ class _BadgesState extends State<Badges> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/badges.gif',
         body: ListView(
           children: <Widget>[
-            Text('Badges', style: hintStyleTextblackbolder(),),
+            Text(
+              'Badges',
+              style: hintStyleTextblackbolder(),
+            ),
             SizedBox(
               height: 20,
             ),
-            Text('Badges can be used for an additional marker for any widget, e.g. show a number of items in a shopping cart.', style: hintStyleTextblackdull(),),
+            Text(
+              'Badges can be used for an additional marker for any widget, e.g. show a number of items in a shopping cart.',
+              style: hintStyleTextblackdull(),
+            ),
             SizedBox(
               height: 30,
             ),
-            Text('With Buttons',  style: hintStyleTextblackbold(),),
-             GFCard(
-            content: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Primary',
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Second',
-                      color: GFColor.secondary,
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Success',
-                      color: GFColor.success,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Warning',
-                      color: GFColor.warning,
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Danger',
-                      color: GFColor.danger,
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Info',
-                      color: GFColor.info,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Light',
-                      color: GFColor.light,
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Dark',
-                      textStyle: TextStyle(color: getGFColor(GFColor.white)),
-                      color: GFColor.dark,
-                    ),
-                    GFButtonBadge(
-                      icon: GFBadge(
-                        text: '6',
-                        shape: GFBadgeShape.pills,
-                      ),
-                      onPressed: () {},
-                      text: 'Link',
-                      color: GFColor.transparent,
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-              ],
+            Text(
+              'With Buttons',
+              style: hintStyleTextblackbold(),
             ),
-          ),
-         
-      
-//icons with badges
-Text('Icon with Badges',  style: hintStyleTextblackbold(),),
             GFCard(
-            content: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: <Widget>[
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/primary.svg',
-                              color: getGFColor(GFColor.primary),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.circle,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/secondary.svg',
-                              color: getGFColor(GFColor.secondary),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.circle,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/success.svg',
-                              color: getGFColor(GFColor.success),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.circle,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/warning.svg',
-                              color: getGFColor(GFColor.warning),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.circle,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/danger.svg',
-                              color: getGFColor(GFColor.danger),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.circle,
-                          size: GFSize.small,
-                        )),
-                  ],
-                ),
-                Row(
-                  children: <Widget>[
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/info.svg',
-                              color: getGFColor(GFColor.info),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.standard,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/light.svg',
-                              color: getGFColor(GFColor.light),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
-                          shape: GFBadgeShape.square,
-                          size: GFSize.small,
-                        )),
-                    GFIconBadge(
-                        child: GFIconButton(
-                            type: GFType.transparent,
-                            onPressed: () {},
-                            icon: SvgPicture.asset(
-                              'lib/assets/icons/dark.svg',
-                              color: getGFColor(GFColor.dark),
-                            )),
-                        counterChild: GFBadge(
-                          text: '12',
+              content: Column(
+                children: <Widget>[
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
                           shape: GFBadgeShape.pills,
-                          size: GFSize.small,
-                        )),
-                  ],
-                )
-              ],
+                        ),
+                        onPressed: () {},
+                        text: 'Primary',
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Second',
+                        color: GFColor.secondary,
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Success',
+                        color: GFColor.success,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Warning',
+                        color: GFColor.warning,
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Danger',
+                        color: GFColor.danger,
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Info',
+                        color: GFColor.info,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Light',
+                        color: GFColor.light,
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Dark',
+                        textStyle: TextStyle(color: getGFColor(GFColor.white)),
+                        color: GFColor.dark,
+                      ),
+                      GFButtonBadge(
+                        icon: GFBadge(
+                          text: '6',
+                          shape: GFBadgeShape.pills,
+                        ),
+                        onPressed: () {},
+                        text: 'Link',
+                        color: GFColor.transparent,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
             ),
-          ),        
 
+//icons with badges
+            Text(
+              'Icon with Badges',
+              style: hintStyleTextblackbold(),
+            ),
+            GFCard(
+              content: Column(
+                children: <Widget>[
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/primary.svg',
+                                color: getGFColor(GFColor.primary),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/secondary.svg',
+                                color: getGFColor(GFColor.secondary),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/success.svg',
+                                color: getGFColor(GFColor.success),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/warning.svg',
+                                color: getGFColor(GFColor.warning),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/danger.svg',
+                                color: getGFColor(GFColor.danger),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                    ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/info.svg',
+                                color: getGFColor(GFColor.info),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.standard,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/light.svg',
+                                color: getGFColor(GFColor.light),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.square,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: SvgPicture.asset(
+                                'lib/assets/icons/dark.svg',
+                                color: getGFColor(GFColor.dark),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.pills,
+                            size: GFSize.small,
+                          )),
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

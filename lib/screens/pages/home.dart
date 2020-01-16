@@ -12,6 +12,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Layout(
+            // demoImageUrl: '',
             body: Column(
           children: <Widget>[
             // GFCard(

@@ -15,7 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  getflutter: 1.0.0-dev.2
+  getflutter: 1.0.0-dev.4
 
 flutter:
   uses-material-design: true
@@ -96,3 +96,15 @@ flutter:
     - lib/assets/images/three6.png
     - lib/assets/images/three7.png
     - lib/assets/images/cir.png
+    - lib/assets/standard-buttons.gif
+    - lib/assets/std-buttons-mockup.gif
+    - lib/assets/frame.png
+    - lib/assets/pills-button.gif
+    - lib/assets/square-button.gif
+    - lib/assets/icons-button.gif
+    - lib/assets/social-buttons.gif
+    - lib/assets/badges.gif
+    - lib/assets/cards.gif
+    - lib/assets/avatars.gif
+    - lib/assets/images.gif
+    - lib/assets/tiles.gif
