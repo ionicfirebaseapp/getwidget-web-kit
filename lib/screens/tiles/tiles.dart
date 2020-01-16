@@ -47,7 +47,7 @@ class _TilesState extends State<Tiles> {
                     Text('Lorem ipsum dolor sit amet, consectetur adipiscing'),
                 description: Text(""),
                 icon: Icon(Icons.favorite),
-                // showDivider: false,
+                showDivider: false,
               ),
             ),
             GFCard(
@@ -57,7 +57,7 @@ class _TilesState extends State<Tiles> {
                 icon: Text('Caption'),
                 description: Container(),
                 subTitle: Container(),
-                // showDivider: false,
+                showDivider: false,
               ),
             ),
             SizedBox(
@@ -79,7 +79,7 @@ class _TilesState extends State<Tiles> {
                 description: Container(),
                 subTitle:
                     Text('Lorem ipsum dolor sit amet, consectetur adipiscing'),
-                // showDivider: false,
+                showDivider: false,
               ),
             ),
             GFCard(
@@ -92,7 +92,7 @@ class _TilesState extends State<Tiles> {
                 subTitle: Container(),
                 description: Container(),
                 icon: Text('Caption'),
-                // showDivider: false,
+                showDivider: false,
               ),
             ),
           ],
