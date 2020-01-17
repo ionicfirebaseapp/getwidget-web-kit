@@ -23,7 +23,7 @@ class _BadgesState extends State<Badges> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/badges.gif',
+        demoImageUrl: 'lib/assets/ezgif.com-resize.gif',
         body: ListView(
           children: <Widget>[
             Text(

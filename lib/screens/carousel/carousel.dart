@@ -32,6 +32,7 @@ class _CarouselState extends State<Carousel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/cards.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -86,6 +87,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -96,6 +98,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 16.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],
@@ -142,6 +145,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -152,6 +156,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 16.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],
@@ -196,6 +201,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -206,6 +212,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 16.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],
@@ -259,6 +266,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -269,6 +277,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],
@@ -314,6 +323,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -324,6 +334,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 16.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],
@@ -368,6 +379,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
+                                      fontSize: 20.0,
                                       color: getGFColor(GFColor.white)),
                                 )),
                             Padding(
@@ -378,6 +390,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
+                                      fontSize: 16.0,
                                       color: getGFColor(GFColor.light)),
                                 ))
                           ],

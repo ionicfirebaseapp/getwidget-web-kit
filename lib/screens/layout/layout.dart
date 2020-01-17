@@ -41,17 +41,22 @@ class _LayoutState extends State<Layout> {
                   width: MediaQuery.of(context).size.width - 730,
                   child: Column(
                     children: <Widget>[
-                      Container(
-                        color: getGFColor(GFColor.light),
-                        width: 1000,
-                        height: 50,
-                        child: Padding(
-                          padding:
-                              EdgeInsets.only(left: 40, right: 10, top: 15),
-                          child: Text(
+                      Padding(
+                        padding: EdgeInsets.only(),
+                        child: Container(
+                          color: getGFColor(GFColor.light),
+                          width: 1000,
+                          height: 50,
+                          child: Padding(
+                            padding: EdgeInsets.only(
+                                left: 40, right: 10, top: 15, bottom: 10),
+                            child: Text(
                               "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
                               style: TextStyle(
-                                  color: getGFColor(GFColor.primary))),
+                                  fontSize: 15.0,
+                                  color: getGFColor(GFColor.danger)),
+                            ),
+                          ),
                         ),
                       ),
                       Container(

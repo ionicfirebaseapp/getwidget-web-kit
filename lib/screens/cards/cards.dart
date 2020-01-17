@@ -64,9 +64,10 @@ class _CardsState extends State<Cards> {
 //              imageOverlay: AssetImage("lib/assets/food.jpeg"),
               titlePosition: GFPosition.end,
               title: GFListTile(
-                title: Text(
-                  'Card Title',
-                ),
+                title: Text('Card Title',
+                    style: TextStyle(
+                      fontSize: 19.0,
+                    )),
                 icon: GFIconButton(
                   onPressed: null,
                   icon: GestureDetector(
@@ -87,7 +88,7 @@ class _CardsState extends State<Cards> {
               ),
               content: Text(
                 "Some quick example text to build on the card",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.start,
@@ -116,9 +117,7 @@ class _CardsState extends State<Cards> {
 //              imageOverlay: AssetImage("lib/assets/food.jpeg"),
               titlePosition: GFPosition.end,
               title: GFListTile(
-                title: Text(
-                  'Card Title',
-                ),
+                title: Text('Card Title', style: TextStyle(fontSize: 19.0)),
                 icon: GFIconButton(
                   onPressed: null,
                   icon: GestureDetector(
@@ -139,7 +138,7 @@ class _CardsState extends State<Cards> {
               ),
               content: Text(
                 "Some quick example text to build on the card",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.end,
@@ -169,12 +168,13 @@ class _CardsState extends State<Cards> {
               title: GFListTile(
                 title: Text(
                   'Card Title',
+                  style: TextStyle(fontSize: 19.0),
                 ),
                 // showDivider: false,
               ),
               content: Text(
                 "Some quick example text to build on the card",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.start,
@@ -201,12 +201,13 @@ class _CardsState extends State<Cards> {
               title: GFListTile(
                 title: Text(
                   'Card Title',
+                  style: TextStyle(fontSize: 19.0),
                 ),
                 // showDivider: false,
               ),
               content: Text(
                 "Some quick example text to build on the card",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.start,
@@ -249,10 +250,11 @@ class _CardsState extends State<Cards> {
                 ),
                 title: Text(
                   'Card Title',
+                  style: TextStyle(fontSize: 19.0),
                 ),
                 subTitle: Text(
                   'subtitle',
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(fontSize: 16.0, color: Colors.grey),
                 ),
                 icon: GFIconButton(
                   onPressed: null,
@@ -275,7 +277,7 @@ class _CardsState extends State<Cards> {
               content: Text(
                 "Flutter Flutter is Google's mobile UI framework for crafting"
                 "Flutter Flutter is Google's mobile UI framework for crafting",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 19.0, color: Colors.grey),
               ),
             ),
 
@@ -297,12 +299,16 @@ class _CardsState extends State<Cards> {
                 ),
                 title: Text(
                   'Card Title',
+                  style: TextStyle(fontSize: 19.0),
                 ),
-                subTitle: Text('Subtitle'),
+                subTitle: Text(
+                  'Subtitle',
+                  style: TextStyle(fontSize: 16.0),
+                ),
               ),
               content: Text(
                 "Some quick example text to build on the card",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.center,
@@ -347,11 +353,13 @@ class _CardsState extends State<Cards> {
                 title: Text(
                   'Card Title',
                   style: TextStyle(
-                      color: Colors.grey, fontWeight: FontWeight.w500),
+                      fontSize: 19.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500),
                 ),
                 subTitle: Text(
                   'subtitle',
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(fontSize: 16.0, color: Colors.white),
                 ),
 //                                    icon: GFAvatar(
 //                                        child: Icon(Icons.insert_emoticon)
@@ -362,7 +370,7 @@ class _CardsState extends State<Cards> {
                 "Flutter is Google's mobile UI framework for crafting"
                 " high-quality native interfaces on iOS and Android in "
                 "Flutter ",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.white),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.center,
@@ -387,11 +395,13 @@ class _CardsState extends State<Cards> {
                 title: Text(
                   'Card Title',
                   style: TextStyle(
-                      color: Colors.grey, fontWeight: FontWeight.w500),
+                      fontSize: 19.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500),
                 ),
                 subTitle: Text(
                   'subtitle',
-                  style: TextStyle(color: Colors.grey),
+                  style: TextStyle(fontSize: 16.0, color: Colors.white),
                 ),
 //                                    icon: GFAvatar(
 //                                        child: Icon(Icons.insert_emoticon)
@@ -402,7 +412,7 @@ class _CardsState extends State<Cards> {
                 "Flutter is Google's mobile UI framework for crafting"
                 " high-quality native interfaces on iOS and Android in "
                 "Flutter ",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(fontSize: 16.0, color: Colors.white),
               ),
               buttonBar: GFButtonBar(
                 // alignment: MainAxisAlignment.center,

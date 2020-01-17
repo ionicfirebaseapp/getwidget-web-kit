@@ -45,7 +45,7 @@ class _ImagesState extends State<Images> {
                 children: <Widget>[
                   GFImageOverlay(
                     height: 200,
-                    width: 300,
+                    width: 400,
                     image: AssetImage('lib/assets/images/image2.png'),
                   )
                 ],
@@ -57,7 +57,7 @@ class _ImagesState extends State<Images> {
                 children: <Widget>[
                   GFImageOverlay(
                     height: 200,
-                    width: 300,
+                    width: 400,
                     image: AssetImage('lib/assets/images/image.png'),
                   )
                 ],
@@ -69,7 +69,7 @@ class _ImagesState extends State<Images> {
                 children: <Widget>[
                   GFImageOverlay(
                     height: 200,
-                    width: 300,
+                    width: 400,
                     image: AssetImage('lib/assets/images/image1.png'),
                   )
                 ],
@@ -81,7 +81,7 @@ class _ImagesState extends State<Images> {
             ),
             GFCard(
               content: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GFImageOverlay(
                     height: 140,
@@ -122,7 +122,7 @@ class _ImagesState extends State<Images> {
                 children: <Widget>[
                   GFImageOverlay(
                     height: 200,
-                    width: 300,
+                    width: 400,
                     child: Padding(
                         padding: EdgeInsets.only(top: 90, left: 100),
                         child: Text(
@@ -137,23 +137,19 @@ class _ImagesState extends State<Images> {
               ),
             ),
             GFCard(
-              content: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GFImageOverlay(
-                    height: 200,
-                    width: 300,
-                    child: Padding(
-                        padding: EdgeInsets.only(top: 90, left: 100),
-                        child: Text(
-                          'Medium Overlay',
-                          style: TextStyle(color: getGFColor(GFColor.white)),
-                        )),
-                    colorFilter: new ColorFilter.mode(
-                        Colors.black.withOpacity(0.40), BlendMode.darken),
-                    image: AssetImage('lib/assets/images/image1.png'),
-                  ),
-                ],
+              content: GFImageOverlay(
+                height: 200,
+                width: 200,
+                boxFit: BoxFit.fill,
+                child: Padding(
+                    padding: EdgeInsets.only(top: 90, left: 100),
+                    child: Text(
+                      'Medium Overlay',
+                      style: TextStyle(color: getGFColor(GFColor.white)),
+                    )),
+                colorFilter: new ColorFilter.mode(
+                    Colors.black.withOpacity(0.90), BlendMode.darken),
+                image: AssetImage('lib/assets/images/image1.png'),
               ),
             ),
             GFCard(
@@ -162,7 +158,7 @@ class _ImagesState extends State<Images> {
                 children: <Widget>[
                   GFImageOverlay(
                       height: 200,
-                      width: 300,
+                      width: 400,
                       colorFilter: new ColorFilter.mode(
                           Colors.black.withOpacity(0.60), BlendMode.darken),
                       image: AssetImage('lib/assets/images/image1.png'),

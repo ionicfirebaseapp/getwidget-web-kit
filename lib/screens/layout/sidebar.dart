@@ -13,214 +13,238 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   AnimationController controller;
   Animation<Offset> offset;
 
-
   @override
   void initState() {
     super.initState();
-    animationController = AnimationController(duration: Duration(seconds: 2), vsync: this);
-    controller = AnimationController(vsync: this, duration: Duration(milliseconds: 300));
-    offset = Tween<Offset>(begin: Offset.zero, end: Offset(0.0, 0.1),).animate(controller);
+    animationController =
+        AnimationController(duration: Duration(seconds: 2), vsync: this);
+    controller =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+    offset = Tween<Offset>(
+      begin: Offset.zero,
+      end: Offset(0.0, 0.1),
+    ).animate(controller);
 //    animation =   Tween(begin: 1.0, end: 0.0).animate(CurvedAnimation(parent: animationController, curve: Curves.fastLinearToSlowEaseIn));
   }
-
-
 
   bool showButtonTypes = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-margin: EdgeInsets.only(right: 10,),
-        padding: EdgeInsets.only(left:60, right: 20, top:30),
+        margin: EdgeInsets.only(
+          right: 10,
+        ),
+        padding: EdgeInsets.only(left: 60, right: 20, top: 30),
         width: 300,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          border: Border.all(
-            color: Colors.black.withOpacity(0.30)
-          ),
+            border: Border.all(color: Colors.black.withOpacity(0.30)),
             color: Colors.white,
             boxShadow: [
-              BoxShadow(
-                  color: Colors.black.withOpacity(0.40),
-                  blurRadius: 5.0
-              ),
-            ]
-        ),
+              BoxShadow(color: Colors.black.withOpacity(0.40), blurRadius: 5.0),
+            ]),
         child: ListView(
           children: <Widget>[
-
-            Text('COMPONENTS', style: hintStyleTextblack(),),
-           SizedBox(
-             height: 25,
-           ),
-           GestureDetector(
-             onTap: (){
-               setState(() {
-                 switch (controller.status) {
-                   case AnimationStatus.completed:
-                     controller.forward(from: 0);
-                     break;
-                   case AnimationStatus.dismissed:
-                     controller.forward();
-                     break;
-                   default:
-                 }
-                 showButtonTypes = !showButtonTypes;
-               });
-
-             },
-             child:  Row(
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-               children: <Widget>[
-                 Text('GF Buttons', style: hintStyleTextblackdull()),
-                 showButtonTypes? Icon(Icons.keyboard_arrow_down): Icon(Icons.keyboard_arrow_right)
-               ],
-             )
-           ),
-           showButtonTypes?
-           SlideTransition(
-             position: offset,
-             child: Container(
-               height: 200,
-               decoration: BoxDecoration(
-                 color: Colors.white,
-                 boxShadow: [
-                   BoxShadow(
-                     color: Colors.black.withOpacity(0.40)
-                   )
-                 ]
-               ),
-                padding: EdgeInsets.only(top:0, bottom: 30, left: 25, right: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+            Text(
+              'COMPONENTS',
+              style: hintStyleTextblack(),
+            ),
+            SizedBox(
+              height: 25,
+            ),
+            GestureDetector(
+                onTap: () {
+                  setState(() {
+                    switch (controller.status) {
+                      case AnimationStatus.completed:
+                        controller.forward(from: 0);
+                        break;
+                      case AnimationStatus.dismissed:
+                        controller.forward();
+                        break;
+                      default:
+                    }
+                    showButtonTypes = !showButtonTypes;
+                  });
+                },
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                   GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/standard-button');
-                     },
-                     child:  Text('Standard Buttons'),
-                   ),
-                   GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/pill-button');
-                     },
-                     child:  Text('Pills Buttons'),
-                   ),
-                    GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/square-button');
-                     },
-                     child:  Text('Square Buttons'),
-                   ),
-                    GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                     },
-                     child:  Text('Shadow Buttons'),
-                   ),
-                     GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/icon-button');
-                     },
-                     child:  Text('Icon Buttons'),
-                   ),
-                    GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-buttons/social-button');
-                     },
-                     child:  Text('Social Buttons'),
-                   ),
+                    Text('GF Buttons', style: hintStyleTextblackdull()),
+                    showButtonTypes
+                        ? Icon(Icons.keyboard_arrow_down)
+                        : Icon(Icons.keyboard_arrow_right)
                   ],
-                ),
-              ),
-           ):Container(),
+                )),
+            showButtonTypes
+                ? SlideTransition(
+                    position: offset,
+                    child: Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(color: Colors.black.withOpacity(0.40))
+                          ]),
+                      padding: EdgeInsets.only(
+                          top: 0, bottom: 30, left: 25, right: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-buttons/standard-button');
+                            },
+                            child: Text('Standard Buttons'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-buttons/pill-button');
+                            },
+                            child: Text('Pills Buttons'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-buttons/square-button');
+                            },
+                            child: Text('Square Buttons'),
+                          ),
+                          //   GestureDetector(
+                          //    onTap: (){
+                          //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
+                          //    },
+                          //    child:  Text('Shadow Buttons'),
+                          //  ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-buttons/icon-button');
+                            },
+                            child: Text('Icon Buttons'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-buttons/social-button');
+                            },
+                            child: Text('Social Buttons'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                : Container(),
 
             SizedBox(
               height: 20,
             ),
 
             // Text('GF Badge', style: hintStyleTextblackdull(),),
-             GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-badges/badges');
-                     },
-                     child:  Text('GF Badges',style: hintStyleTextblackdull(),),
-                     
-                   ),
-                       SizedBox(
-              height: 20,
-            ),
- GestureDetector(
-                        onTap: (){
-                       Navigator.pushNamed(context, '/gf-avatar/avatar');
-                     },
-                     child:  Text('GF Avatar',style: hintStyleTextblackdull(),),
-                     
-                   ),            SizedBox(
-              height: 20,
-            ),
             GestureDetector(
-                        onTap: (){
-                       Navigator.pushNamed(context, '/gf-images/image');
-                     },
-                     child:  Text('GF Images',style: hintStyleTextblackdull(),),
-                     
-                   ),
-            SizedBox(
-              height: 20,
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-badges/badges');
+              },
+              child: Text(
+                'GF Badges',
+                style: hintStyleTextblackdull(),
+              ),
             ),
-             GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-cards/cards');
-                     },
-                     child:  Text('GF Cards',style: hintStyleTextblackdull(),),
-                     
-                   ),
-                       SizedBox(
-              height: 20,
-            ),
-             GestureDetector(
-                        onTap: (){
-                       Navigator.pushNamed(context, '/gf-carousel/carousel');
-                     },
-                     child:  Text('GF Carousel',style: hintStyleTextblackdull(),),
-                     
-                   ),
-            SizedBox(
-              height: 20,
-            ),
-             GestureDetector(
-                        onTap: (){
-                       Navigator.pushNamed(context, '/gf-tiles/tiles');
-                     },
-                     child:  Text('GF Tiles',style: hintStyleTextblackdull(),),
-                     
-                   ),
             SizedBox(
               height: 20,
             ),
             GestureDetector(
-                        onTap: (){
-                       Navigator.pushNamed(context, '/gf-tabs/tabs');
-                     },
-                     child:  Text('GF Tab',style: hintStyleTextblackdull(),),
-                     
-                   ),
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-avatar/avatar');
+              },
+              child: Text(
+                'GF Avatar',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
             GestureDetector(
-                     onTap: (){
-                       Navigator.pushNamed(context, '/gf-typography/heading');
-                     },
-                     child:  Text('GF Typography',style: hintStyleTextblackdull(),),
-                     
-                   ),
-                       SizedBox(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-images/image');
+              },
+              child: Text(
+                'GF Images',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
               height: 20,
             ),
-            Text('COMING SOON', style: hintStyleTextblack(),),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-cards/cards');
+              },
+              child: Text(
+                'GF Cards',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-carousel/carousel');
+              },
+              child: Text(
+                'GF Carousel',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-tiles/tiles');
+              },
+              child: Text(
+                'GF Tiles',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-tabs/tabs');
+              },
+              child: Text(
+                'GF Tab',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-typography/heading');
+              },
+              child: Text(
+                'GF Typography',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              'COMING SOON',
+              style: hintStyleTextblack(),
+            ),
             SizedBox(
               height: 25,
             ),

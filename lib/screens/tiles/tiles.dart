@@ -43,9 +43,14 @@ class _TilesState extends State<Tiles> {
             GFCard(
               // content: Text("fj"),
               title: GFListTile(
-                title: Text('Title'),
-                subTitle:
-                    Text('Lorem ipsum dolor sit amet, consectetur adipiscing'),
+                title: Text(
+                  'Title',
+                  style: TextStyle(fontSize: 19.0),
+                ),
+                subTitle: Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                  style: TextStyle(fontSize: 16.0),
+                ),
                 description: Text(""),
                 icon: Icon(Icons.favorite),
                 // showDivider: false,
@@ -54,8 +59,14 @@ class _TilesState extends State<Tiles> {
             GFCard(
               content: GFListTile(
                 avatar: Icon(Icons.favorite),
-                title: Text('Title'),
-                icon: Text('Caption'),
+                title: Text(
+                  'Title',
+                  style: TextStyle(fontSize: 19.0),
+                ),
+                icon: Text(
+                  'Caption',
+                  style: TextStyle(fontSize: 19.0),
+                ),
                 description: Container(),
                 subTitle: Container(),
                 // showDivider: false,
@@ -76,10 +87,15 @@ class _TilesState extends State<Tiles> {
                 avatar: GFAvatar(
                   backgroundImage: AssetImage('lib/assets/images/three3.png'),
                 ),
-                title: Text('Title'),
+                title: Text(
+                  'Title',
+                  style: TextStyle(fontSize: 19.0),
+                ),
                 description: Container(),
-                subTitle:
-                    Text('Lorem ipsum dolor sit amet, consectetur adipiscing'),
+                subTitle: Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                  style: TextStyle(fontSize: 16.0),
+                ),
                 // showDivider: false,
               ),
             ),
@@ -89,10 +105,16 @@ class _TilesState extends State<Tiles> {
                   shape: GFAvatarShape.standard,
                   backgroundImage: AssetImage('lib/assets/images/three5.png'),
                 ),
-                title: Text('Title'),
+                title: Text(
+                  'Title',
+                  style: TextStyle(fontSize: 19.0),
+                ),
                 subTitle: Container(),
                 description: Container(),
-                icon: Text('Caption'),
+                icon: Text(
+                  'Caption',
+                  style: TextStyle(fontSize: 19.0),
+                ),
                 // showDivider: false,
               ),
             ),
