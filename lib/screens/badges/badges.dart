@@ -11,6 +11,7 @@ import 'package:getflutter/components/badge/gf_badge.dart';
 import 'package:getflutter/components/badge/gf_button_badge.dart';
 import 'package:getflutter/components/badge/gf_icon_badge.dart';
 import 'package:getflutter/components/button/gf_icon_button.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Badges extends StatefulWidget {
   @override
@@ -39,9 +40,23 @@ class _BadgesState extends State<Badges> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'With Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'With Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'With Buttons',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -159,9 +174,23 @@ class _BadgesState extends State<Badges> {
             ),
 
 //icons with badges
-            Text(
-              'Icon with Badges',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Icon with Badges',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Icon with Badges',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -238,11 +267,6 @@ class _BadgesState extends State<Badges> {
                             shape: GFBadgeShape.circle,
                             size: GFSize.small,
                           )),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
                       GFIconBadge(
                           child: GFIconButton(
                               type: GFType.transparent,
@@ -308,6 +332,10 @@ class _BadgesState extends State<Badges> {
                             size: GFSize.small,
                           )),
                     ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[],
                   )
                 ],
               ),

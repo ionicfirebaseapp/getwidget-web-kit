@@ -15,6 +15,14 @@ TextStyle hintStyleTextblackdull() {
   );
 }
 
+TextStyle sidebarText() {
+  return TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 16.0,
+    color: blacktext.withOpacity(0.40),
+  );
+}
+
 TextStyle headerText() {
   return TextStyle(
       fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600);

@@ -42,11 +42,11 @@ class _LayoutState extends State<Layout> {
                   child: Column(
                     children: <Widget>[
                       Padding(
-                        padding: EdgeInsets.only(),
+                        padding: EdgeInsets.only(bottom: 15.0),
                         child: Container(
                           color: getGFColor(GFColor.light),
                           width: 1000,
-                          height: 50,
+                          height: 47,
                           child: Padding(
                             padding: EdgeInsets.only(
                                 left: 40, right: 10, top: 15, bottom: 10),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/button/gf_button.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 import 'package:getflutter/shape/gf_button_shape.dart';
-
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/types/gf_type.dart';
@@ -36,9 +36,23 @@ class _SquareButtonsState extends State<SquareButtons> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Solid Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -74,13 +88,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -101,6 +108,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -111,13 +125,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -148,7 +155,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -157,9 +170,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              'Disabled Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Disabled Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Disabled',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -195,13 +222,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -222,6 +242,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -232,13 +259,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -269,7 +289,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -381,9 +407,23 @@ class _SquareButtonsState extends State<SquareButtons> {
             //   height: 20,
             // ),
 
-            Text(
-              ' Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -436,9 +476,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              ' Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -488,9 +542,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               ),
             ),
             //outline buttons
-            Text(
-              'Solid Outline Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Outline Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -529,13 +597,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -558,6 +619,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -569,13 +637,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -609,6 +670,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -618,9 +682,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              'Disabled Outline Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Disabled Outline Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Disabled Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -659,13 +737,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -688,6 +759,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -699,13 +777,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -739,6 +810,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -749,9 +823,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -807,9 +895,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              ' Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -862,9 +964,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               ),
             ),
             //outline 2x buttons
-            Text(
-              'Solid Outline Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Outline Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -903,13 +1019,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -932,6 +1041,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -943,13 +1059,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -983,7 +1092,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -992,9 +1107,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              'Disabled Outline Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Disabled Outline Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Disabled Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -1033,13 +1162,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1062,6 +1184,13 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1073,13 +1202,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1113,6 +1235,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -1123,9 +1248,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -1181,9 +1320,23 @@ class _SquareButtonsState extends State<SquareButtons> {
               height: 20,
             ),
 
-            Text(
-              ' Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(

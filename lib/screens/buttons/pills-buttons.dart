@@ -3,7 +3,7 @@ import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/button/gf_button.dart';
 import 'package:getflutter/shape/gf_button_shape.dart';
-
+import 'package:getflutter/components/typography/gf_typography.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/types/gf_type.dart';
@@ -36,9 +36,23 @@ class _PillButtonsState extends State<PillButtons> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Solid Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -74,28 +88,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                      // Expanded(child: GFButton(
-                      //   onPressed: (){},
-                      //   text: 'Warning',
-                      //   shape: GFButtonShape.pills,
-                      //   color: GFColor.warning,
-                      // )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
-                      // Expanded(child: GFButton(
-                      //   onPressed: (){},
-                      //   shape: GFButtonShape.pills,
-                      //   text: 'danger',
-                      //   color: GFColor.danger,
-                      // ))
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -116,6 +108,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -126,10 +125,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -160,6 +155,9 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -169,9 +167,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Disabled Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Disabled Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Disabled',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -207,13 +219,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -234,6 +239,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -244,13 +256,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -281,7 +286,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -393,9 +404,23 @@ class _PillButtonsState extends State<PillButtons> {
             //   height: 20,
             // ),
 
-            Text(
-              ' Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -448,9 +473,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              ' Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -500,9 +539,23 @@ class _PillButtonsState extends State<PillButtons> {
               ),
             ),
 //  outline buttons
-            Text(
-              'Outline Solid Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Solid Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Solid',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -541,13 +594,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -570,6 +616,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -581,10 +634,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -618,6 +667,9 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -627,9 +679,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Disabled Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Disabled Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Disabled',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -668,13 +734,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -697,6 +756,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -708,13 +774,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -748,7 +807,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -758,9 +823,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -816,9 +895,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -871,9 +964,23 @@ class _PillButtonsState extends State<PillButtons> {
               ),
             ),
 //outline 2x buttons
-            Text(
-              'Outline2x Solid Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline2x Solid Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline2x Solid',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -912,13 +1019,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -941,6 +1041,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -952,13 +1059,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -992,7 +1092,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -1000,11 +1106,24 @@ class _PillButtonsState extends State<PillButtons> {
             SizedBox(
               height: 20,
             ),
-
-            Text(
-              'Disabled Outline Buttons',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Disabled Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
+            // Text(
+            //   'Disabled Outline Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -1042,13 +1161,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1071,6 +1183,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1082,13 +1201,6 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: null,
@@ -1122,7 +1234,13 @@ class _PillButtonsState extends State<PillButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),
@@ -1132,9 +1250,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Buttons Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -1190,9 +1322,23 @@ class _PillButtonsState extends State<PillButtons> {
               height: 20,
             ),
 
-            Text(
-              'Outline Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(

@@ -5,6 +5,7 @@ import 'package:getflutter/components/button/gf_button.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/shape/gf_icon_button_shape.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 import 'package:getflutter/components/button/gf_icon_button.dart';
 
 class SocialButtons extends StatefulWidget {
@@ -34,84 +35,91 @@ class _SocialButtonsState extends State<SocialButtons> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Solid Buttons Full',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Buttons Full',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid Buttons Full',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(
-                    height: 10,
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Expanded(
-                        child: GFButton(
-                          buttonBoxShadow: true,
-                          color: Color(0xFF3B5998),
-                          onPressed: () {},
-                          child: Text(
-                            "FB",
+                      // Expanded(
+                      GFButton(
+                        buttonBoxShadow: true,
+                        color: Color(0xFF3B5998),
+                        onPressed: () {},
+                        child: Text(
+                          "FB",
+                        ),
+                        icon: Icon(
+                          IconData(
+                            0xe904,
+                            fontFamily: 'icomoon',
                           ),
-                          icon: Icon(
-                            IconData(
-                              0xe904,
-                              fontFamily: 'icomoon',
-                            ),
-                            color: getGFColor(GFColor.white),
-                          ),
+                          color: getGFColor(GFColor.white),
                         ),
                       ),
+                      // ),
                       SizedBox(
-                        width: 6,
+                        height: 10,
                       ),
-                      Expanded(
-                        child: GFButton(
-                          onPressed: () {},
-                          child: Text("Twitter"),
-                          icon: Icon(
-                            IconData(
-                              0xe90f,
-                              fontFamily: 'icomoon',
-                            ),
-                            color: getGFColor(GFColor.white),
+                      // Expanded(
+                      GFButton(
+                        onPressed: () {},
+                        child: Text("Twitter"),
+                        icon: Icon(
+                          IconData(
+                            0xe90f,
+                            fontFamily: 'icomoon',
                           ),
-                          color: Color(0xFF00ACEE),
-                          buttonBoxShadow: true,
+                          color: getGFColor(GFColor.white),
                         ),
+                        color: Color(0xFF00ACEE),
+                        buttonBoxShadow: true,
                       ),
+                      // ),
                       SizedBox(
-                        width: 6,
+                        height: 10,
                       ),
-                      Expanded(
-                        child: GFButton(
-                          onPressed: () {},
-                          child: Text(
-                            "Whatsap",
-                          ),
-                          icon: Icon(
-                            IconData(
-                              0xe911,
-                              fontFamily: 'icomoon',
-                            ),
-                            color: getGFColor(GFColor.white),
-                          ),
-                          color: Color(0xFF25D366),
-                          buttonBoxShadow: true,
+                      // Expanded(
+                      GFButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Whatsap",
                         ),
-                      )
-                    ],
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                        icon: Icon(
+                          IconData(
+                            0xe911,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        color: Color(0xFF25D366),
+                        buttonBoxShadow: true,
+                      ),
+                      // ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -127,6 +135,11 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFFDD4B39),
                         buttonBoxShadow: true,
                       ),
+                      // ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -141,6 +154,10 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         color: Color(0xFFEA4C89),
                         buttonBoxShadow: true,
+                      ),
+                      // ),
+                      SizedBox(
+                        height: 6,
                       ),
                       GFButton(
                         onPressed: () {},
@@ -165,6 +182,13 @@ class _SocialButtonsState extends State<SocialButtons> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
+                      // Expanded(
+
+                      // ),
+                      // Expanded(
+                      // SizedBox(
+                      //   height: 6,
+                      // ),
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -180,6 +204,11 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFFC4302B),
                         buttonBoxShadow: true,
                       ),
+                      // ),
+                      // SizedBox(
+                      //   height: 6,
+                      // ),
+                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -196,6 +225,11 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0XFF2EB67D),
                         buttonBoxShadow: true,
                       ),
+                      // ),
+                      // SizedBox(
+                      //   height: 6,
+                      // ),
+                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -211,6 +245,25 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0XFFC8232C),
                         buttonBoxShadow: true,
                       ),
+                      // ),
+                      // SizedBox(
+                      //   height: 10,
+                      // ),
+                      GFButton(
+                        child: Text(''),
+                        onPressed: () {},
+                        color: GFColor.white,
+                      ),
+                      GFButton(
+                        child: Text(''),
+                        onPressed: () {},
+                        color: GFColor.white,
+                      ),
+                      GFButton(
+                        child: Text(''),
+                        onPressed: () {},
+                        color: GFColor.white,
+                      )
                     ],
                   ),
                   SizedBox(
@@ -221,9 +274,23 @@ class _SocialButtonsState extends State<SocialButtons> {
             ),
 
 //social buttons icons
-            Text(
-              'Social Buttons Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Social Buttons Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Social Buttons Icons',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -286,14 +353,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
                       GFIconButton(
                           color: Color(0xFF0E76A8),
                           icon: Icon(
@@ -304,6 +363,14 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
                       GFIconButton(
                           color: Color(0xFFC4302B),
                           icon: Icon(
@@ -334,6 +401,39 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      )
                     ],
                   ),
                   SizedBox(
@@ -343,9 +443,23 @@ class _SocialButtonsState extends State<SocialButtons> {
               ),
             ),
 //shadow icons
-            Text(
-              'Floating Social Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Floating Social Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Floating Social Buttons',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -413,14 +527,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
                       GFIconButton(
                           color: Color(0xFF0E76A8),
                           shape: GFIconButtonShape.pills,
@@ -432,6 +538,14 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
                       GFIconButton(
                           color: Color(0xFFC4302B),
                           shape: GFIconButtonShape.pills,
@@ -465,6 +579,39 @@ class _SocialButtonsState extends State<SocialButtons> {
                             color: getGFColor(GFColor.white),
                           ),
                           onPressed: () {}),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      ),
+                      GFIconButton(
+                        color: getGFColor(GFColor.white),
+                        icon: Icon(
+                          IconData(
+                            0xe,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: getGFColor(GFColor.white),
+                        ),
+                        onPressed: () {},
+                      ),
                     ],
                   ),
                   SizedBox(

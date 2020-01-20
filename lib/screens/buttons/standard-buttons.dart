@@ -6,6 +6,7 @@ import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/types/gf_type.dart';
 import 'package:getflutter/size/gf_size.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 
 class StandardButtons extends StatefulWidget {
   @override
@@ -28,7 +29,18 @@ class _StandardButtonsState extends State<StandardButtons> {
             SizedBox(
               height: 30,
             ),
-            Text('Solid Buttons',  style: hintStyleTextblackbold(),),
+            // Text('Solid Buttons',  style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            // text: 'Solid',
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Solid ',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -57,27 +69,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                      // Expanded(child: GFButton(
-                      //   onPressed: (){},
-                      //   text: 'Warning',
-                      //   color: GFColor.warning,
-                      // )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
-                      // Expanded(child: GFButton(
-                      //   onPressed: (){},
-                      //   text: 'danger',
-                      //   color: GFColor.danger,
-                      // ))
-                    ],
-                  ),
-SizedBox(
-  height: 20,
-),
-                  Row(
-                    children: <Widget>[
-                       Expanded(child: GFButton(
+                      Expanded(child: GFButton(
                         onPressed: (){},
                         text: 'Warning',
                         color: GFColor.warning,
@@ -85,7 +77,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(child: GFButton(
+                        Expanded(child: GFButton(
                         onPressed: (){},
                         text: 'Danger',
                         color: GFColor.danger,
@@ -93,6 +85,17 @@ SizedBox(
                        SizedBox(
                         width: 10,
                       ),
+                  
+                    ],
+                  ),
+SizedBox(
+  height: 20,
+),
+                  Row(
+                    children: <Widget>[
+                       
+                     
+                    
                       Expanded(child: GFButton(
                         onPressed: (){},
                         text: 'Info',
@@ -101,14 +104,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                   
-                      // Expanded(child: Text(''))
-
-                    ],
-                  ),
-            Row(
-                    children: <Widget>[
-                        Expanded(child: GFButton(
+                       Expanded(child: GFButton(
                         onPressed: (){},
                         text: 'Light',
                         color: GFColor.light,
@@ -132,6 +128,12 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(child: Text('')),
+                      // Expanded(child: Text('')),
+                      // Expanded(child: Text(''))
+                   
+                      // Expanded(child: Text(''))
+
                     ],
                   ),
 SizedBox(
@@ -145,7 +147,16 @@ SizedBox(
             ),
          
 
-            Text('Disabled Buttons',  style: hintStyleTextblackbold(),),
+            // Text('Disabled Buttons',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Disabled ',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -174,27 +185,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      // Expanded(child: GFButton(
-                      //   onPressed:null,
-                      //   text: 'Warning',
-                      //   color: GFColor.warning,
-                      // )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
-                      // Expanded(child: GFButton(
-                      //   onPressed:null,
-                      //   text: 'danger',
-                      //   color: GFColor.danger,
-                      // ))
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
-                        Expanded(child: GFButton(
+                    Expanded(child: GFButton(
                         onPressed:null,
                         text: 'Warning',
                         color: GFColor.warning,
@@ -210,6 +201,14 @@ SizedBox(
                        SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                        
                       Expanded(child: GFButton(
                         onPressed:null,
                         text: 'Info',
@@ -218,16 +217,6 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                     
-                      SizedBox(
-                        width: 10,
-                      ),
-                  
-
-                    ],
-                  ),
-                   Row(
-                    children: <Widget>[
                      
                       Expanded(child: GFButton(
                         onPressed:null,
@@ -253,8 +242,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      
-
+                      Expanded(child: Text(''))
                     ],
                   ),
 
@@ -266,7 +254,16 @@ SizedBox(
               height: 20,
             ),
 
-            Text('Transparent Buttons',  style: hintStyleTextblackbold(),),
+            // Text('Transparent Buttons',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Transparent ',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -298,29 +295,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-                      // Expanded(child: GFButton(
-                      //   onPressed:null,
-                      //   text: 'Warning',
-                      //   color: GFColor.warning,
-                      //   type: GFType.transparent,
-                      // )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
-                      // Expanded(child: GFButton(
-                      //   onPressed:null,
-                      //   text: 'danger',
-                      //   color: GFColor.danger,
-                      //   type: GFType.transparent,
-                      // ))
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
-                        Expanded(child: GFButton(
+            Expanded(child: GFButton(
                         onPressed:null,
                         text: 'Warning',
                         color: GFColor.warning,
@@ -338,6 +313,14 @@ SizedBox(
                        SizedBox(
                         width: 10,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                        
                       Expanded(child: GFButton(
                         onPressed:null,
                         text: 'Info',
@@ -347,13 +330,7 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
-
-                    ],
-                  ),
-                   Row(
-                    children: <Widget>[
-                
-                      Expanded(child: GFButton(
+         Expanded(child: GFButton(
                         onPressed:null,
                         text: 'Light',
                         color: GFColor.light,
@@ -380,10 +357,10 @@ SizedBox(
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(child: Text(''))
 
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -391,7 +368,16 @@ SizedBox(
               height: 20,
             ),
 
-            Text(' Button Sizes',  style: hintStyleTextblackbold(),),
+            // Text(' Button Sizes',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Button Sizes ',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -438,7 +424,16 @@ SizedBox(
               height: 20,
             ),
 
-            Text(' Block Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Block Buttons',  style: hintStyleTextblackbold(),),
+             Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Block',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
             GFCard(
               content:  Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -494,7 +489,16 @@ SizedBox(
 
             ),
  //outline buttons
-            Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Solid Outline ',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 
              GFCard(
                           content: Column(
@@ -528,15 +532,7 @@ SizedBox(
                                     type: GFType.outline,
                                     color: GFColor.success,
                                   ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  GFButton(
+                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
                                       "Warning",
@@ -552,6 +548,16 @@ SizedBox(
                                     type: GFType.outline,
                                     color: GFColor.danger,
                                   ),
+                                ],
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                               
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                 
                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
@@ -560,15 +566,7 @@ SizedBox(
                                     type: GFType.outline,
                                     color: GFColor.info,
                                   ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  GFButton(
+                                     GFButton(
                                     onPressed: () {},
                                     child: Text(
                                       "Light",
@@ -591,15 +589,25 @@ SizedBox(
                                     ),
                                     type: GFType.transparent,
                                   ),
+                                  GFButton(child: Text(''), onPressed: () {},color: GFColor.white,),
                                 ],
                               ),
                               SizedBox(
                                 height: 10,
                               ),
-                            ],
+                              ],
                           ),
                         ),
-            Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
+             Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Disabled Outline',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 
                         GFCard(
                           content: Column(
@@ -633,15 +641,7 @@ SizedBox(
                                     type: GFType.outline,
                                     color: GFColor.success,
                                   ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  GFButton(
+                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
                                       "Warning",
@@ -657,14 +657,6 @@ SizedBox(
                                     type: GFType.outline,
                                     color: GFColor.danger,
                                   ),
-                                  GFButton(
-                                    onPressed: null,
-                                    child: Text(
-                                      "Info",
-                                    ),
-                                    type: GFType.outline,
-                                    color: GFColor.info,
-                                  ),
                                 ],
                               ),
                               SizedBox(
@@ -673,7 +665,16 @@ SizedBox(
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
+                                 
                                   GFButton(
+                                    onPressed: null,
+                                    child: Text(
+                                      "Info",
+                                    ),
+                                    type: GFType.outline,
+                                    color: GFColor.info,
+                                  ),
+                                   GFButton(
                                     onPressed: null,
                                     child: Text(
                                       "Light",
@@ -696,6 +697,7 @@ SizedBox(
                                     ),
                                     type: GFType.transparent,
                                   ),
+                                  GFButton(child: Text(''), onPressed: () {},color: GFColor.white,),
                                 ],
                               ),
                               SizedBox(
@@ -704,7 +706,16 @@ SizedBox(
                             ],
                           ),
                         ),
-            Text('Button Sizes',  style: hintStyleTextblackbold(),),
+            // Text('Button Sizes',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Button Sizes',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 GFCard(
                           content: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -751,7 +762,16 @@ GFCard(
                             ],
                           ),
                         ),
-            Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Block Outline',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 GFCard(
                           content: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -803,7 +823,16 @@ GFCard(
                           ),
                         ),
 //outline 2x buttons
-Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
+// Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
+Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Solid Outline',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 
              GFCard(
                           content: Column(
@@ -837,14 +866,6 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     type: GFType.outline2x,
                                     color: GFColor.success,
                                   ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
@@ -861,14 +882,6 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     type: GFType.outline2x,
                                     color: GFColor.danger,
                                   ),
-                                  GFButton(
-                                    onPressed: () {},
-                                    child: Text(
-                                      "Info",
-                                    ),
-                                    type: GFType.outline2x,
-                                    color: GFColor.info,
-                                  ),
                                 ],
                               ),
                               SizedBox(
@@ -877,6 +890,15 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
+                                  
+                                  GFButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Info",
+                                    ),
+                                    type: GFType.outline2x,
+                                    color: GFColor.info,
+                                  ),
                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
@@ -900,7 +922,11 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     ),
                                     type: GFType.transparent,
                                   ),
+                                  GFButton(child: Text(''), onPressed: () {},color: GFColor.white,),
                                 ],
+                              ),
+                              SizedBox(
+                                height: 10,
                               ),
                               SizedBox(
                                 height: 10,
@@ -908,7 +934,16 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                             ],
                           ),
                         ),
-            Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
+            Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Disabled Outline',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 
                         GFCard(
                           content: Column(
@@ -942,14 +977,6 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     type: GFType.outline2x,
                                     color: GFColor.success,
                                   ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
                                   GFButton(
                                     onPressed: () {},
                                     child: Text(
@@ -966,14 +993,6 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     type: GFType.outline2x,
                                     color: GFColor.danger,
                                   ),
-                                  GFButton(
-                                    onPressed: null,
-                                    child: Text(
-                                      "Info",
-                                    ),
-                                    type: GFType.outline2x,
-                                    color: GFColor.info,
-                                  ),
                                 ],
                               ),
                               SizedBox(
@@ -982,7 +1001,16 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
+                                  
                                   GFButton(
+                                    onPressed: null,
+                                    child: Text(
+                                      "Info",
+                                    ),
+                                    type: GFType.outline2x,
+                                    color: GFColor.info,
+                                  ),
+ GFButton(
                                     onPressed: null,
                                     child: Text(
                                       "Light",
@@ -1005,6 +1033,8 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                                     ),
                                     type: GFType.transparent,
                                   ),
+                                  GFButton(child: Text(''), onPressed: () {},color: GFColor.white,),
+
                                 ],
                               ),
                               SizedBox(
@@ -1013,7 +1043,16 @@ Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
                             ],
                           ),
                         ),
-            Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
+            // Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
+             Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 GFCard(
                           content: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1060,7 +1099,16 @@ GFCard(
                             ],
                           ),
                         ),
-            Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
+            // Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
+             Padding(
+                        padding: EdgeInsets.only(left: 15,),
+                          child: GFTypography(
+                            type: GFTypographyType.typo5,
+                            dividerWidth: 50,
+                            dividerColor: Color(0xFF19CA4B),
+                            child: Text('Block Outline Buttons',  style: hintStyleTextblackbold(),),
+                          ),
+                        ),
 GFCard(
                           content: Column(
                             mainAxisAlignment: MainAxisAlignment.start,

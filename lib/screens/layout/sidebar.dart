@@ -248,24 +248,27 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 25,
             ),
-            Text('GF Forms', style: hintStyleTextblackdull()),
+            Text(
+              'GF Forms',
+              style: sidebarText(),
+            ),
             SizedBox(
               height: 20,
             ),
-            Text('GF Chip', style: hintStyleTextblackdull()),
+            Text('GF Chip', style: sidebarText()),
             SizedBox(
               height: 20,
             ),
 
-            Text('GF List', style: hintStyleTextblackdull()),
+            Text('GF List', style: sidebarText()),
             SizedBox(
               height: 20,
             ),
-            Text('GF Spinner', style: hintStyleTextblackdull()),
+            Text('GF Spinner', style: sidebarText()),
             SizedBox(
               height: 20,
             ),
-            Text('GF Header', style: hintStyleTextblackdull()),
+            Text('GF Header', style: sidebarText()),
             SizedBox(
               height: 20,
             ),

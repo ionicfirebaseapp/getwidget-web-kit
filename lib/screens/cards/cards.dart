@@ -12,7 +12,7 @@ import 'package:getflutter/position/gf_position.dart';
 import 'package:getflutter/components/button/gf_icon_button.dart';
 import 'package:getflutter/shape/gf_icon_button_shape.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Cards extends StatefulWidget {
   @override
@@ -45,385 +45,506 @@ class _CardsState extends State<Cards> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Basic Cards',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Basic Cards',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Basic',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
             ),
-            GFCard(
-              boxFit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                'lib/assets/images/card.png',
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
+                    child: GFCard(
+                      boxFit: BoxFit.cover,
+
+                      colorFilter: new ColorFilter.mode(
+                          Colors.black.withOpacity(0.67), BlendMode.darken),
+                      image: Image.asset(
+                        'lib/assets/images/card.png',
+                        width: MediaQuery.of(context).size.width,
+                        fit: BoxFit.fitWidth,
+                        // width: 300,
+                        // height: 400,
+                      ),
 //              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                title: Text('Card Title',
-                    style: TextStyle(
-                      fontSize: 19.0,
-                    )),
-                icon: GFIconButton(
-                  onPressed: null,
-                  icon: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        fav = !fav;
-                      });
-                    },
-                    child: fav
-                        ? Icon(
-                            Icons.favorite,
-                            color: getGFColor(GFColor.danger),
+                      titlePosition: GFPosition.end,
+                      title: GFListTile(
+                        title: Text('Card Title',
+                            style: TextStyle(
+                              fontSize: 19.0,
+                            )),
+                        icon: GFIconButton(
+                          onPressed: null,
+                          icon: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                fav = !fav;
+                              });
+                            },
+                            child: fav
+                                ? Icon(
+                                    Icons.favorite,
+                                    color: getGFColor(GFColor.danger),
+                                  )
+                                : Icon(Icons.favorite_border),
+                          ),
+                          type: GFType.transparent,
+                        ),
+                      ),
+                      content: Text(
+                        "Some quick example text to build on the card",
+                        style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                      ),
+                      buttonBar: GFButtonBar(
+                        // alignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          GFButton(
+                            onPressed: () {},
+                            text: 'Read More',
+                          ),
+                          GFButton(
+                            onPressed: () {},
+                            text: 'Send',
                           )
-                        : Icon(Icons.favorite_border),
+                        ],
+                      ),
+                    ),
                   ),
-                  type: GFType.transparent,
                 ),
-              ),
-              content: Text(
-                "Some quick example text to build on the card",
-                style: TextStyle(fontSize: 16.0, color: Colors.grey),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  GFButton(
-                    onPressed: () {},
-                    text: 'Read More',
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.contain,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.67), BlendMode.darken),
+                    image: Image.asset(
+                      'lib/assets/images/card1.png',
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.fitWidth,
+                    ),
+//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
+                    titlePosition: GFPosition.end,
+                    title: GFListTile(
+                      title:
+                          Text('Card Title', style: TextStyle(fontSize: 19.0)),
+                      icon: GFIconButton(
+                        onPressed: null,
+                        icon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              fav1 = !fav1;
+                            });
+                          },
+                          child: fav1
+                              ? Icon(
+                                  Icons.favorite,
+                                  color: getGFColor(GFColor.danger),
+                                )
+                              : Icon(Icons.favorite_border),
+                        ),
+                        type: GFType.transparent,
+                      ),
+                    ),
+                    content: Text(
+                      "Some quick example text to build on the card",
+                      style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        GFButton(
+                          onPressed: null,
+                          child: Text("Read More"),
+                          icon: Icon(Icons.keyboard_arrow_right),
+                          type: GFType.transparent,
+                          position: GFPosition.end,
+                        ),
+                      ],
+                    ),
                   ),
-                  GFButton(
-                    onPressed: () {},
-                    text: 'Send',
-                  )
-                ],
-              ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.67), BlendMode.darken),
+                    image: Image.asset(
+                      'lib/assets/images/card2.png',
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.fitWidth,
+                    ),
+//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
+                    titlePosition: GFPosition.end,
+                    title: GFListTile(
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(fontSize: 19.0),
+                      ),
+                      // showDivider: false,
+                    ),
+                    content: Text(
+                      "Some quick example text to build on the card",
+                      style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        GFButton(
+                          onPressed: () {},
+                          text: 'Share',
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.fitWidth,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.67), BlendMode.darken),
+                    image: Image.asset(
+                      'lib/assets/images/card3.png',
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.fitWidth,
+                    ),
+//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
+                    titlePosition: GFPosition.end,
+                    title: GFListTile(
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(fontSize: 19.0),
+                      ),
+                      // showDivider: false,
+                    ),
+                    content: Text(
+                      "Some quick example text to build on the card",
+                      style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        GFButton(
+                          onPressed: () {},
+                          text: 'View More',
+                        ),
+                        GFButton(
+                          onPressed: () {},
+                          text: 'Share',
+                        )
+                      ],
+                    ),
+                  ),
+                )
+              ],
             ),
 
-            GFCard(
-              boxFit: BoxFit.contain,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                'lib/assets/images/card1.png',
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                title: Text('Card Title', style: TextStyle(fontSize: 19.0)),
-                icon: GFIconButton(
-                  onPressed: null,
-                  icon: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        fav1 = !fav1;
-                      });
-                    },
-                    child: fav1
-                        ? Icon(
-                            Icons.favorite,
-                            color: getGFColor(GFColor.danger),
-                          )
-                        : Icon(Icons.favorite_border),
-                  ),
-                  type: GFType.transparent,
-                ),
-              ),
-              content: Text(
-                "Some quick example text to build on the card",
-                style: TextStyle(fontSize: 16.0, color: Colors.grey),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  GFButton(
-                    onPressed: null,
-                    child: Text("Read More"),
-                    icon: Icon(Icons.keyboard_arrow_right),
-                    type: GFType.transparent,
-                    position: GFPosition.end,
-                  ),
-                ],
-              ),
-            ),
-
-            GFCard(
-              boxFit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                'lib/assets/images/card2.png',
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(fontSize: 19.0),
-                ),
-                // showDivider: false,
-              ),
-              content: Text(
-                "Some quick example text to build on the card",
-                style: TextStyle(fontSize: 16.0, color: Colors.grey),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  GFButton(
-                    onPressed: () {},
-                    text: 'Share',
-                  )
-                ],
-              ),
-            ),
-
-            GFCard(
-              boxFit: BoxFit.fitWidth,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                'lib/assets/images/card3.png',
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(fontSize: 19.0),
-                ),
-                // showDivider: false,
-              ),
-              content: Text(
-                "Some quick example text to build on the card",
-                style: TextStyle(fontSize: 16.0, color: Colors.grey),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  GFButton(
-                    onPressed: () {},
-                    text: 'View More',
-                  ),
-                  GFButton(
-                    onPressed: () {},
-                    text: 'Share',
-                  )
-                ],
-              ),
-            ),
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Avatars',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Avatars',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Avatars',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
             ),
-            GFCard(
-              boxFit: BoxFit.fill,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                "lib/assets/images/image1.png",
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.fill,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.67), BlendMode.darken),
+                    image: Image.asset(
+                      "lib/assets/images/image1.png",
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.fitWidth,
+                    ),
 //              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                avatar: GFAvatar(
-                  backgroundImage: AssetImage('lib/assets/images/three3.png'),
-                ),
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(fontSize: 19.0),
-                ),
-                subTitle: Text(
-                  'subtitle',
-                  style: TextStyle(fontSize: 16.0, color: Colors.grey),
-                ),
-                icon: GFIconButton(
-                  onPressed: null,
-                  icon: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        fav2 = !fav2;
-                      });
-                    },
-                    child: fav2
-                        ? Icon(
-                            Icons.favorite,
-                            color: getGFColor(GFColor.danger),
-                          )
-                        : Icon(Icons.favorite_border),
+                    titlePosition: GFPosition.end,
+                    title: GFListTile(
+                      avatar: GFAvatar(
+                        backgroundImage:
+                            AssetImage('lib/assets/images/three3.png'),
+                      ),
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(fontSize: 19.0),
+                      ),
+                      subTitle: Text(
+                        'subtitle',
+                        style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                      ),
+                      icon: GFIconButton(
+                        onPressed: null,
+                        icon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              fav2 = !fav2;
+                            });
+                          },
+                          child: fav2
+                              ? Icon(
+                                  Icons.favorite,
+                                  color: getGFColor(GFColor.danger),
+                                )
+                              : Icon(Icons.favorite_border),
+                        ),
+                        type: GFType.transparent,
+                      ),
+                    ),
+                    content: Padding(
+                      padding: const EdgeInsets.only(bottom: 5.0),
+                      child: Text(
+                        "Flutter Flutter is Google's mobile UI framework for crafting"
+                        "Flutter Flutter is Google's mobile UI framework for crafting",
+                        style: TextStyle(fontSize: 19.0, color: Colors.grey),
+                      ),
+                    ),
                   ),
-                  type: GFType.transparent,
                 ),
-              ),
-              content: Text(
-                "Flutter Flutter is Google's mobile UI framework for crafting"
-                "Flutter Flutter is Google's mobile UI framework for crafting",
-                style: TextStyle(fontSize: 19.0, color: Colors.grey),
-              ),
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.67), BlendMode.darken),
+                    image: Image.asset(
+                      'lib/assets/images/image1.png',
+                      width: MediaQuery.of(context).size.width,
+                      fit: BoxFit.fitWidth,
+                      // height: 400.0,
+                    ),
+//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
+                    titlePosition: GFPosition.end,
+                    title: GFListTile(
+                      avatar: GFAvatar(
+                        backgroundImage:
+                            AssetImage('lib/assets/images/three4.png'),
+                      ),
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(fontSize: 19.0),
+                      ),
+                      subTitle: Text(
+                        'Subtitle',
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                    ),
+                    content: Text(
+                      "Some quick example text to build on the card",
+                      style: TextStyle(fontSize: 16.0, color: Colors.grey),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10.0),
+                          child: GFIconButton(
+                              color: Color(0xFF3B5998),
+                              shape: GFIconButtonShape.circle,
+                              icon: Icon(
+                                IconData(
+                                  0xe904,
+                                  fontFamily: 'icomoon',
+                                ),
+                                color: getGFColor(GFColor.white),
+                              ),
+                              onPressed: () {}),
+                        ),
+                        GFIconButton(
+                            color: Color(0xFF00ACEE),
+                            shape: GFIconButtonShape.circle,
+                            icon: Icon(
+                              IconData(
+                                0xe90f,
+                                fontFamily: 'icomoon',
+                              ),
+                              color: getGFColor(GFColor.white),
+                            ),
+                            onPressed: () {}),
+                        GFIconButton(
+                            color: Color(0xFF25D366),
+                            shape: GFIconButtonShape.circle,
+                            icon: Icon(
+                              IconData(
+                                0xe911,
+                                fontFamily: 'icomoon',
+                              ),
+                              color: getGFColor(GFColor.white),
+                            ),
+                            onPressed: () {}),
+                      ],
+                    ),
+                  ),
+                )
+              ],
             ),
 
 //
-            GFCard(
-              boxFit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.67), BlendMode.darken),
-              image: Image.asset(
-                'lib/assets/images/image2.png',
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fitWidth,
-              ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
-              titlePosition: GFPosition.end,
-              title: GFListTile(
-                avatar: GFAvatar(
-                  backgroundImage: AssetImage('lib/assets/images/three4.png'),
-                ),
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(fontSize: 19.0),
-                ),
-                subTitle: Text(
-                  'Subtitle',
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ),
-              content: Text(
-                "Some quick example text to build on the card",
-                style: TextStyle(fontSize: 16.0, color: Colors.grey),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GFIconButton(
-                      color: Color(0xFF3B5998),
-                      shape: GFIconButtonShape.circle,
-                      icon: SvgPicture.asset('lib/assets/icons/fb.svg'),
-                      onPressed: () {}),
-                  GFIconButton(
-                      color: Color(0xFF00ACEE),
-                      shape: GFIconButtonShape.circle,
-                      icon: SvgPicture.asset('lib/assets/icons/twitter.svg'),
-                      onPressed: () {}),
-                  GFIconButton(
-                      color: Color(0xFF25D366),
-                      shape: GFIconButtonShape.circle,
-                      icon: SvgPicture.asset('lib/assets/icons/whatsapp.svg'),
-                      onPressed: () {}),
-                ],
-              ),
-            ),
+
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Full Image',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Full Image',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Full Image',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
             ),
-            GFCard(
-              boxFit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.60), BlendMode.darken),
-              imageOverlay: AssetImage('lib/assets/images/image.png'),
-              title: GFListTile(
-                avatar: GFAvatar(
-                  backgroundImage: AssetImage('lib/assets/images/three5.png'),
-                ),
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(
-                      fontSize: 19.0,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500),
-                ),
-                subTitle: Text(
-                  'subtitle',
-                  style: TextStyle(fontSize: 16.0, color: Colors.white),
-                ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.60), BlendMode.darken),
+                    imageOverlay: AssetImage('lib/assets/images/image.png'),
+                    title: GFListTile(
+                      avatar: GFAvatar(
+                        backgroundImage:
+                            AssetImage('lib/assets/images/three5.png'),
+                      ),
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(
+                            fontSize: 19.0,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      subTitle: Text(
+                        'subtitle',
+                        style: TextStyle(fontSize: 16.0, color: Colors.white),
+                      ),
 //                                    icon: GFAvatar(
 //                                        child: Icon(Icons.insert_emoticon)
 //                                    )
-              ),
-              content: Text(
-                "Flutter "
-                "Flutter is Google's mobile UI framework for crafting"
-                " high-quality native interfaces on iOS and Android in "
-                "Flutter ",
-                style: TextStyle(fontSize: 16.0, color: Colors.white),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GFButton(
-                    onPressed: () {},
-                    text: 'Send',
+                    ),
+                    content: Text(
+                      "Flutter "
+                      "Flutter is Google's mobile UI framework for crafting"
+                      " high-quality native interfaces on iOS and Android in "
+                      "Flutter ",
+                      style: TextStyle(fontSize: 16.0, color: Colors.white),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        GFButton(
+                          onPressed: () {},
+                          text: 'Send',
+                        ),
+                        GFButton(
+                          onPressed: () {},
+                          text: 'View',
+                        )
+                      ],
+                    ),
                   ),
-                  GFButton(
-                    onPressed: () {},
-                    text: 'View',
-                  )
-                ],
-              ),
-            ),
-            GFCard(
-              boxFit: BoxFit.cover,
-              colorFilter: new ColorFilter.mode(
-                  Colors.black.withOpacity(0.40), BlendMode.darken),
-              imageOverlay: AssetImage('lib/assets/images/image1.png'),
-              title: GFListTile(
-                title: Text(
-                  'Card Title',
-                  style: TextStyle(
-                      fontSize: 19.0,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500),
                 ),
-                subTitle: Text(
-                  'subtitle',
-                  style: TextStyle(fontSize: 16.0, color: Colors.white),
-                ),
+                Expanded(
+                  child: GFCard(
+                    boxFit: BoxFit.cover,
+                    colorFilter: new ColorFilter.mode(
+                        Colors.black.withOpacity(0.40), BlendMode.darken),
+                    imageOverlay: AssetImage('lib/assets/images/image.png'),
+                    title: GFListTile(
+                      title: Text(
+                        'Card Title',
+                        style: TextStyle(
+                            fontSize: 19.0,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      subTitle: Text(
+                        'subtitle',
+                        style: TextStyle(fontSize: 16.0, color: Colors.white),
+                      ),
 //                                    icon: GFAvatar(
 //                                        child: Icon(Icons.insert_emoticon)
 //                                    )
-              ),
-              content: Text(
-                "Flutter "
-                "Flutter is Google's mobile UI framework for crafting"
-                " high-quality native interfaces on iOS and Android in "
-                "Flutter ",
-                style: TextStyle(fontSize: 16.0, color: Colors.white),
-              ),
-              buttonBar: GFButtonBar(
-                // alignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GFIconButton(
-                      color: Color(0xFF3B5998),
-                      shape: GFIconButtonShape.circle,
-                      icon: SvgPicture.asset('lib/assets/icons/fb.svg'),
-                      onPressed: () {}),
-                ],
-              ),
+                    ),
+                    content: Text(
+                      "Flutter "
+                      "Flutter is Google's mobile UI framework for crafting"
+                      " high-quality native interfaces on iOS and Android in "
+                      "Flutter ",
+                      style: TextStyle(fontSize: 16.0, color: Colors.white),
+                    ),
+                    buttonBar: GFButtonBar(
+                      // alignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Padding(
+                          padding:
+                              const EdgeInsets.only(top: 10.0, bottom: 10.0),
+                          child: GFIconButton(
+                              color: Color(0xFF3B5998),
+                              shape: GFIconButtonShape.circle,
+                              icon: Icon(
+                                IconData(
+                                  0xe904,
+                                  fontFamily: 'icomoon',
+                                ),
+                                color: getGFColor(GFColor.white),
+                              ),
+                              onPressed: () {}),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              ],
             ),
           ],
         ),
