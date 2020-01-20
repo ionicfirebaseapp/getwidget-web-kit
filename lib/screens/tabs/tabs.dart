@@ -31,6 +31,7 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
+        demoImageUrl: 'lib/assets/tabs.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -64,20 +65,24 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                 tabs: <Widget>[
                   Text(
                     "Icons1",
+                    style: TextStyle(fontSize: 16.0),
                   ),
                   Tab(
                     child: Text(
                       "Icons2",
+                      style: TextStyle(fontSize: 16.0),
                     ),
                   ),
                   Tab(
                     child: Text(
                       "Label1",
+                      style: TextStyle(fontSize: 16.0),
                     ),
                   ),
                   Tab(
                     child: Text(
                       "Label2",
+                      style: TextStyle(fontSize: 16.0),
                     ),
                   ),
                 ],

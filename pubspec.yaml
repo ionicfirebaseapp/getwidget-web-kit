@@ -19,11 +19,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: icomoon
+      fonts:
+        - asset: lib/fonts/icomoon.ttf
 
   assets:
     - lib/assets/logo.png
     - lib/assets/icons/next.png
-    - lib/assets/screen.png
     - lib/assets/icons/buttons.png
     - lib/assets/icons/buttons.svg
     - lib/assets/icons/avatar.png
@@ -97,14 +100,17 @@ flutter:
     - lib/assets/images/three7.png
     - lib/assets/images/cir.png
     - lib/assets/standard-buttons.gif
-    - lib/assets/std-buttons-mockup.gif
     - lib/assets/frame.png
     - lib/assets/pills-button.gif
-    - lib/assets/square-button.gif
-    - lib/assets/icons-button.gif
+    - lib/assets/square-buttons.gif
+    - lib/assets/icon-buttons.gif
     - lib/assets/social-buttons.gif
-    - lib/assets/badges.gif
     - lib/assets/cards.gif
     - lib/assets/avatars.gif
     - lib/assets/images.gif
     - lib/assets/tiles.gif
+    - lib/assets/Group-1170.png
+    - lib/assets/carousel.gif
+    - lib/assets/ezgif.com-resize.gif
+    - lib/assets/tabs.gif
+    - lib/assets/typography.gif

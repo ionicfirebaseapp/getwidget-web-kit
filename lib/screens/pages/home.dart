@@ -13,34 +13,36 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         body: Layout(
             // demoImageUrl: '',
-            body: Column(
-          children: <Widget>[
-            // GFCard(
-            //   color: Colors.lightBlue[50],
-            //   content: Row(
-            //     mainAxisAlignment: MainAxisAlignment.start,
-            //     children: <Widget>[Text('Info:')],
-            //   ),
-            // ),
-            Text(
-              'Introduction',
-              style: TextStyle(fontSize: 20),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              'GetFlutter is UI libraries for building flutter app.',
-              style: TextStyle(fontSize: 20),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Image.network(
-              'https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LvKegU8SBuWnETMfqrz%2F-LxtgL3yw3epnXU4dni3%2F-LxtgsMugSV2jttI5pTC%2FButtons%403x.png?alt=media&token=54a7ad05-716d-4cd2-84f7-78e2697fbdec',
-              height: 540,
-            )
-          ],
+            body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              // GFCard(
+              //   color: Colors.lightBlue[50],
+              //   content: Row(
+              //     mainAxisAlignment: MainAxisAlignment.start,
+              //     children: <Widget>[Text('Info:')],
+              //   ),
+              // ),
+              Text(
+                'Introduction',
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'GetFlutter is UI libraries for building flutter app.',
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Image.network(
+                'https://ik.imagekit.io/ionicfirebaseapp/docs/tr:dpr-auto,tr:w-auto-1300/github-settings_2_6MxhZpdf5.png',
+                height: 400,
+              )
+            ],
+          ),
         )));
   }
 }

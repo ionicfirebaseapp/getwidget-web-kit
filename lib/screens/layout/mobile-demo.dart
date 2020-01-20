@@ -24,16 +24,19 @@ class _MobileDemoState extends State<MobileDemo> {
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(left: 90),
-          child: Image.asset('lib/assets/frame.png'),
+          child: Image.asset(
+            'lib/assets/Group-1170.png',
+          ),
         ),
         Padding(
           padding: EdgeInsets.only(
             top: 59,
-            left: 116,
+            left: 118,
           ),
           child: Image.asset(
             widget.demoImageUrl ?? 'lib/assets/standard-buttons.gif',
             height: 480,
+            // width: 320,
           ),
         ),
         // Container(
