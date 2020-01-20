@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-final primary     =   const Color(0xff19CA4B);
-final secondary   =   const Color(0xFFFF7644);
-final blacktext   =   const Color(0xFF0D0D0D);
-final blackdull   =   const Color(0xFFbababa);
-
-
+final primary = const Color(0xff19CA4B);
+final secondary = const Color(0xFFFF7644);
+final blacktext = const Color(0xFF0D0D0D);
+final blackdull = const Color(0xFFbababa);
 
 //.............................................RalewayRegular...................................................................................
 
@@ -15,6 +13,11 @@ TextStyle hintStyleTextblackdull() {
     fontSize: 16.0,
     color: blacktext.withOpacity(0.60),
   );
+}
+
+TextStyle headerText() {
+  return TextStyle(
+      fontSize: 17, color: Colors.white, fontWeight: FontWeight.w600);
 }
 
 TextStyle hintStyleTextblack() {

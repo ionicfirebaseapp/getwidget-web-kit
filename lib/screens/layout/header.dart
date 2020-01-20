@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gf_web/styles/styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Header extends StatefulWidget {
   @override
@@ -6,6 +8,15 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+  launchURL(urlLink) async {
+    // const url = urlLink;
+    if (await canLaunch(urlLink)) {
+      await launch(urlLink);
+    } else {
+      throw 'Could not launch $urlLink';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,58 +29,70 @@ class _HeaderState extends State<Header> {
 //          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Flexible(
-              fit: FlexFit.tight,
-              flex: 1,
+                fit: FlexFit.tight,
+                flex: 1,
 //                child: Image.asset('lib/assets/logo.png')
-              child: Image.network(
-                'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
-                height: 40.0,
-              ),
-            ),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: Image.network(
+                    'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
+                    height: 40.0,
+                  ),
+                )),
             Flexible(
-                fit: FlexFit.loose,
+                fit: FlexFit.tight,
                 flex: 1,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   // crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(left: 300),
-                      child: Text(
-                        'Home',
-                        style: TextStyle(
-                            fontSize: 17,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600),
-                      ),
+                      padding: const EdgeInsets.only(),
+                      child: InkWell(
+                          onTap: () {
+                            launchURL('https://www.getflutter.dev/');
+                          },
+                          child: Text(
+                            'Home',
+                            style: headerText(),
+                          )),
                     ),
-                    Text(
-                      'Features',
-                      style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    Text(
-                      'Docs',
-                      style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    Text(
-                      'Blogs',
-                      style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    Text(
-                      'Contact',
-                      style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600),
+                    InkWell(
+                        onTap: () {
+                          launchURL('https://www.getflutter.dev/features');
+                        },
+                        child: Text(
+                          'Features',
+                          style: headerText(),
+                        )),
+                    InkWell(
+                        onTap: () {
+                          launchURL('https://docs.getflutter.dev/');
+                        },
+                        child: Text(
+                          'Docs',
+                          style: headerText(),
+                        )),
+                    InkWell(
+                        onTap: () {
+                          launchURL('https://www.getflutter.dev/blog/');
+                        },
+                        child: Text(
+                          'Blogs',
+                          style: headerText(),
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 370.0),
+                      child: InkWell(
+                          onTap: () {
+                            launchURL('https://forum.getflutter.dev/');
+                          },
+                          child: Text(
+                            'Forum',
+                            style: headerText(),
+                          )),
                     ),
                   ],
                 ))
