@@ -34,7 +34,7 @@ class _MobileDemoState extends State<MobileDemo> {
             left: 118,
           ),
           child: Image.asset(
-            widget.demoImageUrl ?? 'lib/assets/standard-buttons.gif',
+            widget.demoImageUrl ?? 'lib/assets/images/Artboard1.png',
             height: 480,
             // width: 320,
           ),

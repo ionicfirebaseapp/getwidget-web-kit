@@ -6,6 +6,7 @@ import 'package:gf_web/screens/buttons/icon-buttons.dart';
 import 'package:gf_web/screens/buttons/social-buttons.dart';
 import 'package:gf_web/screens/badges/badges.dart';
 import 'package:gf_web/screens/cards/cards.dart';
+import 'package:gf_web/screens/pages/home.dart';
 import 'package:gf_web/screens/typography/heading.dart';
 import 'package:gf_web/screens/avatar/avatar.dart';
 import 'package:gf_web/screens/images/image.dart';
@@ -16,6 +17,7 @@ import 'package:gf_web/screens/tiles/tiles.dart';
 //Map route = Map<String, dynamic>();
 
 final routes = {
+  '/home': (context) => HomePage(),
   '/gf-buttons/standard-button': (context) => StandardButtons(),
   '/gf-buttons/pill-button': (context) => PillButtons(),
   '/gf-buttons/square-button': (context) => SquareButtons(),

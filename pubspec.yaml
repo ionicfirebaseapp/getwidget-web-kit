@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   flutter_svg: ^0.15.0
+  url_launcher: ^5.4.1
 
 dev_dependencies:
   flutter_test:
@@ -114,3 +115,9 @@ flutter:
     - lib/assets/ezgif.com-resize.gif
     - lib/assets/tabs.gif
     - lib/assets/typography.gif
+    - lib/assets/images/Artboard1.png
+    - lib/assets/Artboard@2x.png
+    - lib/assets/Artboard@3x.png
+
+
+

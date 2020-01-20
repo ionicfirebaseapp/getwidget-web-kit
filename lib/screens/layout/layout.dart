@@ -36,7 +36,7 @@ class _LayoutState extends State<Layout> {
                 child: Sidebar(),
               ),
               Container(
-                  padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+                  padding: EdgeInsets.only(top: 5, left: 20, right: 20),
                   height: MediaQuery.of(context).size.height - 70,
                   width: MediaQuery.of(context).size.width - 730,
                   child: Column(

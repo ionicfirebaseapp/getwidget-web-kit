@@ -6,7 +6,6 @@ import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/types/gf_type.dart';
 import 'package:getflutter/size/gf_size.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:getflutter/shape/gf_badge_shape.dart';
 import 'package:getflutter/components/badge/gf_badge.dart';
 import 'package:getflutter/components/badge/gf_button_badge.dart';
@@ -171,15 +170,37 @@ class _BadgesState extends State<Badges> {
                     height: 20,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       GFIconBadge(
                           child: GFIconButton(
-                              type: GFType.transparent,
-                              onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/primary.svg',
-                                color: getGFColor(GFColor.primary),
-                              )),
+                            type: GFType.transparent,
+                            onPressed: () {},
+                            icon: Icon(
+                              IconData(
+                                0xe90b,
+                                fontFamily: 'icomoon',
+                              ),
+                              color: getGFColor(GFColor.primary),
+                            ),
+                          ),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                            type: GFType.transparent,
+                            onPressed: () {},
+                            icon: Icon(
+                              IconData(
+                                0xe90c,
+                                fontFamily: 'icomoon',
+                              ),
+                              color: getGFColor(GFColor.secondary),
+                            ),
+                          ),
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
@@ -189,21 +210,11 @@ class _BadgesState extends State<Badges> {
                           child: GFIconButton(
                               type: GFType.transparent,
                               onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/secondary.svg',
-                                color: getGFColor(GFColor.secondary),
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.small,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFType.transparent,
-                              onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/success.svg',
+                              icon: Icon(
+                                IconData(
+                                  0xe90e,
+                                  fontFamily: 'icomoon',
+                                ),
                                 color: getGFColor(GFColor.success),
                               )),
                           counterChild: GFBadge(
@@ -215,22 +226,12 @@ class _BadgesState extends State<Badges> {
                           child: GFIconButton(
                               type: GFType.transparent,
                               onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/warning.svg',
+                              icon: Icon(
+                                IconData(
+                                  0xe910,
+                                  fontFamily: 'icomoon',
+                                ),
                                 color: getGFColor(GFColor.warning),
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.small,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFType.transparent,
-                              onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/danger.svg',
-                                color: getGFColor(GFColor.danger),
                               )),
                           counterChild: GFBadge(
                             text: '12',
@@ -240,13 +241,33 @@ class _BadgesState extends State<Badges> {
                     ],
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       GFIconBadge(
                           child: GFIconButton(
                               type: GFType.transparent,
                               onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/info.svg',
+                              icon: Icon(
+                                IconData(
+                                  0xe901,
+                                  fontFamily: 'icomoon',
+                                ),
+                                color: getGFColor(GFColor.danger),
+                              )),
+                          counterChild: GFBadge(
+                            text: '12',
+                            shape: GFBadgeShape.circle,
+                            size: GFSize.small,
+                          )),
+                      GFIconBadge(
+                          child: GFIconButton(
+                              type: GFType.transparent,
+                              onPressed: () {},
+                              icon: Icon(
+                                IconData(
+                                  0xe906,
+                                  fontFamily: 'icomoon',
+                                ),
                                 color: getGFColor(GFColor.info),
                               )),
                           counterChild: GFBadge(
@@ -258,8 +279,11 @@ class _BadgesState extends State<Badges> {
                           child: GFIconButton(
                               type: GFType.transparent,
                               onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/light.svg',
+                              icon: Icon(
+                                IconData(
+                                  0xe907,
+                                  fontFamily: 'icomoon',
+                                ),
                                 color: getGFColor(GFColor.light),
                               )),
                           counterChild: GFBadge(
@@ -271,8 +295,11 @@ class _BadgesState extends State<Badges> {
                           child: GFIconButton(
                               type: GFType.transparent,
                               onPressed: () {},
-                              icon: SvgPicture.asset(
-                                'lib/assets/icons/dark.svg',
+                              icon: Icon(
+                                IconData(
+                                  0xe902,
+                                  fontFamily: 'icomoon',
+                                ),
                                 color: getGFColor(GFColor.dark),
                               )),
                           counterChild: GFBadge(
