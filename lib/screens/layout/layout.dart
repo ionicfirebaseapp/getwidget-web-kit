@@ -44,17 +44,42 @@ class _LayoutState extends State<Layout> {
                       Padding(
                         padding: EdgeInsets.only(bottom: 15.0),
                         child: Container(
-                          color: getGFColor(GFColor.light),
+                          color: GFColors.LIGHT,
                           width: 1000,
-                          height: 47,
+                          // height: MediaQuery.of(context).size.height,
+
                           child: Padding(
                             padding: EdgeInsets.only(
-                                left: 40, right: 10, top: 15, bottom: 10),
-                            child: Text(
-                              "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
-                              style: TextStyle(
-                                  fontSize: 15.0,
-                                  color: getGFColor(GFColor.danger)),
+                                left: 40, right: 10, top: 10, bottom: 10),
+                            child: Column(
+                              children: <Widget>[
+                                Text(
+                                  "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
+                                  style: TextStyle(
+                                      fontSize: 15.0, color: GFColors.DANGER),
+                                ),
+                                // InkWell(
+                                //   onTap: () => launch(
+                                //       'https://play.google.com/store/apps/details?id=dev.getflutter.appkit'),
+                                //   child: RichText(
+                                //     text: TextSpan(
+                                //       children: <TextSpan>[
+                                //         TextSpan(
+                                //           text:
+                                //               "Download & play with GetFlutter mobile app",
+                                //           style: TextStyle(color: Colors.red),
+                                //         ),
+                                //         TextSpan(
+                                //           text:
+                                //               ' https://play.google.com/store/apps/details?id=dev.getflutter.appkit',
+                                //           style: TextStyle(color: Colors.red),
+
+                                //         ),
+                                //       ],
+                                //     ),
+                                //   ),
+                                // ),
+                              ],
                             ),
                           ),
                         ),

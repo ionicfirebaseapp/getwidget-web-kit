@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/colors/gf_color.dart';
 import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/components/button/gf_button.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/components/image/gf_image_overlay.dart';
 import 'package:flutter/cupertino.dart';
@@ -169,7 +169,7 @@ class _ImagesState extends State<Images> {
                         padding: EdgeInsets.only(top: 90, left: 100),
                         child: Text(
                           'Light Overlay',
-                          style: TextStyle(color: getGFColor(GFColor.white)),
+                          style: TextStyle(color: GFColors.WHITE),
                         )),
                     colorFilter: new ColorFilter.mode(
                         Colors.black.withOpacity(0.20), BlendMode.darken),
@@ -187,7 +187,7 @@ class _ImagesState extends State<Images> {
                     padding: EdgeInsets.only(top: 90, left: 100),
                     child: Text(
                       'Medium Overlay',
-                      style: TextStyle(color: getGFColor(GFColor.white)),
+                      style: TextStyle(color: GFColors.WHITE),
                     )),
                 colorFilter: new ColorFilter.mode(
                     Colors.black.withOpacity(0.90), BlendMode.darken),
@@ -207,7 +207,7 @@ class _ImagesState extends State<Images> {
                       child: Center(
                         child: Text(
                           'Strong Overlay',
-                          style: TextStyle(color: getGFColor(GFColor.white)),
+                          style: TextStyle(color: GFColors.WHITE),
                         ),
                       )
                       // ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/card/gf_card.dart';
@@ -33,9 +34,19 @@ class _TilesState extends State<Tiles> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'With Label',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'With Label',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -75,9 +86,19 @@ class _TilesState extends State<Tiles> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'With Avatar',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'With Avatar',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,

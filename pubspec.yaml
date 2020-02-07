@@ -12,11 +12,11 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_svg: ^0.15.0
   url_launcher: ^5.4.1
+  getflutter: 1.0.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  getflutter: 1.0.0-dev.4
 
 flutter:
   uses-material-design: true
@@ -116,6 +116,10 @@ flutter:
     - lib/assets/tabs.gif
     - lib/assets/typography.gif
     - lib/assets/images/Artboard1.png
+    - lib/assets/toasts.gif
+    - lib/assets/toggle.gif
+
+
 
 
 

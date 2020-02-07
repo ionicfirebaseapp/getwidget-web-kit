@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/button/gf_button.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/types/gf_type.dart';
 import 'package:getflutter/components/button/gf_button_bar.dart';
 import 'package:getflutter/components/list_tile/gf_list_tile.dart';
 import 'package:getflutter/components/avatar/gf_avatar.dart';
@@ -101,11 +101,11 @@ class _CardsState extends State<Cards> {
                             child: fav
                                 ? Icon(
                                     Icons.favorite,
-                                    color: getGFColor(GFColor.danger),
+                                    color: GFColors.DANGER,
                                   )
                                 : Icon(Icons.favorite_border),
                           ),
-                          type: GFType.transparent,
+                          type: GFButtonType.transparent,
                         ),
                       ),
                       content: Text(
@@ -154,11 +154,11 @@ class _CardsState extends State<Cards> {
                           child: fav1
                               ? Icon(
                                   Icons.favorite,
-                                  color: getGFColor(GFColor.danger),
+                                  color: GFColors.DANGER,
                                 )
                               : Icon(Icons.favorite_border),
                         ),
-                        type: GFType.transparent,
+                        type: GFButtonType.transparent,
                       ),
                     ),
                     content: Text(
@@ -172,7 +172,7 @@ class _CardsState extends State<Cards> {
                           onPressed: null,
                           child: Text("Read More"),
                           icon: Icon(Icons.keyboard_arrow_right),
-                          type: GFType.transparent,
+                          type: GFButtonType.transparent,
                           position: GFPosition.end,
                         ),
                       ],
@@ -323,11 +323,11 @@ class _CardsState extends State<Cards> {
                           child: fav2
                               ? Icon(
                                   Icons.favorite,
-                                  color: getGFColor(GFColor.danger),
+                                  color: GFColors.DANGER,
                                 )
                               : Icon(Icons.favorite_border),
                         ),
-                        type: GFType.transparent,
+                        type: GFButtonType.transparent,
                       ),
                     ),
                     content: Padding(
@@ -384,7 +384,7 @@ class _CardsState extends State<Cards> {
                                   0xe904,
                                   fontFamily: 'icomoon',
                                 ),
-                                color: getGFColor(GFColor.white),
+                                color: GFColors.WHITE,
                               ),
                               onPressed: () {}),
                         ),
@@ -396,7 +396,7 @@ class _CardsState extends State<Cards> {
                                 0xe90f,
                                 fontFamily: 'icomoon',
                               ),
-                              color: getGFColor(GFColor.white),
+                              color: GFColors.WHITE,
                             ),
                             onPressed: () {}),
                         GFIconButton(
@@ -407,7 +407,7 @@ class _CardsState extends State<Cards> {
                                 0xe911,
                                 fontFamily: 'icomoon',
                               ),
-                              color: getGFColor(GFColor.white),
+                              color: GFColors.WHITE,
                             ),
                             onPressed: () {}),
                       ],
@@ -536,7 +536,7 @@ class _CardsState extends State<Cards> {
                                   0xe904,
                                   fontFamily: 'icomoon',
                                 ),
-                                color: getGFColor(GFColor.white),
+                                color: GFColors.WHITE,
                               ),
                               onPressed: () {}),
                         ),

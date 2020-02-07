@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/button/gf_button.dart';
@@ -74,7 +75,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe904,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       ),
                       // ),
@@ -90,7 +91,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFF00ACEE),
                         buttonBoxShadow: true,
@@ -110,7 +111,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFF25D366),
                         buttonBoxShadow: true,
@@ -130,7 +131,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe905,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFFDD4B39),
                         buttonBoxShadow: true,
@@ -150,7 +151,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe903,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFFEA4C89),
                         buttonBoxShadow: true,
@@ -169,7 +170,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFF0E76A8),
                         buttonBoxShadow: true,
@@ -199,7 +200,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe912,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0xFFC4302B),
                         buttonBoxShadow: true,
@@ -213,14 +214,16 @@ class _SocialButtonsState extends State<SocialButtons> {
                         onPressed: () {},
                         child: Text(
                           "Slack",
-                          style: TextStyle(color: getGFColor(GFColor.white)),
+                          style: TextStyle(
+                            color: GFColors.WHITE,
+                          ),
                         ),
                         icon: Icon(
                           IconData(
                             0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0XFF2EB67D),
                         buttonBoxShadow: true,
@@ -240,7 +243,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                             0xe90a,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         color: Color(0XFFC8232C),
                         buttonBoxShadow: true,
@@ -310,7 +313,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe904,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -320,7 +323,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90f,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -330,7 +333,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe911,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -340,7 +343,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe905,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -350,7 +353,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe903,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -360,7 +363,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe909,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                     ],
@@ -378,7 +381,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe912,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -388,7 +391,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90d,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -398,39 +401,39 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90a,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       ),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       ),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       )
@@ -480,7 +483,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe904,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -491,7 +494,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90f,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -502,7 +505,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe911,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -513,7 +516,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe905,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -524,7 +527,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe903,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -535,7 +538,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe909,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                     ],
@@ -554,7 +557,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe912,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -565,7 +568,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90d,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -576,39 +579,39 @@ class _SocialButtonsState extends State<SocialButtons> {
                               0xe90a,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       ),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       ),
                       GFIconButton(
-                        color: getGFColor(GFColor.white),
+                        color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
                             0xe,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         onPressed: () {},
                       ),
