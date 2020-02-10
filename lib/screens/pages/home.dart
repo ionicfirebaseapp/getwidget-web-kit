@@ -23,15 +23,15 @@ class _HomePageState extends State<HomePage> {
               //     children: <Widget>[Text('Info:')],
               //   ),
               // ),
-              Text(
-                'Introduction',
-                style: TextStyle(fontSize: 20),
-              ),
+              // Text(
+              //   'Introduction',
+              //   style: TextStyle(fontSize: 20),
+              // ),
               SizedBox(
                 height: 20,
               ),
               Text(
-                'GetFlutter is UI libraries for building flutter app.',
+                'Open source UI library for flutter app',
                 style: TextStyle(fontSize: 20),
               ),
               SizedBox(

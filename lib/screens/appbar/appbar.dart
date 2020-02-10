@@ -16,7 +16,7 @@ class _AppBarState extends State<AppBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tabs.gif',
+        demoImageUrl: 'lib/assets/appbar.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -34,7 +34,7 @@ class _AppBarState extends State<AppBar> {
               height: 30,
             ),
             const Padding(
-              padding: EdgeInsets.only(left: 15, top: 30, bottom: 10),
+              padding: EdgeInsets.only(left: 15, bottom: 10),
               child: GFTypography(
                 child: Text(
                   'Basic AppBar',

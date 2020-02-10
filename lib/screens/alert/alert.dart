@@ -17,7 +17,7 @@ class _AlertState extends State<Alert> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tabs.gif',
+        demoImageUrl: 'lib/assets/Alerts.gif',
         body: GFFloatingWidget(
             verticalPosition: 150,
             showblurness: showblur,

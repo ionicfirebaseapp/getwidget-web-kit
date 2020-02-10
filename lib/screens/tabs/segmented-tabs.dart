@@ -95,13 +95,22 @@ class _SegmentTabState extends State<SegmentTab> with TickerProviderStateMixin {
                   controller: tabController,
                   children: const <Widget>[
                     Center(
-                      child: Text('Tab 1'),
+                      child: Text(
+                        'Tab 1',
+                        style: TextStyle(fontSize: 30.0),
+                      ),
                     ),
                     Center(
-                      child: Text('Tab 2'),
+                      child: Text(
+                        'Tab 2',
+                        style: TextStyle(fontSize: 30.0),
+                      ),
                     ),
                     Center(
-                      child: Text('Tab 3'),
+                      child: Text(
+                        'Tab 3',
+                        style: TextStyle(fontSize: 30.0),
+                      ),
                     )
                   ],
                 )),

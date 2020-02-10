@@ -14,7 +14,7 @@ class _AccordionState extends State<Accordion> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tabs.gif',
+        demoImageUrl: 'lib/assets/accordion.gif',
         body: ListView(
           children: <Widget>[
             Text(

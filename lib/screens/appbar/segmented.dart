@@ -25,14 +25,17 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
   Widget build(BuildContext context) => Scaffold(
         appBar: GFAppBar(
           backgroundColor: GFColors.getGFColor(GFColor.dark),
-          title: GFSegmentTabs(
-            tabController: tabController,
-            tabBarColor: GFColors.getGFColor(GFColor.light),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              GFSegmentTabs(
+                tabController: tabController,
+                tabBarColor: GFColors.getGFColor(GFColor.light),
 //          indicatorSize: TabBarIndicatorSize.tab,
-            labelColor: GFColors.getGFColor(GFColor.white),
-            unselectedLabelColor: GFColors.getGFColor(GFColor.dark),
-            indicator: BoxDecoration(
-              color: GFColors.getGFColor(GFColor.dark),
+                labelColor: GFColors.getGFColor(GFColor.white),
+                unselectedLabelColor: GFColors.getGFColor(GFColor.dark),
+                indicator: BoxDecoration(
+                  color: GFColors.getGFColor(GFColor.dark),
 //            border: Border(
 //              bottom: BorderSide(
 //                color: GFColors.getGFColor(GFColor.success),
@@ -40,35 +43,46 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
 //              ),
 //            ),
 //                borderRadius: BorderRadius.circular(2.0)
-            ),
-            indicatorPadding: const EdgeInsets.all(8),
-            indicatorWeight: 2,
-            border: Border.all(color: Colors.white, width: 1),
-            initialIndex: 0,
+                ),
+                indicatorPadding: const EdgeInsets.all(8),
+                indicatorWeight: 2,
+                border: Border.all(color: Colors.white, width: 1),
+                initialIndex: 0,
 
-            length: 3,
-            tabs: const <Widget>[
-              Text(
-                'Tab1',
-              ),
-              Text(
-                'Tab2',
-              ),
-              Text(
-                'Tab3',
+                length: 3,
+                tabs: const <Widget>[
+                  Text(
+                    'Tab1',
+                  ),
+                  Text(
+                    'Tab2',
+                  ),
+                  Text(
+                    'Tab3',
+                  ),
+                ],
               ),
             ],
           ),
         ),
         body: GFTabBarView(controller: tabController, children: const <Widget>[
           Center(
-            child: Text('Tab 1'),
+            child: Text(
+              'Tab 1',
+              style: TextStyle(fontSize: 30.0),
+            ),
           ),
           Center(
-            child: Text('Tab 2'),
+            child: Text(
+              'Tab 2',
+              style: TextStyle(fontSize: 30.0),
+            ),
           ),
           Center(
-            child: Text('Tab 3'),
+            child: Text(
+              'Tab 3',
+              style: TextStyle(fontSize: 30.0),
+            ),
           ),
 //   Container(child: Text('Tab 3'),),
         ]),

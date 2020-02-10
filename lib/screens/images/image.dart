@@ -166,10 +166,12 @@ class _ImagesState extends State<Images> {
                     height: 200,
                     width: 400,
                     child: Padding(
-                        padding: EdgeInsets.only(top: 90, left: 100),
-                        child: Text(
-                          'Light Overlay',
-                          style: TextStyle(color: GFColors.WHITE),
+                        padding: EdgeInsets.only(top: 0, left: 0),
+                        child: Center(
+                          child: Text(
+                            'Light Overlay',
+                            style: TextStyle(color: GFColors.WHITE),
+                          ),
                         )),
                     colorFilter: new ColorFilter.mode(
                         Colors.black.withOpacity(0.20), BlendMode.darken),
@@ -184,10 +186,12 @@ class _ImagesState extends State<Images> {
                 width: 400,
                 boxFit: BoxFit.fill,
                 child: Padding(
-                    padding: EdgeInsets.only(top: 90, left: 100),
-                    child: Text(
-                      'Medium Overlay',
-                      style: TextStyle(color: GFColors.WHITE),
+                    padding: EdgeInsets.only(top: 0, left: 0),
+                    child: Center(
+                      child: Text(
+                        'Medium Overlay',
+                        style: TextStyle(color: GFColors.WHITE),
+                      ),
                     )),
                 colorFilter: new ColorFilter.mode(
                     Colors.black.withOpacity(0.90), BlendMode.darken),

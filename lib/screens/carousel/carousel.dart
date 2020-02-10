@@ -9,11 +9,11 @@ import 'package:getflutter/components/carousel/gf_carousel.dart';
 import 'package:getflutter/components/carousel/gf_items_carousel.dart';
 
 final List<String> imageList = [
-  "lib/assets/images/car.png",
-  "lib/assets/images/image.png",
-  "lib/assets/images/image1.png",
-  "lib/assets/images/image2.png",
-  "lib/assets/images/car4.png",
+  "lib/assets/images/c1.png",
+  "lib/assets/images/c2.png",
+  "lib/assets/images/c3.png",
+  "lib/assets/images/c4.png",
+  "lib/assets/images/c5.png",
 ];
 
 final List<String> assetImg = [

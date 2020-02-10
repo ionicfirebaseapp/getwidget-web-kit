@@ -402,76 +402,76 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'COMING SOON',
-              style: hintStyleTextblack(),
-            ),
-            SizedBox(
-              height: 25,
-            ),
-            Text(
-              'GF Forms',
-              style: sidebarText(),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Chip', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text(
+            //   'COMING SOON',
+            //   style: hintStyleTextblack(),
+            // ),
+            // SizedBox(
+            //   height: 25,
+            // ),
+            // Text(
+            //   'GF Forms',
+            //   style: sidebarText(),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Chip', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
 
-            Text('GF List', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Spinner', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Header', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Footer', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('GF List', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Spinner', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Header', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Footer', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
 
-            Text('GF Drawer', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('GF Drawer', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
 
-            Text('GF Model', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Action Sheet', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Floating Button', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Popover', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Recorder', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Infinite Scroll', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('GF Model', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Action Sheet', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Floating Button', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Popover', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Recorder', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Infinite Scroll', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
 
-            Text('GF Refresher', style: sidebarText()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('GF Refresher', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
           ],
         ),
       ),

@@ -67,7 +67,7 @@ class _IconButtonsState extends State<IconButtons> {
                         textColor: GFColor.white,
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -87,7 +87,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -103,7 +103,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -119,7 +119,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -158,7 +158,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -174,7 +174,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -206,7 +206,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -255,7 +255,7 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -272,7 +272,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -289,7 +289,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -306,7 +306,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -347,7 +347,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -364,7 +364,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -398,7 +398,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -451,7 +451,7 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -468,7 +468,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -485,7 +485,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -502,7 +502,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -543,7 +543,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -560,7 +560,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -594,7 +594,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -645,7 +645,7 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -662,7 +662,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -679,7 +679,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -696,7 +696,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -737,7 +737,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -754,7 +754,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -788,7 +788,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -839,7 +839,7 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -856,7 +856,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -873,7 +873,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -890,7 +890,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -931,7 +931,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -948,7 +948,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -982,7 +982,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -1030,7 +1030,7 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1047,7 +1047,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1064,7 +1064,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1081,7 +1081,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1122,7 +1122,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.info,
                         icon: Icon(
                           IconData(
-                            0xe906,
+                            0xe907,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1139,7 +1139,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.light,
                         icon: Icon(
                           IconData(
-                            0xe907,
+                            0xe908,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1173,7 +1173,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -1440,7 +1440,7 @@ class _IconButtonsState extends State<IconButtons> {
                           ),
                           icon: Icon(
                             IconData(
-                              0xe90b,
+                              0xe90d,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1479,7 +1479,7 @@ class _IconButtonsState extends State<IconButtons> {
                           size: GFSize.small,
                           icon: Icon(
                             IconData(
-                              0xe90e,
+                              0xe90f,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1533,7 +1533,7 @@ class _IconButtonsState extends State<IconButtons> {
                     size: GFSize.large,
                     icon: Icon(
                       IconData(
-                        0xe90b,
+                        0xe90c,
                         fontFamily: 'icomoon',
                       ),
                       color: GFColors.WHITE,
@@ -1553,7 +1553,7 @@ class _IconButtonsState extends State<IconButtons> {
                     size: GFSize.medium,
                     icon: Icon(
                       IconData(
-                        0xe90c,
+                        0xe90d,
                         fontFamily: 'icomoon',
                       ),
                       color: GFColors.WHITE,
@@ -1573,7 +1573,7 @@ class _IconButtonsState extends State<IconButtons> {
                     size: GFSize.small,
                     icon: Icon(
                       IconData(
-                        0xe90e,
+                        0xe90f,
                         fontFamily: 'icomoon',
                       ),
                       color: GFColors.WHITE,
@@ -1618,7 +1618,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90b,
+                              0xe90c,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1632,7 +1632,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90c,
+                              0xe90d,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1646,7 +1646,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90e,
+                              0xe90f,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1660,7 +1660,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe910,
+                              0xe911,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1696,7 +1696,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe906,
+                              0xe907,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -1710,7 +1710,7 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe907,
+                              0xe908,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,

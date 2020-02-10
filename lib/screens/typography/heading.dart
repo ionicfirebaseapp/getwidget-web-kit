@@ -32,9 +32,18 @@ class _TypographyState extends State<Heading> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Headings Regular',
-              style: hintStyleTextblackbold(),
+            GFTypography(
+              child: Text(
+                'Headings Regular',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              type: GFTypographyType.typo5,
+              dividerWidth: 45,
+              dividerColor: Color(0xFF19CA4B),
             ),
             SizedBox(
               height: 20,
@@ -99,9 +108,18 @@ class _TypographyState extends State<Heading> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Opacity',
-              style: hintStyleTextblackbold(),
+            GFTypography(
+              child: Text(
+                'Opacity',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              type: GFTypographyType.typo5,
+              dividerWidth: 45,
+              dividerColor: Color(0xFF19CA4B),
             ),
             SizedBox(
               height: 20,

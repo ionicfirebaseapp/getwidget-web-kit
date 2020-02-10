@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  flutter_svg: ^0.15.0
+  flutter_svg: ^0.17.1
   url_launcher: ^5.4.1
   getflutter: 1.0.4
 
@@ -118,6 +118,26 @@ flutter:
     - lib/assets/images/Artboard1.png
     - lib/assets/toasts.gif
     - lib/assets/toggle.gif
+    - lib/assets/Alerts.gif
+    - lib/assets/accordion.gif
+    - lib/assets/searchbar.gif
+    - lib/assets/appbar.gif
+    - lib/assets/images/c1.png
+    - lib/assets/images/c2.png
+    - lib/assets/images/c3.png
+    - lib/assets/images/c4.png
+    - lib/assets/images/c5.png
+    - lib/assets/images/playstore.svg
+    - lib/assets/icons/playstore.svg
+    - lib/assets/playstore3x.png
+
+
+
+
+
+
+
+
 
 
 

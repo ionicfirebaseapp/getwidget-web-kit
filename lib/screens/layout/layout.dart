@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:getflutter/getflutter.dart';
+
 import 'package:gf_web/screens/layout/mobile-demo.dart';
 import 'sidebar.dart';
 import 'header.dart';
 import 'package:getflutter/colors/gf_color.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Layout extends StatefulWidget {
   final Widget body;
@@ -18,6 +22,15 @@ class Layout extends StatefulWidget {
 }
 
 class _LayoutState extends State<Layout> {
+  launchURL(urlLink) async {
+    // const url = urlLink;
+    if (await canLaunch(urlLink)) {
+      await launch(urlLink);
+    } else {
+      throw 'Could not launch $urlLink';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,48 +54,67 @@ class _LayoutState extends State<Layout> {
                   width: MediaQuery.of(context).size.width - 730,
                   child: Column(
                     children: <Widget>[
-                      Padding(
-                        padding: EdgeInsets.only(bottom: 15.0),
-                        child: Container(
-                          color: GFColors.LIGHT,
-                          width: 1000,
-                          // height: MediaQuery.of(context).size.height,
+                      Container(
+                        color: GFColors.LIGHT,
+                        width: 1000,
+                        // height: MediaQuery.of(context).size.height,
 
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                                left: 40, right: 10, top: 10, bottom: 10),
-                            child: Column(
-                              children: <Widget>[
-                                Text(
-                                  "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
-                                  style: TextStyle(
-                                      fontSize: 15.0, color: GFColors.DANGER),
-                                ),
-                                // InkWell(
-                                //   onTap: () => launch(
-                                //       'https://play.google.com/store/apps/details?id=dev.getflutter.appkit'),
-                                //   child: RichText(
-                                //     text: TextSpan(
-                                //       children: <TextSpan>[
-                                //         TextSpan(
-                                //           text:
-                                //               "Download & play with GetFlutter mobile app",
-                                //           style: TextStyle(color: Colors.red),
-                                //         ),
-                                //         TextSpan(
-                                //           text:
-                                //               ' https://play.google.com/store/apps/details?id=dev.getflutter.appkit',
-                                //           style: TextStyle(color: Colors.red),
-
-                                //         ),
-                                //       ],
-                                //     ),
-                                //   ),
-                                // ),
-                              ],
+                        child: Column(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.only(right: 45.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 10.0, bottom: 10),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Text(
+                                          "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
+                                          style: TextStyle(
+                                              fontSize: 15.0,
+                                              color: GFColors.DANGER),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
+                            // InkWell(
+                            //   child: Padding(
+                            //     padding: const EdgeInsets.only(
+                            //       left: 8.0,
+                            //     ),
+                            //     child: Row(
+                            //       mainAxisAlignment: MainAxisAlignment.center,
+                            //       children: <Widget>[
+                            //         Text(
+                            //           'Download & play with GetFlutter mobile app  ',
+                            //           style: TextStyle(color: Colors.red),
+                            //         ),
+                            //         // GFIconButton(
+                            //         //     icon: Icon(
+                            //         //       IconData(
+                            //         //         0xe904,
+                            //         //         fontFamily: 'icomoon',
+                            //         //       ),
+                            //         //       color: GFColors.WHITE,
+                            //         //     ),
+                            //         //     onPressed: () {}),
+                            //       ],
+                            //     ),
+                            //   ),
+                            // ),
+                          ],
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height - 140,
@@ -91,14 +123,33 @@ class _LayoutState extends State<Layout> {
                       ),
                     ],
                   )),
-              // Container(
-              //   child: Info(),
-              // ),
-              Container(
-                width: 430,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  InkWell(
+                    onTap: () {
+                      launchURL(
+                          'https://play.google.com/store/apps/details?id=dev.getflutter.appkit');
+                    },
+                    child: Container(
+                        height: 100,
+                        width: 200,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 70.0),
+                          child: Image.asset('lib/assets/playstore3x.png'),
+                          // child: SvgPicture.asset(
+                          //     'lib/assets/icons/playstore.svg'),
+                        )),
+                  ),
+                  Container(
+                    width: 430,
 //                color: Colors.red,
-                height: 600,
-                child: MobileDemo(demoImageUrl: widget.demoImageUrl),
+                    height: 600,
+
+                    child: MobileDemo(demoImageUrl: widget.demoImageUrl),
+                  ),
+                ],
               )
             ],
           )

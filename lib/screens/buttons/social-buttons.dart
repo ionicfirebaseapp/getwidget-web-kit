@@ -72,7 +72,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe904,
+                            0xe906,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -88,7 +88,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         child: Text("Twitter"),
                         icon: Icon(
                           IconData(
-                            0xe90f,
+                            0xe910,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -108,7 +108,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe911,
+                            0xe912,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -167,7 +167,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe909,
+                            0xe90a,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -197,7 +197,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe912,
+                            0xe913,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -220,7 +220,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe90d,
+                            0xe90e,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -240,7 +240,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         icon: Icon(
                           IconData(
-                            0xe90a,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -310,7 +310,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFF3B5998),
                           icon: Icon(
                             IconData(
-                              0xe904,
+                              0xe906,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -320,7 +320,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFF00ACEE),
                           icon: Icon(
                             IconData(
-                              0xe90f,
+                              0xe910,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -330,7 +330,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFF25D366),
                           icon: Icon(
                             IconData(
-                              0xe911,
+                              0xe913,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -340,7 +340,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFFDD4B39),
                           icon: Icon(
                             IconData(
-                              0xe905,
+                              0xe90e,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -350,7 +350,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFFEA4C89),
                           icon: Icon(
                             IconData(
-                              0xe903,
+                              0xe90b,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -360,7 +360,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFF0E76A8),
                           icon: Icon(
                             IconData(
-                              0xe909,
+                              0xe90a,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -378,7 +378,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0xFFC4302B),
                           icon: Icon(
                             IconData(
-                              0xe912,
+                              0xe913,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -388,7 +388,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0XFF2EB67D),
                           icon: Icon(
                             IconData(
-                              0xe90d,
+                              0xe90e,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -398,7 +398,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: Color(0XFFC8232C),
                           icon: Icon(
                             IconData(
-                              0xe90a,
+                              0xe90b,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -408,7 +408,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -419,7 +419,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -430,7 +430,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -480,7 +480,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe904,
+                              0xe906,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -491,7 +491,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe90f,
+                              0xe910,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -502,7 +502,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe911,
+                              0xe912,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -535,7 +535,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe909,
+                              0xe90a,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -554,7 +554,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe912,
+                              0xe913,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -565,7 +565,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe90d,
+                              0xe90e,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -576,7 +576,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                           shape: GFIconButtonShape.pills,
                           icon: Icon(
                             IconData(
-                              0xe90a,
+                              0xe90b,
                               fontFamily: 'icomoon',
                             ),
                             color: GFColors.WHITE,
@@ -586,7 +586,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -597,7 +597,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
@@ -608,7 +608,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: GFColors.WHITE,
                         icon: Icon(
                           IconData(
-                            0xe,
+                            0xe90b,
                             fontFamily: 'icomoon',
                           ),
                           color: GFColors.WHITE,
