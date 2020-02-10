@@ -12,6 +12,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   AnimationController animationController;
   AnimationController controller;
   Animation<Offset> offset;
+  AnimationController controller1;
 
   @override
   void initState() {
@@ -28,6 +29,8 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   }
 
   bool showButtonTypes = false;
+  bool showButtonTypes1 = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -217,12 +220,122 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
+            // GestureDetector(
+            //   onTap: () {
+            //     Navigator.pushNamed(context, '/gf-tabs/tabs');
+            //   },
+            //   child: Text(
+            //     'GF Tab',
+            //     style: hintStyleTextblackdull(),
+            //   ),
+            // ),
+            GestureDetector(
+                onTap: () {
+                  setState(() {
+                    switch (controller.status) {
+                      case AnimationStatus.completed:
+                        controller.forward(from: 0);
+                        break;
+                      case AnimationStatus.dismissed:
+                        controller.forward();
+                        break;
+                      default:
+                    }
+                    showButtonTypes1 = !showButtonTypes1;
+                  });
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('GF Tabs', style: hintStyleTextblackdull()),
+                    showButtonTypes
+                        ? Icon(Icons.keyboard_arrow_down)
+                        : Icon(Icons.keyboard_arrow_right)
+                  ],
+                )),
+            showButtonTypes1
+                ? SlideTransition(
+                    position: offset,
+                    child: Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(color: Colors.black.withOpacity(0.40))
+                          ]),
+                      padding: EdgeInsets.only(
+                          top: 0, bottom: 30, left: 25, right: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-tabs/segmented-tabs');
+                            },
+                            child: Text('Segmented Tabs'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-tabs/icon-tabs');
+                            },
+                            child: Text('Icon Tabs'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-tabs/labeled-tabs');
+                            },
+                            child: Text('Labeled Tabs'),
+                          ),
+                          //   GestureDetector(
+                          //    onTap: (){
+                          //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
+                          //    },
+                          //    child:  Text('Shadow Buttons'),
+                          //  ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-tabs/bottomicon-tabs');
+                            },
+                            child: Text('Bottom Icon Tabs'),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushNamed(
+                                  context, '/gf-tabs/bottomlabeled-tabs');
+                            },
+                            child: Text('Bottom Labeled Tabs'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                : Container(),
+            SizedBox(
+              height: 20,
+            ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/gf-tabs/tabs');
+                Navigator.pushNamed(context, '/gf-toasts/toasts');
               },
               child: Text(
-                'GF Tab',
+                'GF Toasts',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-toggle/toggle');
+              },
+              child: Text(
+                'GF Toggle',
                 style: hintStyleTextblackdull(),
               ),
             ),
@@ -241,90 +354,124 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'COMING SOON',
-              style: hintStyleTextblack(),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-accordion/accordion');
+              },
+              child: Text(
+                'GF Accordion',
+                style: hintStyleTextblackdull(),
+              ),
             ),
-            SizedBox(
-              height: 25,
-            ),
-            Text('GF Forms', style: hintStyleTextblackdull()),
             SizedBox(
               height: 20,
             ),
-            Text('GF Chip', style: hintStyleTextblackdull()),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-alert/alert');
+              },
+              child: Text(
+                'GF Alert',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-appbar/appbar');
+              },
+              child: Text(
+                'GF Appbar',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-searchbar/searchbar');
+              },
+              child: Text(
+                'GF SearchBar',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            // Text(
+            //   'COMING SOON',
+            //   style: hintStyleTextblack(),
+            // ),
+            // SizedBox(
+            //   height: 25,
+            // ),
+            // Text(
+            //   'GF Forms',
+            //   style: sidebarText(),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Chip', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
 
-            Text('GF List', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Spinner', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Header', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Footer', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Toggle', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Drawer', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Accordian', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Toast', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Alert', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Model', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Action Sheet', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Floating Button', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Popover', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Recorder', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Infinite Scroll', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Searchbar', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
-            Text('GF Refresher', style: hintStyleTextblackdull()),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('GF List', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Spinner', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Header', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Footer', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+
+            // Text('GF Drawer', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+
+            // Text('GF Model', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Action Sheet', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Floating Button', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Popover', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Recorder', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Text('GF Infinite Scroll', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
+
+            // Text('GF Refresher', style: sidebarText()),
+            // SizedBox(
+            //   height: 20,
+            // ),
           ],
         ),
       ),

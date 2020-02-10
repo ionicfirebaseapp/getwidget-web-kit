@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/components/tabs/gf_tabBar.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/components/tabs/gf_tabBarView.dart';
 import 'package:getflutter/components/tabs/gf_segment_tabs.dart';
 
 class Tabs extends StatefulWidget {
@@ -31,7 +29,7 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tabs.gif',
+        // demoImageUrl: 'lib/assets/tabs.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -86,15 +84,15 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                     ),
                   ),
                 ],
-                tabBarColor: getGFColor(GFColor.light),
+                tabBarColor: GFColors.LIGHT,
                 indicatorSize: TabBarIndicatorSize.tab,
-                labelColor: getGFColor(GFColor.white),
-                unselectedLabelColor: getGFColor(GFColor.dark),
+                labelColor: GFColors.WHITE,
+                unselectedLabelColor: GFColors.DARK,
                 indicator: BoxDecoration(
                   color: Colors.black,
                   border: Border(
                     bottom: BorderSide(
-                      color: getGFColor(GFColor.success),
+                      color: GFColors.SUCCESS,
                       width: 3.0,
                     ),
                   ),
@@ -112,312 +110,309 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
               child: GFTabBarView(controller: tabController, children: [
                 Container(
                     height: 30,
-                    color: getGFColor(GFColor.white),
+                    color: GFColors.WHITE,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        GFTabBar(
-                          initialIndex: 0,
-                          length: 4,
-                          controller: tabController,
-                          tabs: [
-                            Tab(
-                              icon: Icon(
-                                Icons.home,
-                              ),
-                            ),
-                            Tab(
-                              icon: Icon(
-                                Icons.music_note,
-                              ),
-                            ),
-                            Tab(
-                              icon: Icon(
-                                Icons.games,
-                              ),
-                            ),
-                            Tab(
-                              icon: Icon(
-                                Icons.notifications,
-                              ),
-                            ),
-//                            GFIconButton(
-//                              icon: Icon(Icons.home,),
-//                              onPressed: (){},
-//                            ),
-                          ],
-                          indicatorColor: getGFColor(GFColor.success),
-//        indicatorSize: TabBarIndicatorSize.label,
-                          labelColor: getGFColor(GFColor.success),
-                          labelPadding: EdgeInsets.all(8.0),
-                          tabBarColor: getGFColor(GFColor.dark),
-                          unselectedLabelColor: getGFColor(GFColor.white),
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.white,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                          unselectedLabelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.black,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                        ),
+//                         GFTabBar(
+//                           initialIndex: 0,
+//                           length: 4,
+//                           controller: tabController,
+//                           tabs: [
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.home,
+//                               ),
+//                             ),
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.music_note,
+//                               ),
+//                             ),
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.games,
+//                               ),
+//                             ),
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.notifications,
+//                               ),
+//                             ),
+// //                            GFIconButton(
+// //                              icon: Icon(Icons.home,),
+// //                              onPressed: (){},
+// //                            ),
+//                           ],
+//                           indicatorColor: GFColors.SUCCESS,
+// //        indicatorSize: TabBarIndicatorSize.label,
+//                           labelColor: GFColors.SUCCESS,
+//                           labelPadding: EdgeInsets.all(8.0),
+//                           tabBarColor: GFColors.DARK,
+//                           unselectedLabelColor: GFColors.WHITE,
+//                           labelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.white,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                           unselectedLabelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.black,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                         ),
                       ],
                     )),
                 Container(
                     height: 30,
-                    color: getGFColor(GFColor.white),
+                    color: GFColors.WHITE,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                           decoration: BoxDecoration(
-                              color: getGFColor(GFColor.white),
+                              color: GFColors.WHITE,
                               border: Border(
-                                  top: BorderSide(
-                                      color: getGFColor(GFColor.light)))),
+                                  top: BorderSide(color: GFColors.LIGHT))),
                         ),
-                        GFTabBar(
-                          initialIndex: 0,
-                          length: 4,
-                          controller: tabController,
-                          tabs: [
-                            Tab(
-                              icon: Icon(
-                                Icons.home,
-                              ),
-                            ),
-                            Tab(
-                              icon: Icon(Icons.music_note),
-                            ),
-                            Tab(
-                              icon: Icon(
-                                Icons.games,
-                              ),
-                            ),
-                            Tab(
-                              icon: Icon(
-                                Icons.notifications,
-                              ),
-                            ),
-                          ],
-                          indicatorColor: Colors.teal,
+//                         GFTabBar(
+//                           initialIndex: 0,
+//                           length: 4,
+//                           controller: tabController,
+//                           tabs: [
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.home,
+//                               ),
+//                             ),
+//                             Tab(
+//                               icon: Icon(Icons.music_note),
+//                             ),
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.games,
+//                               ),
+//                             ),
+//                             Tab(
+//                               icon: Icon(
+//                                 Icons.notifications,
+//                               ),
+//                             ),
+//                           ],
+//                           indicatorColor: Colors.teal,
 
-//        indicatorSize: TabBarIndicatorSize.label,
-                          labelColor: getGFColor(GFColor.success),
-                          labelPadding: EdgeInsets.all(8.0),
-                          tabBarColor: getGFColor(GFColor.white),
-                          unselectedLabelColor: getGFColor(GFColor.light),
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.white,
-                            fontFamily: 'OpenSansBold',
-                          ),
+// //        indicatorSize: TabBarIndicatorSize.label,
+//                           labelColor: GFColors.SUCCESS,
+//                           labelPadding: EdgeInsets.all(8.0),
+//                           tabBarColor: GFColors.WHITE,
+//                           unselectedLabelColor: GFColors.LIGHT,
+//                           labelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.white,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
 
-                          unselectedLabelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.black,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                        ),
+//                           unselectedLabelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.black,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                         ),
                       ],
                     )),
                 Container(
                     height: 50,
-                    color: getGFColor(GFColor.white),
+                    color: GFColors.WHITE,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                           decoration: BoxDecoration(
-                              color: getGFColor(GFColor.white),
+                              color: GFColors.WHITE,
                               border: Border(
-                                  top: BorderSide(
-                                      color: getGFColor(GFColor.light)))),
+                                  top: BorderSide(color: GFColors.LIGHT))),
                         ),
-                        GFTabBar(
-                          initialIndex: 0,
-                          length: 4,
-                          controller: tabController,
-                          tabs: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.home,
-                                ),
-                                Text(
-                                  'Home',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(Icons.music_note,
-                                    color: getGFColor(GFColor.light)),
-                                Text(
-                                  'Music',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.games,
-                                ),
-                                Text(
-                                  'Games',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.notifications,
-                                ),
-                                Text(
-                                  'Notifications',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                          indicatorColor: Colors.teal,
+//                         GFTabBar(
+//                           initialIndex: 0,
+//                           length: 4,
+//                           controller: tabController,
+//                           tabs: [
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.home,
+//                                 ),
+//                                 Text(
+//                                   'Home',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(Icons.music_note,
+//                                     color: GFColors.LIGHT),
+//                                 Text(
+//                                   'Music',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.games,
+//                                 ),
+//                                 Text(
+//                                   'Games',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.notifications,
+//                                 ),
+//                                 Text(
+//                                   'Notifications',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                           ],
+//                           indicatorColor: Colors.teal,
 
-//        indicatorSize: TabBarIndicatorSize.label,
-                          labelColor: getGFColor(GFColor.success),
-                          labelPadding: EdgeInsets.all(8.0),
-                          tabBarColor: getGFColor(GFColor.dark),
-                          unselectedLabelColor: getGFColor(GFColor.light),
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.white,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                          unselectedLabelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.black,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                        ),
+// //        indicatorSize: TabBarIndicatorSize.label,
+//                           labelColor: GFColors.SUCCESS,
+//                           labelPadding: EdgeInsets.all(8.0),
+//                           tabBarColor: GFColors.DARK,
+//                           unselectedLabelColor: GFColors.LIGHT,
+//                           labelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.white,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                           unselectedLabelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.black,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                         ),
                       ],
                     )),
                 Container(
                     height: 50,
-                    color: getGFColor(GFColor.white),
+                    color: GFColors.WHITE,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                           decoration: BoxDecoration(
-                              color: getGFColor(GFColor.white),
+                              color: GFColors.WHITE,
                               border: Border(
-                                  top: BorderSide(
-                                      color: getGFColor(GFColor.light)))),
+                                  top: BorderSide(color: GFColors.LIGHT))),
                         ),
-                        GFTabBar(
-                          initialIndex: 0,
-                          length: 4,
-                          controller: tabController,
-                          tabs: [
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.home,
-                                ),
-                                Text(
-                                  'Home',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.music_note,
-                                ),
-                                Text(
-                                  'Music',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.games,
-                                ),
-                                Text(
-                                  'Games',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  Icons.notifications,
-                                ),
-                                Text(
-                                  'Notifications',
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                          indicatorColor: Colors.teal,
+//                         GFTabBar(
+//                           initialIndex: 0,
+//                           length: 4,
+//                           controller: tabController,
+//                           tabs: [
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.home,
+//                                 ),
+//                                 Text(
+//                                   'Home',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.music_note,
+//                                 ),
+//                                 Text(
+//                                   'Music',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.games,
+//                                 ),
+//                                 Text(
+//                                   'Games',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                             Column(
+//                               mainAxisAlignment: MainAxisAlignment.center,
+//                               children: <Widget>[
+//                                 Icon(
+//                                   Icons.notifications,
+//                                 ),
+//                                 Text(
+//                                   'Notifications',
+//                                   style: TextStyle(
+//                                     fontSize: 10,
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                           ],
+//                           indicatorColor: Colors.teal,
 
-//        indicatorSize: TabBarIndicatorSize.label,
-                          labelColor: getGFColor(GFColor.success),
-                          labelPadding: EdgeInsets.all(8.0),
-                          tabBarColor: getGFColor(GFColor.white),
-                          unselectedLabelColor: getGFColor(GFColor.light),
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.white,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                          unselectedLabelStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 13.0,
-                            color: Colors.black,
-                            fontFamily: 'OpenSansBold',
-                          ),
-                        ),
+// //        indicatorSize: TabBarIndicatorSize.label,
+//                           labelColor: GFColors.SUCCESS,
+//                           labelPadding: EdgeInsets.all(8.0),
+//                           tabBarColor: GFColors.WHITE,
+//                           unselectedLabelColor: GFColors.LIGHT,
+//                           labelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.white,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                           unselectedLabelStyle: TextStyle(
+//                             fontWeight: FontWeight.w500,
+//                             fontSize: 13.0,
+//                             color: Colors.black,
+//                             fontFamily: 'OpenSansBold',
+//                           ),
+//                         ),
                       ],
                     )),
               ]),

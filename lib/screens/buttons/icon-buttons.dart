@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/button/gf_button.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/types/gf_type.dart';
 import 'package:getflutter/size/gf_size.dart';
 import 'package:getflutter/shape/gf_button_shape.dart';
 import 'package:getflutter/components/typography/gf_typography.dart';
-
 import 'package:getflutter/components/button/gf_icon_button.dart';
 
 class IconButtons extends StatefulWidget {
@@ -38,9 +37,23 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Solid Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Solid Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Solid',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -51,13 +64,13 @@ class _IconButtonsState extends State<IconButtons> {
                           child: GFButton(
                         onPressed: () {},
                         text: 'Primary',
-                        textColor: getGFColor(GFColor.white),
+                        textColor: GFColor.white,
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                         // SvgPicture.asset(
                         //   'lib/assets/icons/primary.svg',
@@ -74,10 +87,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -90,22 +103,15 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -113,10 +119,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -132,23 +138,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -164,14 +154,30 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Light',
-                        color: GFColor.light,
+                        text: 'Info',
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        text: 'Light',
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -187,7 +193,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -200,7 +206,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -218,9 +224,23 @@ class _IconButtonsState extends State<IconButtons> {
               height: 20,
             ),
             //outline icons
-            Text(
-              'Outline Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -230,26 +250,9 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
                         color: GFColor.primary,
                         text: 'Primary',
-                        icon: Icon(
-                          IconData(
-                            0xe90b,
-                            fontFamily: 'icomoon',
-                          ),
-                          // color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        type: GFType.outline,
-                        text: 'Secondary',
-                        color: GFColor.secondary,
                         icon: Icon(
                           IconData(
                             0xe90c,
@@ -264,12 +267,29 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
+                        text: 'Secondary',
+                        color: GFColor.secondary,
+                        icon: Icon(
+                          IconData(
+                            0xe90d,
+                            fontFamily: 'icomoon',
+                          ),
+                          // color: getGFColor(GFColor.white),
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFButtonType.outline,
                         text: 'Success',
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -278,22 +298,15 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
                         text: 'Warning',
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -305,7 +318,7 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
                         text: 'Danger',
                         color: GFColor.danger,
                         icon: Icon(
@@ -319,23 +332,6 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        type: GFType.outline,
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          // color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
                     ],
                   ),
                   SizedBox(
@@ -346,9 +342,9 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
-                        text: 'Light',
-                        color: GFColor.light,
+                        text: 'Info',
+                        type: GFButtonType.outline,
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
@@ -363,7 +359,24 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
+                        text: 'Light',
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          // color: getGFColor(GFColor.white),
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFButtonType.outline,
                         text: 'Dark',
                         color: GFColor.dark,
                         icon: Icon(
@@ -380,12 +393,12 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline,
+                        type: GFButtonType.outline,
                         text: 'Link',
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -394,6 +407,9 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -404,9 +420,23 @@ class _IconButtonsState extends State<IconButtons> {
             ),
 
 //outline 2x icons
-            Text(
-              'Outline 2x Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Outline 2x Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Outline 2x',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -416,26 +446,9 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
                         color: GFColor.primary,
                         text: 'Primary',
-                        icon: Icon(
-                          IconData(
-                            0xe90b,
-                            fontFamily: 'icomoon',
-                          ),
-                          // color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        type: GFType.outline2x,
-                        text: 'Secondary',
-                        color: GFColor.secondary,
                         icon: Icon(
                           IconData(
                             0xe90c,
@@ -450,12 +463,29 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
+                        text: 'Secondary',
+                        color: GFColor.secondary,
+                        icon: Icon(
+                          IconData(
+                            0xe90d,
+                            fontFamily: 'icomoon',
+                          ),
+                          // color: getGFColor(GFColor.white),
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFButtonType.outline2x,
                         text: 'Success',
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -464,22 +494,15 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
                         text: 'Warning',
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -491,7 +514,7 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
                         text: 'Danger',
                         color: GFColor.danger,
                         icon: Icon(
@@ -505,23 +528,6 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        type: GFType.outline2x,
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          // color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
                     ],
                   ),
                   SizedBox(
@@ -532,9 +538,9 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
-                        text: 'Light',
-                        color: GFColor.light,
+                        text: 'Info',
+                        type: GFButtonType.outline2x,
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
@@ -549,7 +555,24 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
+                        text: 'Light',
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          // color: getGFColor(GFColor.white),
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        type: GFButtonType.outline2x,
                         text: 'Dark',
                         color: GFColor.dark,
                         icon: Icon(
@@ -566,12 +589,12 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        type: GFType.outline2x,
+                        type: GFButtonType.outline2x,
                         text: 'Link',
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -580,6 +603,9 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -589,9 +615,23 @@ class _IconButtonsState extends State<IconButtons> {
               height: 20,
             ),
 //square icons
-            Text(
-              'Square Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Square Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Square',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -605,10 +645,10 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -622,10 +662,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -639,22 +679,15 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -663,10 +696,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -683,24 +716,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        shape: GFButtonShape.square,
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -716,15 +732,32 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Light',
+                        text: 'Info',
                         shape: GFButtonShape.square,
-                        color: GFColor.light,
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        text: 'Light',
+                        shape: GFButtonShape.square,
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -741,7 +774,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -755,7 +788,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -764,6 +797,9 @@ class _IconButtonsState extends State<IconButtons> {
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -773,9 +809,23 @@ class _IconButtonsState extends State<IconButtons> {
               height: 20,
             ),
 //pills icons
-            Text(
-              'Pills Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Pills Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Pills',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -789,10 +839,10 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -806,10 +856,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -823,22 +873,15 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -847,10 +890,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -867,24 +910,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        shape: GFButtonShape.pills,
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -900,15 +926,32 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Light',
+                        text: 'Info',
                         shape: GFButtonShape.pills,
-                        color: GFColor.light,
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        text: 'Light',
+                        shape: GFButtonShape.pills,
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -925,7 +968,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -939,7 +982,7 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
                           // color: getGFColor(GFColor.white),
@@ -957,9 +1000,23 @@ class _IconButtonsState extends State<IconButtons> {
               height: 20,
             ),
 //shadow icons
-            Text(
-              'Shadow Icons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Shadow Icons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Shadow',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -973,10 +1030,10 @@ class _IconButtonsState extends State<IconButtons> {
                         text: 'Primary',
                         icon: Icon(
                           IconData(
-                            0xe90b,
+                            0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -990,10 +1047,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.secondary,
                         icon: Icon(
                           IconData(
-                            0xe90c,
+                            0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -1007,22 +1064,15 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.success,
                         icon: Icon(
                           IconData(
-                            0xe90e,
+                            0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
                         width: 10,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
@@ -1031,10 +1081,10 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.warning,
                         icon: Icon(
                           IconData(
-                            0xe910,
+                            0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -1051,24 +1101,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
-                        ),
-                      )),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                          child: GFButton(
-                        onPressed: () {},
-                        text: 'Info',
-                        buttonBoxShadow: true,
-                        color: GFColor.info,
-                        icon: Icon(
-                          IconData(
-                            0xe906,
-                            fontFamily: 'icomoon',
-                          ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -1084,15 +1117,32 @@ class _IconButtonsState extends State<IconButtons> {
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Light',
+                        text: 'Info',
                         buttonBoxShadow: true,
-                        color: GFColor.light,
+                        color: GFColor.info,
                         icon: Icon(
                           IconData(
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
+                        ),
+                      )),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          child: GFButton(
+                        onPressed: () {},
+                        text: 'Light',
+                        buttonBoxShadow: true,
+                        color: GFColor.light,
+                        icon: Icon(
+                          IconData(
+                            0xe908,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -1109,7 +1159,7 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
@@ -1123,15 +1173,18 @@ class _IconButtonsState extends State<IconButtons> {
                         color: GFColor.transparent,
                         icon: Icon(
                           IconData(
-                            0xe908,
+                            0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          color: getGFColor(GFColor.white),
+                          color: GFColors.WHITE,
                         ),
                       )),
                       SizedBox(
                         width: 10,
                       ),
+                      Expanded(
+                        child: Text(''),
+                      )
                     ],
                   ),
                 ],
@@ -1263,7 +1316,7 @@ class _IconButtonsState extends State<IconButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Primary',
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1272,7 +1325,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Secondary',
             //             color: GFColor.secondary,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1281,7 +1334,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Success',
             //             color: GFColor.success,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1290,7 +1343,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Warning',
             //             color: GFColor.warning,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1299,7 +1352,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'danger',
             //             color: GFColor.danger,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           ))
             //         ],
             //       ),
@@ -1312,7 +1365,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Info',
             //             color: GFColor.info,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1321,7 +1374,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Light',
             //             color: GFColor.light,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1330,7 +1383,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed:null,
             //             text: 'Dark',
             //             color: GFColor.dark,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1339,7 +1392,7 @@ class _IconButtonsState extends State<IconButtons> {
             //             onPressed: (){},
             //             text: 'Link',
             //             color: GFColor.transparent,
-            //             type: GFType.transparent,
+            //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -1356,9 +1409,23 @@ class _IconButtonsState extends State<IconButtons> {
             //   height: 20,
             // ),
 
-            Text(
-              ' Button Sizes',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Button Sizes',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Button Sizes',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -1373,10 +1440,10 @@ class _IconButtonsState extends State<IconButtons> {
                           ),
                           icon: Icon(
                             IconData(
-                              0xe90b,
+                              0xe90d,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           size: GFSize.large,
                         ),
@@ -1396,7 +1463,7 @@ class _IconButtonsState extends State<IconButtons> {
                               0xe90c,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                         ),
                       ),
@@ -1412,10 +1479,10 @@ class _IconButtonsState extends State<IconButtons> {
                           size: GFSize.small,
                           icon: Icon(
                             IconData(
-                              0xe90e,
+                              0xe90f,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                         ),
                       ),
@@ -1429,9 +1496,23 @@ class _IconButtonsState extends State<IconButtons> {
               height: 20,
             ),
 
-            Text(
-              ' Block Buttons',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   ' Block Buttons',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Block',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Column(
@@ -1445,15 +1526,17 @@ class _IconButtonsState extends State<IconButtons> {
                     onPressed: () {},
                     blockButton: true,
                     child: Text("Large",
-                        style: TextStyle(color: getGFColor(GFColor.white))),
+                        style: TextStyle(
+                          color: GFColors.WHITE,
+                        )),
                     color: GFColor.primary,
                     size: GFSize.large,
                     icon: Icon(
                       IconData(
-                        0xe90b,
+                        0xe90c,
                         fontFamily: 'icomoon',
                       ),
-                      color: getGFColor(GFColor.white),
+                      color: GFColors.WHITE,
                     ),
                   ),
                   SizedBox(
@@ -1463,15 +1546,17 @@ class _IconButtonsState extends State<IconButtons> {
                     onPressed: () {},
                     blockButton: true,
                     child: Text("Normal",
-                        style: TextStyle(color: getGFColor(GFColor.white))),
+                        style: TextStyle(
+                          color: GFColors.WHITE,
+                        )),
                     color: GFColor.primary,
                     size: GFSize.medium,
                     icon: Icon(
                       IconData(
-                        0xe90c,
+                        0xe90d,
                         fontFamily: 'icomoon',
                       ),
-                      color: getGFColor(GFColor.white),
+                      color: GFColors.WHITE,
                     ),
                   ),
                   SizedBox(
@@ -1481,15 +1566,17 @@ class _IconButtonsState extends State<IconButtons> {
                     onPressed: () {},
                     blockButton: true,
                     child: Text("Small",
-                        style: TextStyle(color: getGFColor(GFColor.white))),
+                        style: TextStyle(
+                          color: GFColors.WHITE,
+                        )),
                     color: GFColor.primary,
                     size: GFSize.small,
                     icon: Icon(
                       IconData(
-                        0xe90e,
+                        0xe90f,
                         fontFamily: 'icomoon',
                       ),
-                      color: getGFColor(GFColor.white),
+                      color: GFColors.WHITE,
                     ),
                   ),
                   SizedBox(
@@ -1499,12 +1586,17 @@ class _IconButtonsState extends State<IconButtons> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 15, top: 20),
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
               child: GFTypography(
-                text: 'Icons Only',
-                // type: GFTypographyType.typo5,
-                dividerWidth: 25,
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Icons Only',
+                  style: hintStyleTextblackbold(),
+                ),
               ),
             ),
 
@@ -1526,10 +1618,10 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90b,
+                              0xe90c,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -1540,10 +1632,10 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90c,
+                              0xe90d,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -1554,10 +1646,10 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe90e,
+                              0xe90f,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -1568,20 +1660,12 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe910,
+                              0xe911,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
                       GFIconButton(
                           color: GFColor.danger,
                           // icon: SvgPicture.asset(
@@ -1593,9 +1677,17 @@ class _IconButtonsState extends State<IconButtons> {
                               0xe901,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
                       GFIconButton(
                           color: GFColor.info,
                           // icon: SvgPicture.asset(
@@ -1604,10 +1696,10 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe906,
+                              0xe907,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -1618,10 +1710,10 @@ class _IconButtonsState extends State<IconButtons> {
                           // ),
                           icon: Icon(
                             IconData(
-                              0xe907,
+                              0xe908,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
                           onPressed: () {}),
                       GFIconButton(
@@ -1635,8 +1727,17 @@ class _IconButtonsState extends State<IconButtons> {
                               0xe902,
                               fontFamily: 'icomoon',
                             ),
-                            color: getGFColor(GFColor.white),
+                            color: GFColors.WHITE,
                           ),
+                          onPressed: () {}),
+                      GFIconButton(
+                          type: GFButtonType.outline,
+                          icon: Icon(Icons.settings),
+                          onPressed: () {}),
+                      GFIconButton(
+                          type: GFButtonType.outline,
+                          color: GFColor.secondary,
+                          icon: Icon(Icons.send),
                           onPressed: () {}),
                     ],
                   ),
@@ -1647,23 +1748,29 @@ class _IconButtonsState extends State<IconButtons> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       GFIconButton(
-                          type: GFType.outline,
-                          icon: Icon(Icons.settings),
-                          onPressed: () {}),
-                      GFIconButton(
-                          type: GFType.outline,
-                          color: GFColor.secondary,
-                          icon: Icon(Icons.send),
-                          onPressed: () {}),
-                      GFIconButton(
-                          type: GFType.outline,
+                          type: GFButtonType.outline,
                           color: GFColor.success,
                           icon: Icon(Icons.file_download),
                           onPressed: () {}),
                       GFIconButton(
-                          type: GFType.outline,
+                          type: GFButtonType.outline,
                           color: GFColor.warning,
                           icon: Icon(Icons.warning),
+                          onPressed: () {}),
+                      GFIconButton(
+                          type: GFButtonType.outline,
+                          color: GFColor.danger,
+                          icon: Icon(Icons.insert_drive_file),
+                          onPressed: () {}),
+                      GFIconButton(
+                          type: GFButtonType.outline,
+                          color: GFColor.info,
+                          icon: Icon(Icons.delete),
+                          onPressed: () {}),
+                      GFIconButton(
+                          type: GFButtonType.outline,
+                          color: GFColor.light,
+                          icon: Icon(Icons.info),
                           onPressed: () {}),
                     ],
                   ),
@@ -1674,22 +1781,7 @@ class _IconButtonsState extends State<IconButtons> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       GFIconButton(
-                          type: GFType.outline,
-                          color: GFColor.danger,
-                          icon: Icon(Icons.insert_drive_file),
-                          onPressed: () {}),
-                      GFIconButton(
-                          type: GFType.outline,
-                          color: GFColor.info,
-                          icon: Icon(Icons.delete),
-                          onPressed: () {}),
-                      GFIconButton(
-                          type: GFType.outline,
-                          color: GFColor.light,
-                          icon: Icon(Icons.info),
-                          onPressed: () {}),
-                      GFIconButton(
-                          type: GFType.outline,
+                          type: GFButtonType.outline,
                           color: GFColor.dark,
                           icon: Icon(Icons.apps),
                           onPressed: () {}),

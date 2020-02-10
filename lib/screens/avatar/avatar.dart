@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/components/avatar/gf_avatar.dart';
 import 'package:getflutter/shape/gf_avatar_shape.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Avatar extends StatefulWidget {
   @override
@@ -18,9 +20,23 @@ class _AvatarState extends State<Avatar> {
         demoImageUrl: 'lib/assets/avatars.gif',
         body: ListView(
           children: <Widget>[
-            Text(
-              'Avatar',
-              style: hintStyleTextblackbolder(),
+            // Text(
+            //   'Avatar',
+            //   style: hintStyleTextblackbolder(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                  // left: 15,
+                  ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Avatar',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -57,15 +73,7 @@ class _AvatarState extends State<Avatar> {
                       GFAvatar(
                         backgroundImage:
                             AssetImage('lib/assets/images/img2.png'),
-                      )
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                      ),
                       GFAvatar(
                         backgroundImage:
                             AssetImage('lib/assets/images/three1.png'),
@@ -76,6 +84,14 @@ class _AvatarState extends State<Avatar> {
                             AssetImage('lib/assets/images/three6.png'),
                         shape: GFAvatarShape.standard,
                       ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
                       GFAvatar(
                         backgroundImage:
                             AssetImage('lib/assets/images/three4.png'),
@@ -86,14 +102,6 @@ class _AvatarState extends State<Avatar> {
                             AssetImage('lib/assets/images/three7.png'),
                         shape: GFAvatarShape.standard,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
                       GFAvatar(
                         backgroundImage: AssetImage(
                           'lib/assets/images/three5.png',

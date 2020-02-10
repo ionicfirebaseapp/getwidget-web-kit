@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/colors/gf_color.dart';
@@ -8,11 +9,11 @@ import 'package:getflutter/components/carousel/gf_carousel.dart';
 import 'package:getflutter/components/carousel/gf_items_carousel.dart';
 
 final List<String> imageList = [
-  "lib/assets/images/car.png",
-  "lib/assets/images/image.png",
-  "lib/assets/images/image1.png",
-  "lib/assets/images/image2.png",
-  "lib/assets/images/car4.png",
+  "lib/assets/images/c1.png",
+  "lib/assets/images/c2.png",
+  "lib/assets/images/c3.png",
+  "lib/assets/images/c4.png",
+  "lib/assets/images/c5.png",
 ];
 
 final List<String> assetImg = [
@@ -32,7 +33,7 @@ class _CarouselState extends State<Carousel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/cards.gif',
+        demoImageUrl: 'lib/assets/carousel.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -49,9 +50,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Full Width ',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Full Width',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -60,8 +71,8 @@ class _CarouselState extends State<Carousel> {
               autoPlay: true,
               pagination: true,
               viewportFraction: 1.0,
-              activeIndicator: getGFColor(GFColor.success),
-              passiveIndicator: getGFColor(GFColor.dark),
+              activeIndicator: GFColors.SUCCESS,
+              passiveIndicator: GFColors.DARK,
               aspectRatio: 2.0,
               items: assetImg.map(
                 (url) {
@@ -87,8 +98,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -98,8 +108,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 16.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 16.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),
@@ -117,9 +126,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'Multiple Items',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Multiple Items',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -145,8 +164,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -156,8 +174,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 16.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 16.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),
@@ -169,9 +186,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'Full Size',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Full Size',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -180,8 +207,8 @@ class _CarouselState extends State<Carousel> {
               autoPlay: true,
               pagination: true,
               viewportFraction: 1.0,
-              activeIndicator: getGFColor(GFColor.success),
-              passiveIndicator: getGFColor(GFColor.white),
+              activeIndicator: GFColors.SUCCESS,
+              passiveIndicator: GFColors.WHITE,
               aspectRatio: 2.0,
               items: assetImg.map(
                 (url) {
@@ -201,8 +228,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -212,8 +238,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 16.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 16.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),
@@ -230,9 +255,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'Full Width',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Full Width',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -241,8 +276,8 @@ class _CarouselState extends State<Carousel> {
               autoPlay: true,
               pagination: true,
               viewportFraction: 1.0,
-              activeIndicator: getGFColor(GFColor.success),
-              passiveIndicator: getGFColor(GFColor.dark),
+              activeIndicator: GFColors.SUCCESS,
+              passiveIndicator: GFColors.DARK,
               aspectRatio: 2.0,
               items: imageList.map(
                 (url) {
@@ -266,8 +301,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -277,8 +311,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 20.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),
@@ -295,9 +328,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'Multiple Items',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Multiple Items',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -323,8 +366,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -334,8 +376,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 16.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 16.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),
@@ -347,9 +388,19 @@ class _CarouselState extends State<Carousel> {
             SizedBox(
               height: 20,
             ),
-            Text(
-              'Full Size',
-              style: hintStyleTextblackbold(),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Full Size',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             SizedBox(
               height: 20,
@@ -358,8 +409,8 @@ class _CarouselState extends State<Carousel> {
               autoPlay: true,
               pagination: true,
               viewportFraction: 1.0,
-              activeIndicator: getGFColor(GFColor.success),
-              passiveIndicator: getGFColor(GFColor.white),
+              activeIndicator: GFColors.SUCCESS,
+              passiveIndicator: GFColors.WHITE,
               aspectRatio: 2.0,
               items: imageList.map(
                 (url) {
@@ -379,8 +430,7 @@ class _CarouselState extends State<Carousel> {
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: getGFColor(GFColor.white)),
+                                      fontSize: 20.0, color: GFColors.WHITE),
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
@@ -390,8 +440,7 @@ class _CarouselState extends State<Carousel> {
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      fontSize: 16.0,
-                                      color: getGFColor(GFColor.light)),
+                                      fontSize: 16.0, color: GFColors.LIGHT),
                                 ))
                           ],
                         )),

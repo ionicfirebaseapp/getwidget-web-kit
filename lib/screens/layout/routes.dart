@@ -1,3 +1,6 @@
+import 'package:gf_web/screens/accordion/accordion.dart';
+import 'package:gf_web/screens/alert/alert.dart';
+import 'package:gf_web/screens/appbar/appbar.dart';
 import 'package:gf_web/screens/buttons/standard-buttons.dart';
 import 'package:gf_web/screens/buttons/pills-buttons.dart';
 import 'package:gf_web/screens/buttons/square-buttons.dart';
@@ -7,6 +10,14 @@ import 'package:gf_web/screens/buttons/social-buttons.dart';
 import 'package:gf_web/screens/badges/badges.dart';
 import 'package:gf_web/screens/cards/cards.dart';
 import 'package:gf_web/screens/pages/home.dart';
+import 'package:gf_web/screens/searchbar/searchbar.dart';
+import 'package:gf_web/screens/tabs/bottom-icon.dart';
+import 'package:gf_web/screens/tabs/bottom-labeled.dart';
+import 'package:gf_web/screens/tabs/icon-tabs.dart';
+import 'package:gf_web/screens/tabs/labeled-tabs.dart';
+import 'package:gf_web/screens/tabs/segmented-tabs.dart';
+import 'package:gf_web/screens/toasts/toasts.dart';
+import 'package:gf_web/screens/toggles/toggle.dart';
 import 'package:gf_web/screens/typography/heading.dart';
 import 'package:gf_web/screens/avatar/avatar.dart';
 import 'package:gf_web/screens/images/image.dart';
@@ -24,7 +35,6 @@ final routes = {
   '/gf-buttons/shadow-button': (context) => ShadowButtons(),
   '/gf-buttons/icon-button': (context) => IconButtons(),
   '/gf-buttons/social-button': (context) => SocialButtons(),
-
   '/gf-badges/badges': (context) => Badges(),
   '/gf-cards/cards': (context) => Cards(),
   '/gf-typography/heading': (context) => Heading(),
@@ -32,8 +42,16 @@ final routes = {
   '/gf-images/image': (context) => Images(),
   '/gf-carousel/carousel': (context) => Carousel(),
   '/gf-tabs/tabs': (context) => Tabs(),
+  '/gf-tabs/segmented-tabs': (context) => SegmentTab(),
+  '/gf-tabs/icon-tabs': (context) => IconTabs(),
+  '/gf-tabs/labeled-tabs': (context) => LabeledTabs(),
+  '/gf-tabs/bottomicon-tabs': (context) => BottomIconTabs(),
+  '/gf-tabs/bottomlabeled-tabs': (context) => BottomLabeledTabs(),
   '/gf-tiles/tiles': (context) => Tiles(),
-
-//        '/third': (context) => ThirdScreen(),
-//        '/fourth':(context) => FourthScreen()
+  '/gf-toasts/toasts': (context) => Toasts(),
+  '/gf-toggle/toggle': (context) => Toggle(),
+  '/gf-alert/alert': (context) => Alert(),
+  '/gf-accordion/accordion': (context) => Accordion(),
+  '/gf-appbar/appbar': (context) => AppBar(),
+  '/gf-searchbar/searchbar': (context) => SearchBar(),
 };

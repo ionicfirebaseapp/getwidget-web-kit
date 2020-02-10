@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getflutter.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 import 'package:getflutter/colors/gf_color.dart';
-
-import 'package:getflutter/components/button/gf_button.dart';
+import 'package:getflutter/components/typography/gf_typography.dart';
 import 'package:getflutter/components/card/gf_card.dart';
 import 'package:getflutter/components/image/gf_image_overlay.dart';
 import 'package:flutter/cupertino.dart';
@@ -35,9 +35,23 @@ class _ImagesState extends State<Images> {
             SizedBox(
               height: 30,
             ),
-            Text(
-              'Basic Images',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Basic Images',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Basic',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Row(
@@ -75,9 +89,23 @@ class _ImagesState extends State<Images> {
                 ],
               ),
             ),
-            Text(
-              'Circular Images',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Circular Images',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Circular',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Row(
@@ -112,9 +140,23 @@ class _ImagesState extends State<Images> {
                 ],
               ),
             ),
-            Text(
-              'Overlay Images',
-              style: hintStyleTextblackbold(),
+            // Text(
+            //   'Overlay Images',
+            //   style: hintStyleTextblackbold(),
+            // ),
+            Padding(
+              padding: EdgeInsets.only(
+                left: 15,
+              ),
+              child: GFTypography(
+                type: GFTypographyType.typo5,
+                dividerWidth: 50,
+                dividerColor: Color(0xFF19CA4B),
+                child: Text(
+                  'Overlay',
+                  style: hintStyleTextblackbold(),
+                ),
+              ),
             ),
             GFCard(
               content: Row(
@@ -124,10 +166,12 @@ class _ImagesState extends State<Images> {
                     height: 200,
                     width: 400,
                     child: Padding(
-                        padding: EdgeInsets.only(top: 90, left: 100),
-                        child: Text(
-                          'Light Overlay',
-                          style: TextStyle(color: getGFColor(GFColor.white)),
+                        padding: EdgeInsets.only(top: 0, left: 0),
+                        child: Center(
+                          child: Text(
+                            'Light Overlay',
+                            style: TextStyle(color: GFColors.WHITE),
+                          ),
                         )),
                     colorFilter: new ColorFilter.mode(
                         Colors.black.withOpacity(0.20), BlendMode.darken),
@@ -139,13 +183,15 @@ class _ImagesState extends State<Images> {
             GFCard(
               content: GFImageOverlay(
                 height: 200,
-                width: 200,
+                width: 400,
                 boxFit: BoxFit.fill,
                 child: Padding(
-                    padding: EdgeInsets.only(top: 90, left: 100),
-                    child: Text(
-                      'Medium Overlay',
-                      style: TextStyle(color: getGFColor(GFColor.white)),
+                    padding: EdgeInsets.only(top: 0, left: 0),
+                    child: Center(
+                      child: Text(
+                        'Medium Overlay',
+                        style: TextStyle(color: GFColors.WHITE),
+                      ),
                     )),
                 colorFilter: new ColorFilter.mode(
                     Colors.black.withOpacity(0.90), BlendMode.darken),
@@ -165,7 +211,7 @@ class _ImagesState extends State<Images> {
                       child: Center(
                         child: Text(
                           'Strong Overlay',
-                          style: TextStyle(color: getGFColor(GFColor.white)),
+                          style: TextStyle(color: GFColors.WHITE),
                         ),
                       )
                       // ),
