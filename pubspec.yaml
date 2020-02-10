@@ -10,9 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  flutter_svg: ^0.17.1
+  flutter_svg: ^0.15.0
   url_launcher: ^5.4.1
-  getflutter: 1.0.4
+  getflutter: 1.0.5
 
 dev_dependencies:
   flutter_test:
@@ -130,6 +130,10 @@ flutter:
     - lib/assets/images/playstore.svg
     - lib/assets/icons/playstore.svg
     - lib/assets/playstore3x.png
+    - lib/assets/gif/loader.gif
+    - lib/assets/gif/loader1.gif
+
+
 
 
 
