@@ -13,7 +13,7 @@ class _ToastsState extends State<Toasts> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/toasts.gif',
+        demoImageUrl: 'lib/assets/gif/toasts.gif',
         body: ListView(
           children: <Widget>[
             Text(

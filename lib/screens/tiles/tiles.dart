@@ -17,7 +17,7 @@ class _TilesState extends State<Tiles> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tiles.gif',
+        demoImageUrl: 'lib/assets/gif/tiles.gif',
         body: ListView(
           children: <Widget>[
             Text(

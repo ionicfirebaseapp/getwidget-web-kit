@@ -100,28 +100,28 @@ flutter:
     - lib/assets/images/three6.png
     - lib/assets/images/three7.png
     - lib/assets/images/cir.png
-    - lib/assets/standard-buttons.gif
-    - lib/assets/frame.png
-    - lib/assets/pills-button.gif
-    - lib/assets/square-buttons.gif
-    - lib/assets/icon-buttons.gif
-    - lib/assets/social-buttons.gif
-    - lib/assets/cards.gif
-    - lib/assets/avatars.gif
-    - lib/assets/images.gif
-    - lib/assets/tiles.gif
-    - lib/assets/Group-1170.png
-    - lib/assets/carousel.gif
-    - lib/assets/ezgif.com-resize.gif
-    - lib/assets/tabs.gif
-    - lib/assets/typography.gif
+    - lib/assets/gif/standard-buttons.gif
+    - lib/assets/images/frame.png
+    - lib/assets/gif/pills-button.gif
+    - lib/assets/gif/square-buttons.gif
+    - lib/assets/gif/icon-buttons.gif
+    - lib/assets/gif/social-buttons.gif
+    - lib/assets/gif/cards.gif
+    - lib/assets/gif/avatars.gif
+    - lib/assets/gif/images.gif
+    - lib/assets/gif/tiles.gif
+    - lib/assets/images/Group-1170.png
+    - lib/assets/gif/carousel.gif
+    - lib/assets/gif/ezgif.com-resize.gif
+    - lib/assets/gif/tabs.gif
+    - lib/assets/gif/typography.gif
     - lib/assets/images/Artboard1.png
-    - lib/assets/toasts.gif
-    - lib/assets/toggle.gif
-    - lib/assets/Alerts.gif
-    - lib/assets/accordion.gif
-    - lib/assets/searchbar.gif
-    - lib/assets/appbar.gif
+    - lib/assets/gif/toasts.gif
+    - lib/assets/gif/toggle.gif
+    - lib/assets/gif/Alerts.gif
+    - lib/assets/gif/accordion.gif
+    - lib/assets/gif/searchbar.gif
+    - lib/assets/gif/appbar.gif
     - lib/assets/images/c1.png
     - lib/assets/images/c2.png
     - lib/assets/images/c3.png
@@ -129,9 +129,13 @@ flutter:
     - lib/assets/images/c5.png
     - lib/assets/images/playstore.svg
     - lib/assets/icons/playstore.svg
-    - lib/assets/playstore3x.png
+    - lib/assets/images/playstore3x.png
     - lib/assets/gif/loader.gif
     - lib/assets/gif/loader1.gif
+    - lib/assets/gif/loaders.gif
+    - lib/assets/gif/ratings.gif
+
+
 
 
 

@@ -127,6 +127,11 @@ class _LayoutState extends State<Layout> {
                 // mainAxisAlignment: MainAxisAlignment.start,
                 // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  Center(
+                      child: Padding(
+                    padding: const EdgeInsets.only(bottom: 10.0, left: 70.0),
+                    child: Text('Try our Get Flutter mobile app'),
+                  )),
                   InkWell(
                     onTap: () {
                       launchURL(
@@ -154,7 +159,8 @@ class _LayoutState extends State<Layout> {
                           //     ],
                           //   ),
                           // )
-                          child: Image.asset('lib/assets/playstore3x.png'),
+                          child:
+                              Image.asset('lib/assets/images/playstore3x.png'),
                         )),
                   ),
                   Container(

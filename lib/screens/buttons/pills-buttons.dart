@@ -19,7 +19,7 @@ class _PillButtonsState extends State<PillButtons> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/pills-button.gif',
+        demoImageUrl: 'lib/assets/gif/pills-button.gif',
         body: ListView(
           children: <Widget>[
             Text(

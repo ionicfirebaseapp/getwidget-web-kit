@@ -16,7 +16,7 @@ class _AppBarState extends State<AppBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/appbar.gif',
+        demoImageUrl: 'lib/assets/gif/appbar.gif',
         body: ListView(
           children: <Widget>[
             Text(

@@ -15,7 +15,7 @@ class _LoaderState extends State<Loader> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/accordion.gif',
+        demoImageUrl: 'lib/assets/gif/loaders.gif',
         body: ListView(
           children: <Widget>[
             Text(
