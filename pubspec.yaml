@@ -101,7 +101,6 @@ flutter:
     - lib/assets/images/three7.png
     - lib/assets/images/cir.png
     - lib/assets/gif/standard-buttons.gif
-    - lib/assets/images/frame.png
     - lib/assets/gif/pills-button.gif
     - lib/assets/gif/square-buttons.gif
     - lib/assets/gif/icon-buttons.gif
