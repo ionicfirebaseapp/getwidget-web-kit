@@ -28,7 +28,7 @@ class _BottomIconTabsState extends State<BottomIconTabs>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/tabs.gif',
+        demoImageUrl: 'lib/assets/gif/tabs.gif',
         body: ListView(
           children: <Widget>[
             Text(

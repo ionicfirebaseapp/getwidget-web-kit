@@ -33,7 +33,7 @@ class _CarouselState extends State<Carousel> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/carousel.gif',
+        demoImageUrl: 'lib/assets/gif/carousel.gif',
         body: ListView(
           children: <Widget>[
             Text(

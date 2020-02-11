@@ -23,7 +23,7 @@ class _SearchBarState extends State<SearchBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/searchbar.gif',
+        demoImageUrl: 'lib/assets/gif/searchbar.gif',
         body: ListView(
           physics: const ScrollPhysics(),
           children: <Widget>[

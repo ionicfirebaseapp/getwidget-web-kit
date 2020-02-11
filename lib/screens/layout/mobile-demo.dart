@@ -25,7 +25,7 @@ class _MobileDemoState extends State<MobileDemo> {
         Padding(
           padding: EdgeInsets.only(left: 90),
           child: Image.asset(
-            'lib/assets/Group-1170.png',
+            'lib/assets/images/Group-1170.png',
           ),
         ),
         Padding(

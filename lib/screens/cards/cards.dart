@@ -28,7 +28,7 @@ class _CardsState extends State<Cards> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/cards.gif',
+        demoImageUrl: 'lib/assets/gif/cards.gif',
         body: ListView(
           children: <Widget>[
             Text(

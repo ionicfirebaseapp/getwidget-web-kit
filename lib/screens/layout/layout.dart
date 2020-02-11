@@ -124,22 +124,43 @@ class _LayoutState extends State<Layout> {
                     ],
                   )),
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                // mainAxisAlignment: MainAxisAlignment.start,
+                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  Center(
+                      child: Padding(
+                    padding: const EdgeInsets.only(bottom: 10.0, left: 70.0),
+                    child: Text('Try our Get Flutter mobile app'),
+                  )),
                   InkWell(
                     onTap: () {
                       launchURL(
                           'https://play.google.com/store/apps/details?id=dev.getflutter.appkit');
                     },
                     child: Container(
-                        height: 100,
+                        // height: 115,
                         width: 200,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 70.0),
-                          child: Image.asset('lib/assets/playstore3x.png'),
-                          // child: SvgPicture.asset(
-                          //     'lib/assets/icons/playstore.svg'),
+                          // child: GFButton(
+                          //   onPressed: () {},
+                          //   color: GFColor.dark,
+                          //   child: Row(
+                          //     children: <Widget>[
+                          //       Column(
+                          //         children: <Widget>[
+                          //           Text('Get it On'),
+                          //           Text(
+                          //             'Google Play',
+                          //             style: TextStyle(fontSize: 23),
+                          //           )
+                          //         ],
+                          //       )
+                          //     ],
+                          //   ),
+                          // )
+                          child:
+                              Image.asset('lib/assets/images/playstore3x.png'),
                         )),
                   ),
                   Container(

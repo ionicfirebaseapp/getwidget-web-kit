@@ -13,7 +13,7 @@ class _ToggleState extends State<Toggle> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/toggle.gif',
+        demoImageUrl: 'lib/assets/gif/toggle.gif',
         body: ListView(
           children: <Widget>[
             Text(

@@ -17,7 +17,7 @@ class _AvatarState extends State<Avatar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/avatars.gif',
+        demoImageUrl: 'lib/assets/gif/avatars.gif',
         body: ListView(
           children: <Widget>[
             // Text(

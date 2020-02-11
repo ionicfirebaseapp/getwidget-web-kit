@@ -19,7 +19,7 @@ class _SquareButtonsState extends State<SquareButtons> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/square-buttons.gif',
+        demoImageUrl: 'lib/assets/gif/square-buttons.gif',
         body: ListView(
           children: <Widget>[
             Text(

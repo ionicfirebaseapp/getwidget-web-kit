@@ -18,7 +18,7 @@ class _ImagesState extends State<Images> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/images.gif',
+        demoImageUrl: 'lib/assets/gif/images.gif',
         body: ListView(
           children: <Widget>[
             Text(

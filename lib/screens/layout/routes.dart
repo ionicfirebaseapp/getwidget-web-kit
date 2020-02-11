@@ -9,7 +9,9 @@ import 'package:gf_web/screens/buttons/icon-buttons.dart';
 import 'package:gf_web/screens/buttons/social-buttons.dart';
 import 'package:gf_web/screens/badges/badges.dart';
 import 'package:gf_web/screens/cards/cards.dart';
+import 'package:gf_web/screens/loader/loader.dart';
 import 'package:gf_web/screens/pages/home.dart';
+import 'package:gf_web/screens/rating/rating.dart';
 import 'package:gf_web/screens/searchbar/searchbar.dart';
 import 'package:gf_web/screens/tabs/bottom-icon.dart';
 import 'package:gf_web/screens/tabs/bottom-labeled.dart';
@@ -54,4 +56,6 @@ final routes = {
   '/gf-accordion/accordion': (context) => Accordion(),
   '/gf-appbar/appbar': (context) => AppBar(),
   '/gf-searchbar/searchbar': (context) => SearchBar(),
+  '/gf-loader/loader': (context) => Loader(),
+  '/gf-rating/rating': (context) => Rating(),
 };

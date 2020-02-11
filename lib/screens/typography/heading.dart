@@ -15,7 +15,7 @@ class _TypographyState extends State<Heading> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/typography.gif',
+        demoImageUrl: 'lib/assets/gif/typography.gif',
         body: ListView(
           children: <Widget>[
             Text(
