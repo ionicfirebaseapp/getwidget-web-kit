@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/components/alert/gf_alert.dart';
-import 'package:getflutter/getwidget.dart';
-import 'package:getflutter/types/gf_alert_type.dart';
+import 'package:getwidget/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
@@ -71,7 +69,7 @@ class _AlertState extends State<Alert> {
                                   backgroundColor: Colors.white,
                                   title: 'Welcome !',
                                   content:
-                                      'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+                                      'GetWidget is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
                                   bottombar: Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: <Widget>[
@@ -145,7 +143,7 @@ class _AlertState extends State<Alert> {
                                 backgroundColor: Colors.white,
                                 title: 'Welcome !',
                                 content:
-                                    'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+                                    'GetWidget is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
                                 type: GFAlertType.rounded,
                                 bottombar: Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -217,7 +215,7 @@ class _AlertState extends State<Alert> {
                                 backgroundColor: Colors.white,
                                 title: 'Welcome !',
                                 content:
-                                    'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+                                    'GetWidget is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
                                 type: GFAlertType.fullWidth,
                                 bottombar: Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
