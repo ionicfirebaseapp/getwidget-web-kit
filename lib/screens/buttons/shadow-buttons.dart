@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gf_web/screens/layout/layout.dart';
-import 'package:getflutter/getwidget.dart';
+import 'package:getwidget/getwidget.dart';
 import '../../styles/styles.dart';
 
 class ShadowButtons extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getwidget.dart';
+import 'package:getwidget/getwidget.dart';
 import 'package:gf_web/screens/appbar/default_appbar.dart';
 import 'package:gf_web/screens/appbar/searchbar.dart';
 import 'package:gf_web/screens/appbar/segmented.dart';

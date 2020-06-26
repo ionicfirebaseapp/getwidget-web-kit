@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:getflutter/getwidget.dart';
+import 'package:getwidget/getwidget.dart';
 
 import 'package:gf_web/screens/layout/mobile-demo.dart';
 import 'sidebar.dart';
@@ -22,7 +21,6 @@ class Layout extends StatefulWidget {
 
 class _LayoutState extends State<Layout> {
   launchURL(urlLink) async {
-    // const url = urlLink;
     if (await canLaunch(urlLink)) {
       await launch(urlLink);
     } else {
@@ -56,8 +54,6 @@ class _LayoutState extends State<Layout> {
                       Container(
                         color: GFColors.LIGHT,
                         width: 1000,
-                        // height: MediaQuery.of(context).size.height,
-
                         child: Column(
                           children: <Widget>[
                             Padding(
@@ -129,7 +125,7 @@ class _LayoutState extends State<Layout> {
                   Center(
                       child: Padding(
                     padding: const EdgeInsets.only(bottom: 10.0, left: 70.0),
-                    child: Text('Try our Get Flutter mobile app'),
+                    child: Text('Try our GetWidget mobile app'),
                   )),
                   InkWell(
                     onTap: () {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/components/accordian/gf_accordian.dart';
-import 'package:getflutter/getwidget.dart';
+import 'package:getwidget/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
