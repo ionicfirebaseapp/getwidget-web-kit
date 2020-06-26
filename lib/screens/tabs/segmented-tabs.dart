@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 
@@ -51,7 +51,6 @@ class _SegmentTabState extends State<SegmentTab> with TickerProviderStateMixin {
                 tabController: tabController,
 //              height: 38.0,
                 width: 280,
-                initialIndex: 0,
                 length: 3,
                 tabs: const <Widget>[
                   Text(
@@ -68,15 +67,15 @@ class _SegmentTabState extends State<SegmentTab> with TickerProviderStateMixin {
                     ),
                   ),
                 ],
-                tabBarColor: GFColors.getGFColor(GFColor.light),
+                tabBarColor: GFColors.LIGHT,
                 indicatorSize: TabBarIndicatorSize.tab,
-                labelColor: GFColors.getGFColor(GFColor.white),
-                unselectedLabelColor: GFColors.getGFColor(GFColor.dark),
+                labelColor: GFColors.WHITE,
+                unselectedLabelColor: GFColors.DARK,
                 indicator: BoxDecoration(
-                  color: GFColors.getGFColor(GFColor.dark),
+                  color: GFColors.DARK,
                   border: Border(
                     bottom: BorderSide(
-                      color: GFColors.getGFColor(GFColor.success),
+                      color: GFColors.SUCCESS,
                       width: 3,
                     ),
                   ),

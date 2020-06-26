@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 
@@ -46,7 +46,6 @@ class _LabeledTabsState extends State<LabeledTabs>
               height: 30,
             ),
             GFTabBar(
-              initialIndex: 0,
               length: 4,
               controller: tabController,
               tabs: [
@@ -110,11 +109,11 @@ class _LabeledTabsState extends State<LabeledTabs>
               indicatorColor: Colors.teal,
 
 //        indicatorSize: TabBarIndicatorSize.label,
-              labelColor: GFColors.getGFColor(GFColor.success),
+              labelColor: GFColors.SUCCESS,
               labelPadding: const EdgeInsets.all(8),
 
-              tabBarColor: GFColors.getGFColor(GFColor.white),
-              unselectedLabelColor: GFColors.getGFColor(GFColor.light),
+              tabBarColor: GFColors.WHITE,
+              unselectedLabelColor: GFColors.LIGHT,
               labelStyle: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 13,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getflutter/components/accordian/gf_accordian.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
@@ -51,7 +51,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -61,7 +61,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -71,7 +71,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 title: 'GF Accordion',
                 content:
-                    'GetFlutter is an open source library that comes with pre-build 1000+ UI components.'
+                    'GetWidget is an open source library that comes with pre-build 1000+ UI components.'
                     ' The library is built to make flutter development faster and more enjoyable.'),
             const Padding(
               padding: EdgeInsets.only(left: 15, top: 30),
@@ -93,7 +93,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -103,7 +103,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -113,7 +113,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 title: 'GF Accordion',
                 content:
-                    'GetFlutter is an open source library that comes with pre-build 1000+ UI components.'
+                    'GetWidget is an open source library that comes with pre-build 1000+ UI components.'
                     ' The library is built to make flutter development faster and more enjoyable.',
                 collapsedIcon: const Text('Show'),
                 expandedIcon: Text(
@@ -140,7 +140,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -150,7 +150,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -160,7 +160,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 title: 'GF Accordion',
                 content:
-                    'GetFlutter is an open source library that comes with pre-build 1000+ UI components.'
+                    'GetWidget is an open source library that comes with pre-build 1000+ UI components.'
                     ' The library is built to make flutter development faster and more enjoyable.',
                 collapsedIcon: Icon(Icons.add_circle_outline),
                 expandedIcon: Icon(

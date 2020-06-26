@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 
 import 'package:gf_web/screens/layout/mobile-demo.dart';
 import 'sidebar.dart';
 import 'header.dart';
-import 'package:getflutter/colors/gf_color.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Layout extends StatefulWidget {
@@ -94,7 +93,7 @@ class _LayoutState extends State<Layout> {
                             //       mainAxisAlignment: MainAxisAlignment.center,
                             //       children: <Widget>[
                             //         Text(
-                            //           'Download & play with GetFlutter mobile app  ',
+                            //           'Download & play with GetWIdget mobile app  ',
                             //           style: TextStyle(color: Colors.red),
                             //         ),
                             //         // GFIconButton(
@@ -144,7 +143,7 @@ class _LayoutState extends State<Layout> {
                           padding: const EdgeInsets.only(left: 70.0),
                           // child: GFButton(
                           //   onPressed: () {},
-                          //   color: GFColor.dark,
+                          //   color: GFColors.DARK,
                           //   child: Row(
                           //     children: <Widget>[
                           //       Column(

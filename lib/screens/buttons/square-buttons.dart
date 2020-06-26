@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/shape/gf_button_shape.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/size/gf_size.dart';
 
 class SquareButtons extends StatefulWidget {
   @override
@@ -73,7 +67,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -83,7 +77,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         text: 'Success',
                         shape: GFButtonShape.square,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -93,7 +87,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         text: 'Warning',
                         shape: GFButtonShape.square,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -103,7 +97,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -120,7 +114,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -130,7 +124,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -140,7 +134,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -150,7 +144,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -207,7 +201,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -217,7 +211,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -227,7 +221,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -237,7 +231,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -254,7 +248,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -264,7 +258,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -274,7 +268,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -284,7 +278,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -331,7 +325,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -344,7 +338,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -357,7 +351,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -400,8 +394,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -414,8 +408,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -428,8 +422,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,
@@ -477,7 +471,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -488,7 +482,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         type: GFButtonType.outline,
                         text: 'Success',
                         shape: GFButtonShape.square,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -499,7 +493,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         type: GFButtonType.outline,
                         text: 'Warning',
                         shape: GFButtonShape.square,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -510,7 +504,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -528,7 +522,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -539,7 +533,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -550,7 +544,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -561,7 +555,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -617,7 +611,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -628,7 +622,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -639,7 +633,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -650,7 +644,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -668,7 +662,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -679,7 +673,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -690,7 +684,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -701,7 +695,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -750,7 +744,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -764,7 +758,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -778,7 +772,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -824,8 +818,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     type: GFButtonType.outline,
                     child: Text("Large",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -837,8 +831,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     type: GFButtonType.outline,
                     child: Text("Normal",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -850,8 +844,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     blockButton: true,
                     child: Text("Small",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,
@@ -899,7 +893,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         type: GFButtonType.outline2x,
                         shape: GFButtonShape.square,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -910,7 +904,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         text: 'Success',
                         type: GFButtonType.outline2x,
                         shape: GFButtonShape.square,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -921,7 +915,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         text: 'Warning',
                         type: GFButtonType.outline2x,
                         shape: GFButtonShape.square,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -932,7 +926,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -950,7 +944,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -961,7 +955,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -972,7 +966,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -983,7 +977,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1042,7 +1036,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -1053,7 +1047,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -1064,7 +1058,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -1075,7 +1069,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -1093,7 +1087,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -1104,7 +1098,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1115,7 +1109,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -1126,7 +1120,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1175,7 +1169,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -1189,7 +1183,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -1203,7 +1197,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -1249,8 +1243,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     type: GFButtonType.outline2x,
                     child: Text("Large",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -1262,8 +1256,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     type: GFButtonType.outline2x,
                     child: Text("Normal",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -1275,8 +1269,8 @@ class _SquareButtonsState extends State<SquareButtons> {
                     type: GFButtonType.outline2x,
                     child: Text("Small",
                         style: TextStyle(color: GFColors.PRIMARY)),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,

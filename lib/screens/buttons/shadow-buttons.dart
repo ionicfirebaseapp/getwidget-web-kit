@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gf_web/screens/layout/layout.dart';
+import 'package:getflutter/getwidget.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/shape/gf_button_shape.dart';
-
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/size/gf_size.dart';
 
 class ShadowButtons extends StatefulWidget {
   @override
@@ -59,7 +54,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -70,7 +65,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         text: 'Success',
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -88,7 +83,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         text: 'Warning',
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -99,7 +94,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -110,7 +105,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -128,7 +123,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -139,7 +134,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -150,7 +145,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -184,7 +179,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Secondary',
-            //             color: GFColor.secondary,
+            //             color: GFColors.SECONDARY,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -194,7 +189,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Success',
-            //             color: GFColor.success,
+            //             color: GFColors.SUCCESS,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -204,7 +199,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Warning',
-            //             color: GFColor.warning,
+            //             color: GFColors.WARNING,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -214,7 +209,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'danger',
-            //             color: GFColor.danger,
+            //             color: GFColors.DANGER,
             //           ))
             //         ],
             //       ),
@@ -228,7 +223,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //            shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Info',
-            //             color: GFColor.info,
+            //             color: GFColors.INFO,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -238,7 +233,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -248,7 +243,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Dark',
-            //             color: GFColor.dark,
+            //             color: GFColors.DARK,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -258,7 +253,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Link',
-            //             color: GFColor.transparent,
+            //             color: GFColors.TRANSPARENT,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -293,7 +288,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Secondary',
-            //             color: GFColor.secondary,
+            //             color: GFColors.SECONDARY,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -302,7 +297,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Success',
-            //             color: GFColor.success,
+            //             color: GFColors.SUCCESS,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -311,7 +306,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Warning',
-            //             color: GFColor.warning,
+            //             color: GFColors.WARNING,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -320,7 +315,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'danger',
-            //             color: GFColor.danger,
+            //             color: GFColors.DANGER,
             //             type: GFType.transparent,
             //           ))
             //         ],
@@ -333,7 +328,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Info',
-            //             color: GFColor.info,
+            //             color: GFColors.INFO,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -342,7 +337,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -351,7 +346,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Dark',
-            //             color: GFColor.dark,
+            //             color: GFColors.DARK,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -360,7 +355,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed: (){},
             //             text: 'Link',
-            //             color: GFColor.transparent,
+            //             color: GFColors.TRANSPARENT,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -395,7 +390,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -409,7 +404,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -423,7 +418,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -457,8 +452,8 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -472,8 +467,8 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -487,8 +482,8 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,

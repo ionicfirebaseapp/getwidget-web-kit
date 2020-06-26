@@ -52,7 +52,7 @@ class _HeaderState extends State<Header> {
                       padding: const EdgeInsets.only(),
                       child: InkWell(
                           onTap: () {
-                            launchURL('https://www.getflutter.dev/');
+                            launchURL('https://www.getwidget.dev/');
                           },
                           child: Text(
                             'Home',
@@ -61,7 +61,7 @@ class _HeaderState extends State<Header> {
                     ),
                     InkWell(
                         onTap: () {
-                          launchURL('https://www.getflutter.dev/features');
+                          launchURL('https://www.getwidget.dev/features');
                         },
                         child: Text(
                           'Features',
@@ -69,7 +69,7 @@ class _HeaderState extends State<Header> {
                         )),
                     InkWell(
                         onTap: () {
-                          launchURL('https://docs.getflutter.dev/');
+                          launchURL('https://docs.getwidget.dev/');
                         },
                         child: Text(
                           'Docs',
@@ -77,7 +77,7 @@ class _HeaderState extends State<Header> {
                         )),
                     InkWell(
                         onTap: () {
-                          launchURL('https://www.getflutter.dev/blog/');
+                          launchURL('https://www.getwidget.dev/blog/');
                         },
                         child: Text(
                           'Blogs',
@@ -87,7 +87,7 @@ class _HeaderState extends State<Header> {
                       padding: const EdgeInsets.only(right: 370.0),
                       child: InkWell(
                           onTap: () {
-                            launchURL('https://forum.getflutter.dev/');
+                            launchURL('https://forum.getwidget.dev/');
                           },
                           child: Text(
                             'Forum',

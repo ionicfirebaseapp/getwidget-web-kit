@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/shape/gf_icon_button_shape.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/components/button/gf_icon_button.dart';
 
 class SocialButtons extends StatefulWidget {
   @override
@@ -255,17 +249,17 @@ class _SocialButtonsState extends State<SocialButtons> {
                       GFButton(
                         child: Text(''),
                         onPressed: () {},
-                        color: GFColor.white,
+                        color: GFColors.WHITE,
                       ),
                       GFButton(
                         child: Text(''),
                         onPressed: () {},
-                        color: GFColor.white,
+                        color: GFColors.WHITE,
                       ),
                       GFButton(
                         child: Text(''),
                         onPressed: () {},
-                        color: GFColor.white,
+                        color: GFColors.WHITE,
                       )
                     ],
                   ),

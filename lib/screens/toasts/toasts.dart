@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 
@@ -55,7 +55,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               autoDismiss: true,
             ),
@@ -91,7 +91,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               autoDismiss: false,
               duration: const Duration(milliseconds: 300),
@@ -107,7 +107,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               autoDismiss: false,
             ),
@@ -139,7 +139,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               type: GFToastType.rounded,
               autoDismiss: false,
@@ -155,7 +155,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               autoDismiss: false,
               type: GFToastType.rounded,
@@ -189,7 +189,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               type: GFToastType.fullWidth,
               autoDismiss: false,
@@ -204,7 +204,7 @@ class _ToastsState extends State<Toasts> {
                 onPressed: () {},
                 text: 'OK',
                 type: GFButtonType.transparent,
-                color: GFColor.success,
+                color: GFColors.SUCCESS,
               ),
               autoDismiss: false,
               type: GFToastType.fullWidth,

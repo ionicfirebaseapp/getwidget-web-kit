@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/components/avatar/gf_avatar.dart';
-import 'package:getflutter/shape/gf_avatar_shape.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Avatar extends StatefulWidget {
   @override

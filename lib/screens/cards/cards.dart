@@ -1,18 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/components/button/gf_button_bar.dart';
-import 'package:getflutter/components/list_tile/gf_list_tile.dart';
-import 'package:getflutter/components/avatar/gf_avatar.dart';
-import 'package:getflutter/position/gf_position.dart';
-import 'package:getflutter/components/button/gf_icon_button.dart';
-import 'package:getflutter/shape/gf_icon_button_shape.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Cards extends StatefulWidget {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
@@ -67,24 +67,21 @@ class _ToggleState extends State<Toggle> {
                             value: true,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.danger),
+                            enabledTrackColor: GFColors.DANGER,
                             onChanged: (val) {
                               print('on change val $val');
                             },
                             value: true,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.warning),
+                            enabledTrackColor: GFColors.WARNING,
                             onChanged: (val) {
                               print('on change val $val');
                             },
                             value: true,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.info),
+                            enabledTrackColor: GFColors.INFO,
                             onChanged: (val) {
                               print('on change val $val');
                             },
@@ -134,8 +131,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.danger),
+                            enabledTrackColor: GFColors.DANGER,
                             onChanged: (v) {
                               print('ios val $v');
                             },
@@ -143,8 +139,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.warning),
+                            enabledTrackColor: GFColors.WARNING,
                             onChanged: (v) {
                               print('ios val $v');
                             },
@@ -152,8 +147,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.info),
+                            enabledTrackColor: GFColors.INFO,
                             onChanged: (v) {
                               print('ios val $v');
                             },
@@ -204,8 +198,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.square,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.danger),
+                            enabledTrackColor: GFColors.DANGER,
                             onChanged: (val) {
                               print('on change val $val');
                             },
@@ -213,8 +206,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.square,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.warning),
+                            enabledTrackColor: GFColors.WARNING,
                             onChanged: (val) {
                               print('on change val $val');
                             },
@@ -222,8 +214,7 @@ class _ToggleState extends State<Toggle> {
                             type: GFToggleType.square,
                           ),
                           GFToggle(
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.info),
+                            enabledTrackColor: GFColors.INFO,
                             onChanged: (val) {
                               print('on change val $val');
                             },
@@ -280,8 +271,7 @@ class _ToggleState extends State<Toggle> {
                             value: true,
                             type: GFToggleType.android,
                             boxShape: BoxShape.rectangle,
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.danger),
+                            enabledTrackColor: GFColors.DANGER,
                           ),
                           GFToggle(
                             onChanged: (val) {
@@ -290,8 +280,7 @@ class _ToggleState extends State<Toggle> {
                             value: true,
                             type: GFToggleType.ios,
                             boxShape: BoxShape.rectangle,
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.warning),
+                            enabledTrackColor: GFColors.WARNING,
                             borderRadius:
                                 const BorderRadius.all(Radius.circular(0)),
                           ),
@@ -304,8 +293,7 @@ class _ToggleState extends State<Toggle> {
                             boxShape: BoxShape.rectangle,
                             enabledText: 'ON',
                             disabledText: 'OFF',
-                            enabledTrackColor:
-                                GFColors.getGFColor(GFColor.info),
+                            enabledTrackColor: GFColors.INFO,
                             borderRadius:
                                 const BorderRadius.all(Radius.circular(0)),
                           )
