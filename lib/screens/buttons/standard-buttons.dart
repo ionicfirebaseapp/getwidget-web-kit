@@ -121,7 +121,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           child: GFButton(
                         onPressed: () {},
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -240,7 +240,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           child: GFButton(
                         onPressed: null,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -363,7 +363,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           child: GFButton(
                         onPressed: null,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         type: GFButtonType.transparent,
                       )),
                       SizedBox(
@@ -608,7 +608,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           "Light",
                         ),
                         type: GFButtonType.outline,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       ),
                       GFButton(
                         onPressed: () {},
@@ -724,7 +724,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           "Light",
                         ),
                         type: GFButtonType.outline,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       ),
                       GFButton(
                         onPressed: null,
@@ -967,7 +967,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           "Light",
                         ),
                         type: GFButtonType.outline2x,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       ),
                       GFButton(
                         onPressed: () {},
@@ -1086,7 +1086,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                           "Light",
                         ),
                         type: GFButtonType.outline2x,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       ),
                       GFButton(
                         onPressed: null,

@@ -128,7 +128,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
                         shape: GFButtonShape.standard,
                         buttonBoxShadow: true,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -238,7 +238,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //             shape: GFButtonShape.standard,
             //             buttonBoxShadow: true,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //           )),
             //           SizedBox(
             //             width: 10,
@@ -342,7 +342,7 @@ class _ShadowButtonsState extends State<ShadowButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(

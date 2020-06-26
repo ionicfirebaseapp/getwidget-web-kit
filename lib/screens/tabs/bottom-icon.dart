@@ -107,7 +107,7 @@ class _BottomIconTabsState extends State<BottomIconTabs>
                 labelColor: GFColors.getGFColor(GFColor.success),
                 labelPadding: const EdgeInsets.all(8),
                 tabBarColor: GFColors.getGFColor(GFColor.dark),
-                unselectedLabelColor: GFColors.getGFColor(GFColor.white),
+                unselectedLabelColor: GFColors.WHITE,
                 labelStyle: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 13,

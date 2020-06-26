@@ -27,7 +27,7 @@ class _AppbarState extends State<Appbar> {
             },
             child: Icon(
               CupertinoIcons.back,
-              color: GFColors.getGFColor(GFColor.white),
+              color: GFColors.WHITE,
             ),
           ),
           backgroundColor: GFColors.getGFColor(GFColor.dark),

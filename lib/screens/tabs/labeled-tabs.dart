@@ -113,8 +113,8 @@ class _LabeledTabsState extends State<LabeledTabs>
               labelColor: GFColors.getGFColor(GFColor.success),
               labelPadding: const EdgeInsets.all(8),
 
-              tabBarColor: GFColors.getGFColor(GFColor.white),
-              unselectedLabelColor: GFColors.getGFColor(GFColor.light),
+              tabBarColor: GFColors.WHITE,
+              unselectedLabelColor: GFColors.getGFColor(GFColors.LIGHT),
               labelStyle: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 13,

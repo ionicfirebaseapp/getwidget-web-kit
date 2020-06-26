@@ -30,9 +30,9 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
             children: <Widget>[
               GFSegmentTabs(
                 tabController: tabController,
-                tabBarColor: GFColors.getGFColor(GFColor.light),
+                tabBarColor: GFColors.getGFColor(GFColors.LIGHT),
 //          indicatorSize: TabBarIndicatorSize.tab,
-                labelColor: GFColors.getGFColor(GFColor.white),
+                labelColor: GFColors.WHITE,
                 unselectedLabelColor: GFColors.getGFColor(GFColor.dark),
                 indicator: BoxDecoration(
                   color: GFColors.getGFColor(GFColor.dark),

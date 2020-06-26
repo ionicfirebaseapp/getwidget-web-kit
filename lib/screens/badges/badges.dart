@@ -142,7 +142,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       ),
                       GFButtonBadge(
                         icon: GFBadge(

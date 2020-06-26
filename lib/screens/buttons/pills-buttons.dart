@@ -130,7 +130,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -261,7 +261,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -368,7 +368,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -646,7 +646,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -786,7 +786,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1077,7 +1077,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1219,7 +1219,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,

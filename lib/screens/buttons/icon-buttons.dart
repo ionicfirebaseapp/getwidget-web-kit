@@ -171,7 +171,7 @@ class _IconButtonsState extends State<IconButtons> {
                           child: GFButton(
                         onPressed: () {},
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -361,7 +361,7 @@ class _IconButtonsState extends State<IconButtons> {
                         onPressed: () {},
                         type: GFButtonType.outline,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -557,7 +557,7 @@ class _IconButtonsState extends State<IconButtons> {
                         onPressed: () {},
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -751,7 +751,7 @@ class _IconButtonsState extends State<IconButtons> {
                         onPressed: () {},
                         text: 'Light',
                         shape: GFButtonShape.square,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -945,7 +945,7 @@ class _IconButtonsState extends State<IconButtons> {
                         onPressed: () {},
                         text: 'Light',
                         shape: GFButtonShape.pills,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -1136,7 +1136,7 @@ class _IconButtonsState extends State<IconButtons> {
                         onPressed: () {},
                         text: 'Light',
                         buttonBoxShadow: true,
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                         icon: Icon(
                           IconData(
                             0xe908,
@@ -1267,7 +1267,7 @@ class _IconButtonsState extends State<IconButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //             icon: SvgPicture.asset(
             //                     'lib/assets/icons/light.svg')
             //           )),
@@ -1373,7 +1373,7 @@ class _IconButtonsState extends State<IconButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Light',
-            //             color: GFColor.light,
+            //             color: GFColors.LIGHT,
             //             type: GFButtonType.transparent,
             //           )),
             //           SizedBox(
@@ -1703,7 +1703,7 @@ class _IconButtonsState extends State<IconButtons> {
                           ),
                           onPressed: () {}),
                       GFIconButton(
-                          color: GFColor.light,
+                          color: GFColors.LIGHT,
                           // icon: SvgPicture.asset(
                           //   'lib/assets/icons/light.svg',
                           //   color: Colors.white,
@@ -1769,7 +1769,7 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           type: GFButtonType.outline,
-                          color: GFColor.light,
+                          color: GFColors.LIGHT,
                           icon: Icon(Icons.info),
                           onPressed: () {}),
                     ],

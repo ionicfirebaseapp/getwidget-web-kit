@@ -130,7 +130,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.square,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -264,7 +264,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         onPressed: null,
                         shape: GFButtonShape.square,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -539,7 +539,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -679,7 +679,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -961,7 +961,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1104,7 +1104,7 @@ class _SquareButtonsState extends State<SquareButtons> {
                         shape: GFButtonShape.square,
                         type: GFButtonType.outline2x,
                         text: 'Light',
-                        color: GFColor.light,
+                        color: GFColors.LIGHT,
                       )),
                       SizedBox(
                         width: 10,

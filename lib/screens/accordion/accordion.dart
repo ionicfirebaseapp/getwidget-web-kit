@@ -51,7 +51,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -61,7 +61,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -93,7 +93,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -103,7 +103,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -140,7 +140,7 @@ class _AccordionState extends State<Accordion> {
               height: 10,
             ),
             GFAccordion(
-                titleborderColor: Border(
+                titleborder: Border(
                   top: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
@@ -150,7 +150,7 @@ class _AccordionState extends State<Accordion> {
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                 ),
-                contentBorderColor: Border(
+                contentBorder: Border(
                   bottom: BorderSide(
                       color: Colors.black.withOpacity(0.2), width: 0.5),
                   left: BorderSide(
