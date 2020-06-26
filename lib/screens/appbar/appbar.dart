@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
-import 'package:gf_web/screens/appbar/default-appbar.dart';
+import 'package:getflutter/getwidget.dart';
+import 'package:gf_web/screens/appbar/default_appbar.dart';
 import 'package:gf_web/screens/appbar/searchbar.dart';
 import 'package:gf_web/screens/appbar/segmented.dart';
 import 'package:gf_web/screens/layout/layout.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
 
@@ -85,7 +85,6 @@ class _BottomIconTabsState extends State<BottomIconTabs>
             ),
             Container(
               child: GFTabBar(
-                initialIndex: 0,
                 length: 1,
                 controller: tabController,
                 tabs: [
@@ -102,11 +101,11 @@ class _BottomIconTabsState extends State<BottomIconTabs>
                     Icons.notifications,
                   ),
                 ],
-                indicatorColor: GFColors.getGFColor(GFColor.success),
+                indicatorColor: GFColors.SUCCESS,
 //        indicatorSize: TabBarIndicatorSize.label,
-                labelColor: GFColors.getGFColor(GFColor.success),
+                labelColor: GFColors.SUCCESS,
                 labelPadding: const EdgeInsets.all(8),
-                tabBarColor: GFColors.getGFColor(GFColor.dark),
+                tabBarColor: GFColors.DARK,
                 unselectedLabelColor: GFColors.WHITE,
                 labelStyle: TextStyle(
                   fontWeight: FontWeight.w500,

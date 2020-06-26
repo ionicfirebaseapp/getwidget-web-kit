@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 
 class SegmentedAppbar extends StatefulWidget {
   @override
@@ -24,21 +24,21 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: GFAppBar(
-          backgroundColor: GFColors.getGFColor(GFColor.dark),
+          backgroundColor: GFColors.DARK,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               GFSegmentTabs(
                 tabController: tabController,
-                tabBarColor: GFColors.getGFColor(GFColors.LIGHT),
+                tabBarColor: GFColors.LIGHT,
 //          indicatorSize: TabBarIndicatorSize.tab,
                 labelColor: GFColors.WHITE,
-                unselectedLabelColor: GFColors.getGFColor(GFColor.dark),
+                unselectedLabelColor: GFColors.DARK,
                 indicator: BoxDecoration(
-                  color: GFColors.getGFColor(GFColor.dark),
+                  color: GFColors.DARK,
 //            border: Border(
 //              bottom: BorderSide(
-//                color: GFColors.getGFColor(GFColor.success),
+//                color: GFColors.SUCCESS,
 //                width: 3.0,
 //              ),
 //            ),
@@ -47,8 +47,6 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
                 indicatorPadding: const EdgeInsets.all(8),
                 indicatorWeight: 2,
                 border: Border.all(color: Colors.white, width: 1),
-                initialIndex: 0,
-
                 length: 3,
                 tabs: const <Widget>[
                   Text(

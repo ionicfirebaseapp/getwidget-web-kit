@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/button/gf_button.dart';
-import 'package:getflutter/shape/gf_button_shape.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/size/gf_size.dart';
 
 class PillButtons extends StatefulWidget {
   @override
@@ -73,7 +67,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -83,7 +77,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         text: 'Success',
                         shape: GFButtonShape.pills,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -93,7 +87,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         text: 'Warning',
                         shape: GFButtonShape.pills,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -103,7 +97,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -120,7 +114,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -140,7 +134,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -150,7 +144,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -204,7 +198,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -214,7 +208,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -224,7 +218,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -234,7 +228,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -251,7 +245,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -271,7 +265,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: null,
                         shape: GFButtonShape.pills,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -281,7 +275,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         shape: GFButtonShape.pills,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -319,7 +313,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Secondary',
-            //             color: GFColor.secondary,
+            //             color: GFColors.SECONDARY,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -328,7 +322,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Success',
-            //             color: GFColor.success,
+            //             color: GFColors.SUCCESS,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -337,7 +331,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Warning',
-            //             color: GFColor.warning,
+            //             color: GFColors.WARNING,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -346,7 +340,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'danger',
-            //             color: GFColor.danger,
+            //             color: GFColors.DANGER,
             //             type: GFType.transparent,
             //           ))
             //         ],
@@ -359,7 +353,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Info',
-            //             color: GFColor.info,
+            //             color: GFColors.INFO,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -377,7 +371,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed:null,
             //             text: 'Dark',
-            //             color: GFColor.dark,
+            //             color: GFColors.DARK,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -386,7 +380,7 @@ class _PillButtonsState extends State<PillButtons> {
             //           Expanded(child: GFButton(
             //             onPressed: (){},
             //             text: 'Link',
-            //             color: GFColor.transparent,
+            //             color: GFColors.TRANSPARENT,
             //             type: GFType.transparent,
             //           )),
             //           SizedBox(
@@ -434,7 +428,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -447,7 +441,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -460,7 +454,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -507,8 +501,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -521,8 +515,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -535,8 +529,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,
@@ -584,7 +578,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -595,7 +589,7 @@ class _PillButtonsState extends State<PillButtons> {
                         onPressed: () {},
                         text: 'Success',
                         shape: GFButtonShape.pills,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -606,7 +600,7 @@ class _PillButtonsState extends State<PillButtons> {
                         text: 'Warning',
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -617,7 +611,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -635,7 +629,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -657,7 +651,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -668,7 +662,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -724,7 +718,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -735,7 +729,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -746,7 +740,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -757,7 +751,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -775,7 +769,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -797,7 +791,7 @@ class _PillButtonsState extends State<PillButtons> {
                         type: GFButtonType.outline,
                         shape: GFButtonShape.pills,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -808,7 +802,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -860,7 +854,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -874,7 +868,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -888,7 +882,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -936,8 +930,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -951,8 +945,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -966,8 +960,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,
@@ -1015,7 +1009,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -1026,7 +1020,7 @@ class _PillButtonsState extends State<PillButtons> {
                         text: 'Success',
                         type: GFButtonType.outline2x,
                         shape: GFButtonShape.pills,
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -1037,7 +1031,7 @@ class _PillButtonsState extends State<PillButtons> {
                         text: 'Warning',
                         type: GFButtonType.outline2x,
                         shape: GFButtonShape.pills,
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -1048,7 +1042,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -1066,7 +1060,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -1088,7 +1082,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -1099,7 +1093,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1157,7 +1151,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Secondary',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       )),
                       SizedBox(
                         width: 10,
@@ -1168,7 +1162,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       )),
                       SizedBox(
                         width: 10,
@@ -1179,7 +1173,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       )),
                       SizedBox(
                         width: 10,
@@ -1190,7 +1184,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       )),
                       SizedBox(
                         width: 10,
@@ -1208,7 +1202,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       )),
                       SizedBox(
                         width: 10,
@@ -1230,7 +1224,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Dark',
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       )),
                       SizedBox(
                         width: 10,
@@ -1241,7 +1235,7 @@ class _PillButtonsState extends State<PillButtons> {
                         shape: GFButtonShape.pills,
                         type: GFButtonType.outline2x,
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       )),
                       SizedBox(
                         width: 10,
@@ -1293,7 +1287,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Large",
                           ),
-                          size: GFSize.large,
+                          size: GFSize.LARGE,
                         ),
                       ),
                       SizedBox(
@@ -1307,7 +1301,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Medium",
                           ),
-                          size: GFSize.medium,
+                          size: GFSize.MEDIUM,
                         ),
                       ),
                       SizedBox(
@@ -1321,7 +1315,7 @@ class _PillButtonsState extends State<PillButtons> {
                           child: Text(
                             "Small",
                           ),
-                          size: GFSize.small,
+                          size: GFSize.SMALL,
                         ),
                       ),
                     ],
@@ -1369,8 +1363,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.large,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.LARGE,
                   ),
                   SizedBox(
                     height: 10,
@@ -1384,8 +1378,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.medium,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.MEDIUM,
                   ),
                   SizedBox(
                     height: 10,
@@ -1399,8 +1393,8 @@ class _PillButtonsState extends State<PillButtons> {
                         style: TextStyle(
                           color: GFColors.WHITE,
                         )),
-                    color: GFColor.primary,
-                    size: GFSize.small,
+                    color: GFColors.PRIMARY,
+                    size: GFSize.SMALL,
                   ),
                   SizedBox(
                     height: 10,

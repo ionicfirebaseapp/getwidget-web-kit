@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 
 class Searchbar extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class _SearchbarState extends State<Searchbar> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: GFAppBar(
-          backgroundColor: GFColors.getGFColor(GFColor.dark),
+          backgroundColor: GFColors.DARK,
           title: const Text('UI Kit'),
           searchBar: true,
 //        searchBarColorTheme: Colors.deepOrange,

@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/size/gf_size.dart';
-import 'package:getflutter/shape/gf_badge_shape.dart';
-import 'package:getflutter/components/badge/gf_badge.dart';
-import 'package:getflutter/components/badge/gf_button_badge.dart';
-import 'package:getflutter/components/badge/gf_icon_badge.dart';
-import 'package:getflutter/components/button/gf_icon_button.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
 
 class Badges extends StatefulWidget {
   @override
@@ -81,7 +72,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Second',
-                        color: GFColor.secondary,
+                        color: GFColors.SECONDARY,
                       ),
                       GFButtonBadge(
                         icon: GFBadge(
@@ -90,7 +81,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Success',
-                        color: GFColor.success,
+                        color: GFColors.SUCCESS,
                       ),
                     ],
                   ),
@@ -107,7 +98,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Warning',
-                        color: GFColor.warning,
+                        color: GFColors.WARNING,
                       ),
                       GFButtonBadge(
                         icon: GFBadge(
@@ -116,7 +107,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Danger',
-                        color: GFColor.danger,
+                        color: GFColors.DANGER,
                       ),
                       GFButtonBadge(
                         icon: GFBadge(
@@ -125,7 +116,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Info',
-                        color: GFColor.info,
+                        color: GFColors.INFO,
                       ),
                     ],
                   ),
@@ -152,7 +143,7 @@ class _BadgesState extends State<Badges> {
                         onPressed: () {},
                         text: 'Dark',
                         textStyle: TextStyle(color: Colors.white),
-                        color: GFColor.dark,
+                        color: GFColors.DARK,
                       ),
                       GFButtonBadge(
                         icon: GFBadge(
@@ -161,7 +152,7 @@ class _BadgesState extends State<Badges> {
                         ),
                         onPressed: () {},
                         text: 'Link',
-                        color: GFColor.transparent,
+                        color: GFColors.TRANSPARENT,
                       ),
                     ],
                   ),
@@ -215,7 +206,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -232,7 +223,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -248,7 +239,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -264,7 +255,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -280,7 +271,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -296,7 +287,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.standard,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -312,7 +303,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.square,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
@@ -328,7 +319,7 @@ class _BadgesState extends State<Badges> {
                           counterChild: GFBadge(
                             text: '12',
                             shape: GFBadgeShape.pills,
-                            size: GFSize.small,
+                            size: GFSize.SMALL,
                           )),
                     ],
                   ),

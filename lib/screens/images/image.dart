@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/components/image/gf_image_overlay.dart';
-import 'package:flutter/cupertino.dart';
 
 class Images extends StatefulWidget {
   @override

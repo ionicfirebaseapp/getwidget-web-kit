@@ -1,27 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/components/image/gf_image_overlay.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:getflutter/components/carousel/gf_carousel.dart';
-import 'package:getflutter/components/carousel/gf_items_carousel.dart';
-
-final List<String> imageList = [
-  "lib/assets/images/c1.png",
-  "lib/assets/images/c2.png",
-  "lib/assets/images/c3.png",
-  "lib/assets/images/c4.png",
-  "lib/assets/images/c5.png",
-];
-
-final List<String> assetImg = [
-  "lib/assets/images/red.png",
-  "lib/assets/images/purple.png",
-  "lib/assets/images/orange.png",
-  "lib/assets/images/red.png",
-];
 
 class Carousel extends StatefulWidget {
   @override
@@ -29,6 +9,21 @@ class Carousel extends StatefulWidget {
 }
 
 class _CarouselState extends State<Carousel> {
+  final List<String> imageList = [
+    "lib/assets/images/c1.png",
+    "lib/assets/images/c2.png",
+    "lib/assets/images/c3.png",
+    "lib/assets/images/c4.png",
+    "lib/assets/images/c5.png",
+  ];
+
+  final List<String> assetImg = [
+    "lib/assets/images/red.png",
+    "lib/assets/images/purple.png",
+    "lib/assets/images/orange.png",
+    "lib/assets/images/red.png",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

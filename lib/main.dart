@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title:
-          'GetFlutter - GetFlutter is open source libraries that come with pre-build 1000+ UI components. It makes development faster & more enjoyable. You can customize the component as per your need.',
+          'GetWidget - GetWidget is open source libraries that come with pre-build 1000+ UI components. It makes development faster & more enjoyable. You can customize the component as per your need.',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
@@ -50,8 +50,8 @@ class _RatingState extends State<Rating> {
               ),
             ),
             GFRating(
-              color: GFColors.getGFColor(GFColor.success),
-              borderColor: GFColors.getGFColor(GFColor.success),
+              color: GFColors.SUCCESS,
+              borderColor: GFColors.SUCCESS,
               value: _rating,
               onChanged: (value) {
                 setState(() {
@@ -79,13 +79,13 @@ class _RatingState extends State<Rating> {
               ),
             ),
             GFRating(
-              color: GFColors.getGFColor(GFColor.success),
-              borderColor: GFColors.getGFColor(GFColor.success),
+              color: GFColors.SUCCESS,
+              borderColor: GFColors.SUCCESS,
               filledIcon: Icon(
                 Icons.check,
-                color: GFColors.getGFColor(GFColor.danger),
+                color: GFColors.DANGER,
               ),
-              size: GFSize.small,
+              size: GFSize.SMALL,
 //              halfFilledIcon:Icon(Icons.favorite_border, color: Colors.amber,),
               value: _iconRating,
               onChanged: (value) {
@@ -114,16 +114,16 @@ class _RatingState extends State<Rating> {
               ),
             ),
             GFRating(
-              color: GFColors.getGFColor(GFColor.success),
-              borderColor: GFColors.getGFColor(GFColor.success),
+              color: GFColors.SUCCESS,
+              borderColor: GFColors.SUCCESS,
               value: _userRating,
               showTextForm: true,
               filledIcon: Icon(
                 Icons.favorite,
-                color: GFColors.getGFColor(GFColor.danger),
+                color: GFColors.DANGER,
               ),
               defaultIcon: Icon(Icons.favorite_border, color: GFColors.DANGER),
-              size: GFSize.small,
+              size: GFSize.SMALL,
               halfFilledIcon: Icon(
                 Icons.favorite,
                 color: Colors.amber,
@@ -160,8 +160,8 @@ class _RatingState extends State<Rating> {
               ),
             ),
             GFRating(
-              color: GFColors.getGFColor(GFColor.danger),
-              borderColor: GFColors.getGFColor(GFColor.danger),
+              color: GFColors.DANGER,
+              borderColor: GFColors.DANGER,
               value: _customrating,
               showTextForm: true,
               halfFilledIcon: Icon(
@@ -170,7 +170,7 @@ class _RatingState extends State<Rating> {
               allowHalfRating: true,
               filledIcon: Icon(Icons.insert_emoticon),
               itemCount: 6,
-              size: GFSize.small,
+              size: GFSize.SMALL,
               controller: _customController,
               suffixIcon: GFButton(
                 type: GFButtonType.transparent,

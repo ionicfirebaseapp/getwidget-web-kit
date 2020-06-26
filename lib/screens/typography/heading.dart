@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/components/card/gf_card.dart';
-import 'package:getflutter/components/typography/gf_typography.dart';
-import 'package:getflutter/types/gf_typography_type.dart';
 
 class Heading extends StatefulWidget {
   @override

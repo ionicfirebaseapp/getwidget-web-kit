@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/components/loader/gf_loader.dart';
-import 'package:getflutter/getflutter.dart';
-import 'package:getflutter/types/gf_loader_type.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
 
@@ -77,19 +75,19 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       loaderstrokeWidth: 2,
-                      size: GFSize.small,
+                      size: GFSize.SMALL,
                     ),
                     GFLoader(
                       androidLoaderColor:
                           AlwaysStoppedAnimation<Color>(Colors.red),
                       loaderstrokeWidth: 2,
-                      size: GFSize.medium,
+                      size: GFSize.MEDIUM,
                     ),
                     GFLoader(
                       androidLoaderColor:
                           AlwaysStoppedAnimation<Color>(Colors.amber),
                       loaderstrokeWidth: 2,
-                      size: GFSize.large,
+                      size: GFSize.LARGE,
                     ),
                     GFLoader(
                       androidLoaderColor:
@@ -131,14 +129,14 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       type: GFLoaderType.ios,
-                      size: GFSize.small,
+                      size: GFSize.SMALL,
                     ),
                     GFLoader(
                       type: GFLoaderType.ios,
                     ),
                     GFLoader(
                       type: GFLoaderType.ios,
-                      size: GFSize.large,
+                      size: GFSize.LARGE,
                     ),
                     GFLoader(
                       type: GFLoaderType.ios,
@@ -178,15 +176,15 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       type: GFLoaderType.circle,
-                      size: GFSize.small,
+                      size: GFSize.SMALL,
                     ),
                     GFLoader(
                       type: GFLoaderType.circle,
-                      size: GFSize.medium,
+                      size: GFSize.MEDIUM,
                     ),
                     GFLoader(
                       type: GFLoaderType.circle,
-                      size: GFSize.large,
+                      size: GFSize.LARGE,
                     ),
                     GFLoader(
                       type: GFLoaderType.circle,
@@ -226,15 +224,15 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       type: GFLoaderType.square,
-                      size: GFSize.small,
+                      size: GFSize.SMALL,
                     ),
                     GFLoader(
                       type: GFLoaderType.square,
-                      size: GFSize.medium,
+                      size: GFSize.MEDIUM,
                     ),
                     GFLoader(
                       type: GFLoaderType.square,
-                      size: GFSize.large,
+                      size: GFSize.LARGE,
                     ),
                     GFLoader(
                       type: GFLoaderType.square,
@@ -274,7 +272,7 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       type: GFLoaderType.custom,
-//                          size: GFSize.large,
+//                          size: GFSize.LARGE,
                       child: Image(
                         image: AssetImage('lib/assets/gif/loader.gif'),
                         width: 150,
@@ -282,7 +280,7 @@ class _LoaderState extends State<Loader> {
                     ),
                     GFLoader(
                       type: GFLoaderType.custom,
-                      size: GFSize.small,
+                      size: GFSize.SMALL,
                       child: Image(
                         image: AssetImage('lib/assets/gif/loader1.gif'),
                         width: 150,

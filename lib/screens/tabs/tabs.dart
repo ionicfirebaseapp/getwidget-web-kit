@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getflutter/getflutter.dart';
+import 'package:getflutter/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import '../../styles/styles.dart';
-import 'package:getflutter/colors/gf_color.dart';
-import 'package:getflutter/components/tabs/gf_segment_tabs.dart';
 
 class Tabs extends StatefulWidget {
   @override
@@ -58,7 +56,6 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                 tabController: tabController,
 //              height: 38.0,
                 width: 280.0,
-                initialIndex: 0,
                 length: 4,
                 tabs: <Widget>[
                   Text(
