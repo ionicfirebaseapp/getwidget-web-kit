@@ -26,16 +26,17 @@ class _MobileDemoState extends State<MobileDemo> {
           padding: EdgeInsets.only(left: 90),
           child: Image.asset(
             'lib/assets/images/Group-1170.png',
+            height: 500,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(
-            top: 59,
-            left: 118,
+            top: 49,
+            left: 113,
           ),
           child: Image.asset(
             widget.demoImageUrl ?? 'lib/assets/images/Artboard1.png',
-            height: 480,
+            height: 400,
             // width: 320,
           ),
         ),

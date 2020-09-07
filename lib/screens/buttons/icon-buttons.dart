@@ -71,12 +71,12 @@ class _IconButtonsState extends State<IconButtons> {
                         // )
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Secondary',
+                        text: 'Second',
                         color: GFColors.SECONDARY,
                         icon: Icon(
                           IconData(
@@ -87,7 +87,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -103,7 +103,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -119,7 +119,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -134,9 +134,9 @@ class _IconButtonsState extends State<IconButtons> {
                           color: GFColors.WHITE,
                         ),
                       )),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      // SizedBox(
+                      //   width: 10,
+                      // ),
                     ],
                   ),
                   SizedBox(
@@ -158,7 +158,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -174,7 +174,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -190,7 +190,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -206,7 +206,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -255,13 +255,13 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
                         type: GFButtonType.outline,
-                        text: 'Secondary',
+                        text: 'Second',
                         color: GFColors.SECONDARY,
                         icon: Icon(
                           IconData(
@@ -272,7 +272,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -289,7 +289,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -306,7 +306,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -323,7 +323,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -347,7 +347,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -364,7 +364,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -381,7 +381,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -398,7 +398,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                         child: Text(''),
@@ -451,13 +451,13 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
                         type: GFButtonType.outline2x,
-                        text: 'Secondary',
+                        text: 'Second',
                         color: GFColors.SECONDARY,
                         icon: Icon(
                           IconData(
@@ -468,7 +468,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -485,7 +485,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -502,7 +502,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -519,7 +519,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -543,7 +543,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -560,7 +560,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -577,7 +577,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -594,7 +594,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                         child: Text(''),
@@ -645,12 +645,12 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Secondary',
+                        text: 'Second',
                         shape: GFButtonShape.square,
                         color: GFColors.SECONDARY,
                         icon: Icon(
@@ -662,7 +662,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -679,7 +679,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -696,7 +696,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -713,7 +713,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -737,7 +737,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -754,7 +754,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -771,7 +771,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -788,7 +788,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                         child: Text(''),
@@ -839,12 +839,12 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Secondary',
+                        text: 'Second',
                         shape: GFButtonShape.pills,
                         color: GFColors.SECONDARY,
                         icon: Icon(
@@ -856,7 +856,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -873,7 +873,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -890,7 +890,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -907,7 +907,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -931,7 +931,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -948,7 +948,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -965,7 +965,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -981,9 +981,9 @@ class _IconButtonsState extends State<IconButtons> {
                           // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      // SizedBox(
+                      //   width: 10,
+                      // ),
                     ],
                   ),
                 ],
@@ -1030,12 +1030,12 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
                         onPressed: () {},
-                        text: 'Secondary',
+                        text: 'Second',
                         buttonBoxShadow: true,
                         color: GFColors.SECONDARY,
                         icon: Icon(
@@ -1047,7 +1047,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1064,7 +1064,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1081,7 +1081,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1098,7 +1098,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                     ],
                   ),
@@ -1122,7 +1122,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1139,7 +1139,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1156,7 +1156,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                           child: GFButton(
@@ -1173,7 +1173,7 @@ class _IconButtonsState extends State<IconButtons> {
                         ),
                       )),
                       SizedBox(
-                        width: 10,
+                        width: 5,
                       ),
                       Expanded(
                         child: Text(''),

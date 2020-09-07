@@ -155,7 +155,7 @@ class _CarouselState extends State<Carousel> {
                           children: <Widget>[
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 230, right: 30, top: 220),
+                                    left: 230, right: 30, top: 0),
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
@@ -163,7 +163,7 @@ class _CarouselState extends State<Carousel> {
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 30, right: 30, top: 0, bottom: 220),
+                                    left: 30, right: 30, top: 0, bottom: 0),
                                 child: Text(
                                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
@@ -357,7 +357,7 @@ class _CarouselState extends State<Carousel> {
                           children: <Widget>[
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 230, right: 30, top: 220),
+                                    left: 230, right: 30, top: 0),
                                 child: Text(
                                   'Title',
                                   style: TextStyle(
@@ -365,7 +365,7 @@ class _CarouselState extends State<Carousel> {
                                 )),
                             Padding(
                                 padding: EdgeInsets.only(
-                                    left: 30, right: 30, top: 0, bottom: 220),
+                                    left: 30, right: 30, top: 0, bottom: 0),
                                 child: Text(
                                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
                                   ' sed do eiusmod tempor dolor sit amet, consectetur',
