@@ -74,7 +74,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                       ),
                       // ),
                       SizedBox(
-                        height: 10,
+                        width: 5,
                       ),
                       // Expanded(
                       GFButton(
@@ -92,7 +92,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                       ),
                       // ),
                       SizedBox(
-                        height: 10,
+                        width: 5,
                       ),
                       // Expanded(
                       GFButton(
@@ -112,7 +112,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                       ),
                       // ),
                       SizedBox(
-                        height: 10,
+                        width: 5,
                       ),
                       // Expanded(
                       GFButton(
@@ -132,7 +132,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                       ),
                       // ),
                       SizedBox(
-                        height: 10,
+                        width: 5,
                       ),
                       // Expanded(
                       GFButton(
@@ -151,24 +151,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                         buttonBoxShadow: true,
                       ),
                       // ),
-                      SizedBox(
-                        height: 6,
-                      ),
-                      GFButton(
-                        onPressed: () {},
-                        child: Text(
-                          "LinkedIn",
-                        ),
-                        icon: Icon(
-                          IconData(
-                            0xe90a,
-                            fontFamily: 'icomoon',
-                          ),
-                          color: GFColors.WHITE,
-                        ),
-                        color: Color(0xFF0E76A8),
-                        buttonBoxShadow: true,
-                      ),
                     ],
                   ),
                   SizedBox(
@@ -184,6 +166,27 @@ class _SocialButtonsState extends State<SocialButtons> {
                       // SizedBox(
                       //   height: 6,
                       // ),
+                      //   SizedBox(
+                      //   height: 6,
+                      // ),
+                      GFButton(
+                        onPressed: () {},
+                        child: Text(
+                          "LinkedIn",
+                        ),
+                        icon: Icon(
+                          IconData(
+                            0xe90a,
+                            fontFamily: 'icomoon',
+                          ),
+                          color: GFColors.WHITE,
+                        ),
+                        color: Color(0xFF0E76A8),
+                        buttonBoxShadow: true,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -198,6 +201,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         color: Color(0xFFC4302B),
                         buttonBoxShadow: true,
+                      ),
+                      SizedBox(
+                        width: 5,
                       ),
                       // ),
                       // SizedBox(
@@ -221,6 +227,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                         ),
                         color: Color(0XFF2EB67D),
                         buttonBoxShadow: true,
+                      ),
+                      SizedBox(
+                        width: 5,
                       ),
                       // ),
                       // SizedBox(
@@ -246,21 +255,21 @@ class _SocialButtonsState extends State<SocialButtons> {
                       // SizedBox(
                       //   height: 10,
                       // ),
-                      GFButton(
-                        child: Text(''),
-                        onPressed: () {},
-                        color: GFColors.WHITE,
-                      ),
-                      GFButton(
-                        child: Text(''),
-                        onPressed: () {},
-                        color: GFColors.WHITE,
-                      ),
-                      GFButton(
-                        child: Text(''),
-                        onPressed: () {},
-                        color: GFColors.WHITE,
-                      )
+                      // GFButton(
+                      //   child: Text(''),
+                      //   onPressed: () {},
+                      //   color: GFColors.WHITE,
+                      // ),
+                      // GFButton(
+                      //   child: Text(''),
+                      //   onPressed: () {},
+                      //   color: GFColors.WHITE,
+                      // ),
+                      // GFButton(
+                      //   child: Text(''),
+                      //   onPressed: () {},
+                      //   color: GFColors.WHITE,
+                      // )
                     ],
                   ),
                   SizedBox(

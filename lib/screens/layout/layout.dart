@@ -46,36 +46,26 @@ class _LayoutState extends State<Layout> {
                 child: Sidebar(),
               ),
               Container(
-                  padding: EdgeInsets.only(top: 5, left: 20, right: 20),
+                  padding: EdgeInsets.only(left: 20, right: 20, top: 10),
                   height: MediaQuery.of(context).size.height - 70,
                   width: MediaQuery.of(context).size.width - 730,
                   child: Column(
                     children: <Widget>[
                       Container(
                         color: GFColors.LIGHT,
-                        width: 1000,
+                        // width: 1100,
                         child: Column(
                           children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(right: 45.0),
+                              padding:
+                                  const EdgeInsets.only(top: 10.0, bottom: 10),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        top: 10.0, bottom: 10),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: <Widget>[
-                                        Text(
-                                          "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
-                                          style: TextStyle(
-                                              fontSize: 15.0,
-                                              color: GFColors.DANGER),
-                                        ),
-                                      ],
-                                    ),
+                                  Text(
+                                    "Flutter Web is still in Beta release so you might get some rendering issue. It will be fixed very soon.",
+                                    style: TextStyle(
+                                        fontSize: 13.0, color: GFColors.DANGER),
                                   ),
                                 ],
                               ),
@@ -113,6 +103,7 @@ class _LayoutState extends State<Layout> {
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height - 140,
+                        // height: 500,
                         width: MediaQuery.of(context).size.width - 730,
                         child: widget.body,
                       ),
@@ -123,37 +114,18 @@ class _LayoutState extends State<Layout> {
                 // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Center(
-                      child: Padding(
-                    padding: const EdgeInsets.only(bottom: 10.0, left: 70.0),
                     child: Text('Try our GetWidget mobile app'),
-                  )),
+                  ),
+                  SizedBox(height: 5),
                   InkWell(
                     onTap: () {
                       launchURL(
                           'https://play.google.com/store/apps/details?id=dev.getflutter.appkit');
                     },
                     child: Container(
-                        // height: 115,
                         width: 200,
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 70.0),
-                          // child: GFButton(
-                          //   onPressed: () {},
-                          //   color: GFColors.DARK,
-                          //   child: Row(
-                          //     children: <Widget>[
-                          //       Column(
-                          //         children: <Widget>[
-                          //           Text('Get it On'),
-                          //           Text(
-                          //             'Google Play',
-                          //             style: TextStyle(fontSize: 23),
-                          //           )
-                          //         ],
-                          //       )
-                          //     ],
-                          //   ),
-                          // )
+                          padding: const EdgeInsets.only(left: 30.0, right: 20),
                           child:
                               Image.asset('lib/assets/images/playstore3x.png'),
                         )),
@@ -161,8 +133,7 @@ class _LayoutState extends State<Layout> {
                   Container(
                     width: 430,
 //                color: Colors.red,
-                    height: 600,
-
+                    height: 500,
                     child: MobileDemo(demoImageUrl: widget.demoImageUrl),
                   ),
                 ],

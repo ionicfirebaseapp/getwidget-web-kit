@@ -189,7 +189,7 @@ class _ImagesState extends State<Images> {
                       ),
                     )),
                 colorFilter: new ColorFilter.mode(
-                    Colors.black.withOpacity(0.90), BlendMode.darken),
+                    Colors.black.withOpacity(0.35), BlendMode.darken),
                 image: AssetImage('lib/assets/images/image1.png'),
               ),
             ),

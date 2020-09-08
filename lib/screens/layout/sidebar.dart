@@ -17,15 +17,15 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    animationController =
-        AnimationController(duration: Duration(seconds: 2), vsync: this);
-    controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+    // animationController =
+    //     AnimationController(duration: Duration(seconds: 2), vsync: this);
+    // controller =
+    //     AnimationController(vsync: this, duration: Duration(milliseconds: 300));
     offset = Tween<Offset>(
       begin: Offset.zero,
       end: Offset(0.0, 0.1),
     ).animate(controller);
-//    animation =   Tween(begin: 1.0, end: 0.0).animate(CurvedAnimation(parent: animationController, curve: Curves.fastLinearToSlowEaseIn));
+    //  animation =   Tween(begin: 1.0, end: 0.0).animate(CurvedAnimation(parent: animationController, curve: Curves.fastLinearToSlowEaseIn));
   }
 
   bool showButtonTypes = false;
@@ -59,15 +59,15 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    switch (controller.status) {
-                      case AnimationStatus.completed:
-                        controller.forward(from: 0);
-                        break;
-                      case AnimationStatus.dismissed:
-                        controller.forward();
-                        break;
-                      default:
-                    }
+                    // switch (controller.status) {
+                    //   case AnimationStatus.completed:
+                    //     controller.forward(from: 0);
+                    //     break;
+                    //   case AnimationStatus.dismissed:
+                    //     controller.forward();
+                    //     break;
+                    //   default:
+                    // }
                     showButtonTypes = !showButtonTypes;
                   });
                 },
@@ -81,66 +81,67 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes
-                ? SlideTransition(
-                    position: offset,
-                    child: Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(color: Colors.black.withOpacity(0.40))
-                          ]),
-                      padding: EdgeInsets.only(
-                          top: 0, bottom: 30, left: 25, right: 20),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-buttons/standard-button');
-                            },
-                            child: Text('Standard Buttons'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-buttons/pill-button');
-                            },
-                            child: Text('Pills Buttons'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-buttons/square-button');
-                            },
-                            child: Text('Square Buttons'),
-                          ),
-                          //   GestureDetector(
-                          //    onTap: (){
-                          //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                          //    },
-                          //    child:  Text('Shadow Buttons'),
-                          //  ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-buttons/icon-button');
-                            },
-                            child: Text('Icon Buttons'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-buttons/social-button');
-                            },
-                            child: Text('Social Buttons'),
-                          ),
-                        ],
-                      ),
+                ?
+                // SlideTransition(
+                //     position: offset,
+                //     child:
+                Container(
+                    height: 200,
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.40))
+                    ]),
+                    padding: EdgeInsets.only(
+                        top: 0, bottom: 30, left: 25, right: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        SizedBox(height: 5),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-buttons/standard-button');
+                          },
+                          child: Text('Standard Buttons'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-buttons/pill-button');
+                          },
+                          child: Text('Pills Buttons'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-buttons/square-button');
+                          },
+                          child: Text('Square Buttons'),
+                        ),
+                        //   GestureDetector(
+                        //    onTap: (){
+                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
+                        //    },
+                        //    child:  Text('Shadow Buttons'),
+                        //  ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-buttons/icon-button');
+                          },
+                          child: Text('Icon Buttons'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-buttons/social-button');
+                          },
+                          child: Text('Social Buttons'),
+                        ),
+                      ],
                     ),
                   )
+                // )
                 : Container(),
 
             SizedBox(
@@ -232,15 +233,15 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    switch (controller.status) {
-                      case AnimationStatus.completed:
-                        controller.forward(from: 0);
-                        break;
-                      case AnimationStatus.dismissed:
-                        controller.forward();
-                        break;
-                      default:
-                    }
+                    // switch (controller.status) {
+                    //   case AnimationStatus.completed:
+                    //     controller.forward(from: 0);
+                    //     break;
+                    //   case AnimationStatus.dismissed:
+                    //     controller.forward();
+                    //     break;
+                    //   default:
+                    // }
                     showButtonTypes1 = !showButtonTypes1;
                   });
                 },
@@ -254,66 +255,66 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes1
-                ? SlideTransition(
-                    position: offset,
-                    child: Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(color: Colors.black.withOpacity(0.40))
-                          ]),
-                      padding: EdgeInsets.only(
-                          top: 0, bottom: 30, left: 25, right: 20),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-tabs/segmented-tabs');
-                            },
-                            child: Text('Segmented Tabs'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-tabs/icon-tabs');
-                            },
-                            child: Text('Icon Tabs'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-tabs/labeled-tabs');
-                            },
-                            child: Text('Labeled Tabs'),
-                          ),
-                          //   GestureDetector(
-                          //    onTap: (){
-                          //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                          //    },
-                          //    child:  Text('Shadow Buttons'),
-                          //  ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-tabs/bottomicon-tabs');
-                            },
-                            child: Text('Bottom Icon Tabs'),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/gf-tabs/bottomlabeled-tabs');
-                            },
-                            child: Text('Bottom Labeled Tabs'),
-                          ),
-                        ],
-                      ),
+                ?
+                // SlideTransition(
+                //     position: offset,
+                //     child:
+                Container(
+                    height: 200,
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.40))
+                    ]),
+                    padding: EdgeInsets.only(
+                        top: 0, bottom: 30, left: 25, right: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        SizedBox(height: 5),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-tabs/segmented-tabs');
+                          },
+                          child: Text('Segmented Tabs'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/gf-tabs/icon-tabs');
+                          },
+                          child: Text('Icon Tabs'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-tabs/labeled-tabs');
+                          },
+                          child: Text('Labeled Tabs'),
+                        ),
+                        //   GestureDetector(
+                        //    onTap: (){
+                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
+                        //    },
+                        //    child:  Text('Shadow Buttons'),
+                        //  ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-tabs/bottomicon-tabs');
+                          },
+                          child: Text('Bottom Icon Tabs'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-tabs/bottomlabeled-tabs');
+                          },
+                          child: Text('Bottom Labeled Tabs'),
+                        ),
+                      ],
                     ),
                   )
+                // )
                 : Container(),
             SizedBox(
               height: 20,
@@ -424,7 +425,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 120,
             ),
             // Text(
             //   'COMING SOON',
