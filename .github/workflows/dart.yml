@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: pub get
     - name : Build Flutter for web
-      run: webdev build
+      run: flutter build web --release
     - uses: cloudflare/wrangler-action@1.2.0
       with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
