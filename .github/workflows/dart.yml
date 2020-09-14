@@ -18,6 +18,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: pub get
+    - name : Build Flutter for web
+      run: webdev build
     - uses: cloudflare/wrangler-action@1.2.0
       with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
