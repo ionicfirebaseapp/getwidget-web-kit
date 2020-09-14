@@ -1,0 +1,8 @@
+name = "getwidget-webdemo"
+type = "webpack"
+account_id = "82045a407889da9f637205842a49f6ce"
+workers_dev = true
+route = ""
+zone_id = ""
+[site]
+bucket = "dist"

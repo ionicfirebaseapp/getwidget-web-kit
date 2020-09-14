@@ -1,0 +1,25 @@
+name: Dart CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image:  google/dart:latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pub get
+    - name : Build Flutter for web
+      run: flutter build web --release
+    - uses: cloudflare/wrangler-action@1.2.0
+      with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
