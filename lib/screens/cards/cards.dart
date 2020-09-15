@@ -370,7 +370,7 @@ class _CardsState extends State<Cards> {
                               shape: GFIconButtonShape.circle,
                               icon: Icon(
                                 IconData(
-                                  0xe904,
+                                  0xe906,
                                   fontFamily: 'icomoon',
                                 ),
                                 color: GFColors.WHITE,
@@ -382,7 +382,7 @@ class _CardsState extends State<Cards> {
                             shape: GFIconButtonShape.circle,
                             icon: Icon(
                               IconData(
-                                0xe90f,
+                                0xe910,
                                 fontFamily: 'icomoon',
                               ),
                               color: GFColors.WHITE,
@@ -393,7 +393,7 @@ class _CardsState extends State<Cards> {
                             shape: GFIconButtonShape.circle,
                             icon: Icon(
                               IconData(
-                                0xe911,
+                                0xe912,
                                 fontFamily: 'icomoon',
                               ),
                               color: GFColors.WHITE,
@@ -522,7 +522,7 @@ class _CardsState extends State<Cards> {
                               shape: GFIconButtonShape.circle,
                               icon: Icon(
                                 IconData(
-                                  0xe904,
+                                  0xe906,
                                   fontFamily: 'icomoon',
                                 ),
                                 color: GFColors.WHITE,

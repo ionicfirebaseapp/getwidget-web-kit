@@ -13,7 +13,7 @@ class _ShimmerState extends State<Shimmer> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/Shimmer.gif',
         body: ListView(
           children: <Widget>[
             Text(

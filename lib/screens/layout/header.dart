@@ -26,21 +26,22 @@ class _HeaderState extends State<Header> {
         width: MediaQuery.of(context).size.width,
         height: 100,
         child: Row(
-//          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Flexible(
                 fit: FlexFit.tight,
                 flex: 1,
-//                child: Image.asset('lib/assets/logo.png')
                 child: InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/home');
-                  },
-                  child: Image.network(
-                    'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
-                    height: 40.0,
-                  ),
-                )),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    // child: Image.network(
+                    //   'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
+                    //   height: 40.0,
+                    // ),
+                    child: Image.asset(
+                      'lib/assets/logo.png',
+                      height: 40,
+                    ))),
             Flexible(
                 fit: FlexFit.tight,
                 flex: 1,

@@ -509,7 +509,31 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
               ),
             ),
             SizedBox(
-              height: 120,
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-border/border');
+              },
+              child: Text(
+                'GF Border',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-bottomsheet/bottomsheet');
+              },
+              child: Text(
+                'GF BottomSheet',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 100,
             ),
             // Text(
             //   'COMING SOON',

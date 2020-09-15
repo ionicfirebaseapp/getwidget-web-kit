@@ -15,7 +15,7 @@ class _RadioButtonState extends State<RadioButton> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/radio.gif',
         body: ListView(
           children: <Widget>[
             Text(

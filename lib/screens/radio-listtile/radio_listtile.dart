@@ -15,7 +15,7 @@ class _RadioListtileState extends State<RadioListtile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/radiolist.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -26,8 +26,11 @@ class _RadioListtileState extends State<RadioListtile> {
               height: 20,
             ),
             Text(
-              "A ListTile with a Radio. In other words, a radio with a label.The entire list tile is interactive: tapping anywhere in the tile toggles the radio.",
+              "A ListTile with a Radio. In other words, a radio with a label.The entire list tile is interactive tapping anywhere in the tile toggles the radio.",
               style: hintStyleTextblackdull(),
+            ),
+            SizedBox(
+              height: 30,
             ),
             GFRadioListTile(
               titleText: 'Hello',

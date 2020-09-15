@@ -15,7 +15,7 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/Checkboxlist.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -26,8 +26,11 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
               height: 20,
             ),
             Text(
-              "A ListTile with a Checkbox. In other words, a checkbox with a label.The entire list tile is interactive: tapping anywhere in the tile toggles the checkbox.",
+              "A ListTile with a Checkbox. In other words, a checkbox with a label.The entire list tile is interactive tapping anywhere in the tile toggles the checkbox.",
               style: hintStyleTextblackdull(),
+            ),
+            SizedBox(
+              height: 30,
             ),
             GFCheckboxListTile(
               titleText: 'hi',

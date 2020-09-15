@@ -134,3 +134,11 @@ flutter:
     - lib/assets/gif/loader1.gif
     - lib/assets/gif/loaders.gif
     - lib/assets/gif/ratings.gif
+    - lib/assets/gif/floating.gif
+    - lib/assets/gif/Progressbar.gif
+    - lib/assets/gif/Shimmer.gif
+    - lib/assets/gif/radio.gif
+    - lib/assets/gif/radiolist.gif
+    - lib/assets/gif/Checkboxlist.gif
+    - lib/assets/gif/Borders.gif
+    - lib/assets/images/gflogo.png
