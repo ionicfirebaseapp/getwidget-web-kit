@@ -21,7 +21,7 @@ class _BottomSheetState extends State<BottomSheet> {
         maxContentHeight: 200,
 //      elevation: 10,
         enableExpandableContent: true,
-        stickyHeaderHeight: 100,
+        stickyHeaderHeight: 90,
         stickyHeader: Container(
           decoration: BoxDecoration(color: Colors.white,
               // borderRadius: BorderRadius.circular(10),
@@ -36,7 +36,7 @@ class _BottomSheetState extends State<BottomSheet> {
           ),
         ),
         contentBody: Container(
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 0),
           child: ListView(
             shrinkWrap: true,
             physics: const ScrollPhysics(),
@@ -81,7 +81,7 @@ class _BottomSheetState extends State<BottomSheet> {
                 : _controller.showBottomSheet();
           }),
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/bottomsheet.gif',
         body: ListView(
           children: <Widget>[
             Text(

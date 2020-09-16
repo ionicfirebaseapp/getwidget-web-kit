@@ -25,7 +25,7 @@ class _CheckBoxState extends State<CheckBox> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/ratings.gif',
+        demoImageUrl: 'lib/assets/gif/Checkbox.gif',
         body: ListView(
           children: <Widget>[
             Text(
