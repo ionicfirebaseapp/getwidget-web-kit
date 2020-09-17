@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies
-      run: pub get
+      run: flutter pub get
     - name : Build Flutter for web
       run: flutter build web --release
     - uses: cloudflare/wrangler-action@1.2.0
