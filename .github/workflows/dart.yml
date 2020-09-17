@@ -10,16 +10,14 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    container:
-      image:  google/dart:latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: flutter pub get
-    - name : Build Flutter for web
-      run: flutter build web --release
+    - uses: actions/checkout@v1
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: beta
+    - run: flutter config --enable-web
+    - run: flutter pub get
+    - run: flutter build web
     - uses: cloudflare/wrangler-action@1.2.0
       with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
