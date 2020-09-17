@@ -1,6 +1,8 @@
 import 'package:gf_web/screens/accordion/accordion.dart';
 import 'package:gf_web/screens/alert/alert.dart';
 import 'package:gf_web/screens/appbar/appbar.dart';
+import 'package:gf_web/screens/border/border.dart';
+import 'package:gf_web/screens/bottomsheet/bottomsheet.dart';
 import 'package:gf_web/screens/buttons/standard-buttons.dart';
 import 'package:gf_web/screens/buttons/pills-buttons.dart';
 import 'package:gf_web/screens/buttons/square-buttons.dart';
@@ -9,10 +11,17 @@ import 'package:gf_web/screens/buttons/icon-buttons.dart';
 import 'package:gf_web/screens/buttons/social-buttons.dart';
 import 'package:gf_web/screens/badges/badges.dart';
 import 'package:gf_web/screens/cards/cards.dart';
+import 'package:gf_web/screens/checkbox-listtile/checkbox_listtile.dart';
+import 'package:gf_web/screens/checkbox/checkbox.dart';
+import 'package:gf_web/screens/floating-widget/floatingwidget.dart';
 import 'package:gf_web/screens/loader/loader.dart';
 import 'package:gf_web/screens/pages/home.dart';
+import 'package:gf_web/screens/progressbar/progressbar.dart';
+import 'package:gf_web/screens/radio-listtile/radio_listtile.dart';
+import 'package:gf_web/screens/radio/radio.dart';
 import 'package:gf_web/screens/rating/rating.dart';
 import 'package:gf_web/screens/searchbar/searchbar.dart';
+import 'package:gf_web/screens/shimmer/shimmer.dart';
 import 'package:gf_web/screens/tabs/bottom-icon.dart';
 import 'package:gf_web/screens/tabs/bottom-labeled.dart';
 import 'package:gf_web/screens/tabs/icon-tabs.dart';
@@ -58,4 +67,13 @@ final routes = {
   '/gf-searchbar/searchbar': (context) => SearchBar(),
   '/gf-loader/loader': (context) => Loader(),
   '/gf-rating/rating': (context) => Rating(),
+  '/gf-floating/floating': (context) => Floating(),
+  '/gf-progressbar/progressbar': (context) => ProgressBar(),
+  '/gf-shimmer/shimmer': (context) => Shimmer(),
+  '/gf-checkbox/checkbox': (context) => CheckBox(),
+  '/gf-checkboxlist/checkboxlist': (context) => CheckboxListtile(),
+  '/gf-radio/radio': (context) => RadioButton(),
+  '/gf-radiolisttile/radiolisttile': (context) => RadioListtile(),
+  '/gf-border/border': (context) => Border(),
+  '/gf-bottomsheet/bottomsheet': (context) => BottomSheet(),
 };

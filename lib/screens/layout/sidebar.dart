@@ -425,7 +425,115 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
               ),
             ),
             SizedBox(
-              height: 120,
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-floating/floating');
+              },
+              child: Text(
+                'GF Floating Widget',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-progressbar/progressbar');
+              },
+              child: Text(
+                'GF Progress Bar',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-shimmer/shimmer');
+              },
+              child: Text(
+                'GF Shimmer',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-checkbox/checkbox');
+              },
+              child: Text(
+                'GF CheckBox',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-checkboxlist/checkboxlist');
+              },
+              child: Text(
+                'GF CheckBox ListTile',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-radio/radio');
+              },
+              child: Text(
+                'GF Radio',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-radiolisttile/radiolisttile');
+              },
+              child: Text(
+                'GF Radio ListTile',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-border/border');
+              },
+              child: Text(
+                'GF Border',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-bottomsheet/bottomsheet');
+              },
+              child: Text(
+                'GF BottomSheet',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 100,
             ),
             // Text(
             //   'COMING SOON',
