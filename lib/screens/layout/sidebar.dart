@@ -30,6 +30,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
 
   bool showButtonTypes = false;
   bool showButtonTypes1 = false;
+  bool showButtonTypes2 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -511,18 +512,117 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
+            // GestureDetector(
+            //   onTap: () {
+            //     Navigator.pushNamed(context, '/gf-border/border');
+            //   },
+            //   child: Text(
+            //     'GF Border',
+            //     style: hintStyleTextblackdull(),
+            //   ),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            GestureDetector(
+                onTap: () {
+                  setState(() {
+                    // switch (controller.status) {
+                    //   case AnimationStatus.completed:
+                    //     controller.forward(from: 0);
+                    //     break;
+                    //   case AnimationStatus.dismissed:
+                    //     controller.forward();
+                    //     break;
+                    //   default:
+                    // }
+                    showButtonTypes2 = !showButtonTypes2;
+                  });
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('GF Border', style: hintStyleTextblackdull()),
+                    showButtonTypes
+                        ? Icon(Icons.keyboard_arrow_down)
+                        : Icon(Icons.keyboard_arrow_right)
+                  ],
+                )),
+            showButtonTypes2
+                ?
+                // SlideTransition(
+                //     position: offset,
+                //     child:
+                Container(
+                    height: 200,
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.40))
+                    ]),
+                    padding:
+                        EdgeInsets.only(top: 0, bottom: 0, left: 25, right: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-border/solidborder');
+                          },
+                          child: Text('Solid Border'),
+                        ),
+                        //   GestureDetector(
+                        //    onTap: (){
+                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
+                        //    },
+                        //    child:  Text('Shadow Buttons'),
+                        //  ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-border/dashedborder');
+                          },
+                          child: Text('Dashed Border'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-border/dottedborder');
+                          },
+                          child: Text('Dotted Border'),
+                        ),
+                      ],
+                    ),
+                  )
+                // )
+                : Container(),
+            SizedBox(
+              height: 20,
+            ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/gf-border/border');
+                Navigator.pushNamed(context, '/gf-animation/animation');
               },
               child: Text(
-                'GF Border',
+                'GF Animation',
                 style: hintStyleTextblackdull(),
               ),
             ),
             SizedBox(
               height: 20,
             ),
+            //    GestureDetector(
+            //   onTap: () {
+            //     Navigator.pushNamed(context, '/gf-stickyheader/stickyheader');
+            //   },
+            //   child: Text(
+            //     'GF Sticky Header',
+            //     style: hintStyleTextblackdull(),
+            //   ),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
             GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/gf-bottomsheet/bottomsheet');

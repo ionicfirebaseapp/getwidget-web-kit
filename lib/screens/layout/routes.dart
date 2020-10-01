@@ -1,7 +1,11 @@
 import 'package:gf_web/screens/accordion/accordion.dart';
 import 'package:gf_web/screens/alert/alert.dart';
+import 'package:gf_web/screens/animation/animation.dart';
 import 'package:gf_web/screens/appbar/appbar.dart';
 import 'package:gf_web/screens/border/border.dart';
+import 'package:gf_web/screens/border/dashedborder.dart';
+import 'package:gf_web/screens/border/dottedborder.dart';
+import 'package:gf_web/screens/border/solidborder.dart';
 import 'package:gf_web/screens/bottomsheet/bottomsheet.dart';
 import 'package:gf_web/screens/buttons/standard-buttons.dart';
 import 'package:gf_web/screens/buttons/pills-buttons.dart';
@@ -74,6 +78,9 @@ final routes = {
   '/gf-checkboxlist/checkboxlist': (context) => CheckboxListtile(),
   '/gf-radio/radio': (context) => RadioButton(),
   '/gf-radiolisttile/radiolisttile': (context) => RadioListtile(),
-  '/gf-border/border': (context) => Border(),
+  '/gf-border/solidborder': (context) => SolidBorder(),
+  '/gf-border/dashedborder': (context) => DashedBorder(),
+  '/gf-border/dottedborder': (context) => DottedBorder(),
   '/gf-bottomsheet/bottomsheet': (context) => BottomSheet(),
+  '/gf-animation/animation': (context) => Animation(),
 };
