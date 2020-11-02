@@ -54,7 +54,7 @@ class _TilesState extends State<Tiles> {
                   'Title',
                   style: TextStyle(fontSize: 19.0),
                 ),
-                subTitle: Text(
+                subtitle: Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
                   style: TextStyle(fontSize: 16.0),
                 ),
@@ -75,7 +75,7 @@ class _TilesState extends State<Tiles> {
                   style: TextStyle(fontSize: 19.0),
                 ),
                 description: Container(),
-                subTitle: Container(),
+                subtitle: Container(),
                 // showDivider: false,
               ),
             ),
@@ -109,7 +109,7 @@ class _TilesState extends State<Tiles> {
                   style: TextStyle(fontSize: 19.0),
                 ),
                 description: Container(),
-                subTitle: Text(
+                subtitle: Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
                   style: TextStyle(fontSize: 16.0),
                 ),
@@ -126,7 +126,7 @@ class _TilesState extends State<Tiles> {
                   'Title',
                   style: TextStyle(fontSize: 19.0),
                 ),
-                subTitle: Container(),
+                subtitle: Container(),
                 description: Container(),
                 icon: Text(
                   'Caption',

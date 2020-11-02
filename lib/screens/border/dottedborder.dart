@@ -51,7 +51,7 @@ class _DottedBorderState extends State<DottedBorder> {
               child: GFBorder(
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 1],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),
@@ -63,7 +63,7 @@ class _DottedBorderState extends State<DottedBorder> {
               child: GFBorder(
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 1],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Image.asset(
                   'lib/assets/images/image1.png',
                   width: MediaQuery.of(context).size.width,
@@ -93,7 +93,7 @@ class _DottedBorderState extends State<DottedBorder> {
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 1],
-                type: GFBorderType.RRect,
+                type: GFBorderType.rect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),
@@ -106,7 +106,7 @@ class _DottedBorderState extends State<DottedBorder> {
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 1],
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 child: GFCard(
                   boxFit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
@@ -119,7 +119,7 @@ class _DottedBorderState extends State<DottedBorder> {
                       style: TextStyle(
                           color: Colors.grey, fontWeight: FontWeight.w500),
                     ),
-                    subTitle: Text(
+                    subtitle: Text(
                       'subtitle',
                       style: TextStyle(color: Colors.grey),
                     ),
@@ -168,7 +168,7 @@ class _DottedBorderState extends State<DottedBorder> {
                   // width: 50,
                   height: 60,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [2, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(child: Text('Oval Border')),
@@ -178,7 +178,7 @@ class _DottedBorderState extends State<DottedBorder> {
                   width: 130,
                   height: 90,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [2, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(
@@ -198,7 +198,7 @@ class _DottedBorderState extends State<DottedBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [2, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(
@@ -212,7 +212,7 @@ class _DottedBorderState extends State<DottedBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [2, 1],
                     color: Color(0xFF19CA4B),
                     child: Container(

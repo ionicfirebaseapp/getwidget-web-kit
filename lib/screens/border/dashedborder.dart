@@ -49,7 +49,7 @@ class _DashedBorderState extends State<DashedBorder> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: GFBorder(
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 color: Color(0xFF19CA4B),
                 child: Container(
                   decoration: BoxDecoration(
@@ -62,7 +62,7 @@ class _DashedBorderState extends State<DashedBorder> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: GFBorder(
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 color: Color(0xFF19CA4B),
                 child: Image.asset(
                   'lib/assets/images/image1.png',
@@ -90,7 +90,7 @@ class _DashedBorderState extends State<DashedBorder> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: GFBorder(
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 child: Container(
@@ -104,7 +104,7 @@ class _DashedBorderState extends State<DashedBorder> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: GFBorder(
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 child: GFCard(
@@ -171,7 +171,7 @@ class _DashedBorderState extends State<DashedBorder> {
                   // width: 50,
                   height: 60,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [3, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(child: Text('Oval Border')),
@@ -181,7 +181,7 @@ class _DashedBorderState extends State<DashedBorder> {
                   width: 130,
                   height: 90,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [3, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(
@@ -201,7 +201,7 @@ class _DashedBorderState extends State<DashedBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [3, 1],
                     color: Color(0xFF19CA4B),
                     child: Center(
@@ -215,7 +215,7 @@ class _DashedBorderState extends State<DashedBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [3, 1],
                     color: Color(0xFF19CA4B),
                     child: Container(

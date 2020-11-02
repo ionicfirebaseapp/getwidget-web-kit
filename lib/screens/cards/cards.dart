@@ -297,7 +297,7 @@ class _CardsState extends State<Cards> {
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      subTitle: Text(
+                      subtitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.grey),
                       ),
@@ -351,7 +351,7 @@ class _CardsState extends State<Cards> {
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      subTitle: Text(
+                      subtitle: Text(
                         'Subtitle',
                         style: TextStyle(fontSize: 16.0),
                       ),
@@ -452,7 +452,7 @@ class _CardsState extends State<Cards> {
                             color: Colors.white,
                             fontWeight: FontWeight.w500),
                       ),
-                      subTitle: Text(
+                      subtitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),
@@ -496,7 +496,7 @@ class _CardsState extends State<Cards> {
                             color: Colors.white,
                             fontWeight: FontWeight.w500),
                       ),
-                      subTitle: Text(
+                      subtitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),

@@ -18,7 +18,7 @@ class _AlertState extends State<Alert> {
         demoImageUrl: 'lib/assets/gif/Alerts.gif',
         body: GFFloatingWidget(
             verticalPosition: 150,
-            showblurness: showblur,
+            showBlurness: showblur,
 //blurnessColor: Colors.black54,
 
 //

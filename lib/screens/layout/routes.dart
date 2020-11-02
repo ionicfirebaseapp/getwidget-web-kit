@@ -39,6 +39,8 @@ import 'package:gf_web/screens/images/image.dart';
 import 'package:gf_web/screens/carousel/carousel.dart';
 import 'package:gf_web/screens/tabs/tabs.dart';
 import 'package:gf_web/screens/tiles/tiles.dart';
+import 'package:gf_web/screens/intro-screen/fullintro.dart';
+import 'package:gf_web/screens/intro-screen/halfintro.dart';
 
 //Map route = Map<String, dynamic>();
 
@@ -83,4 +85,6 @@ final routes = {
   '/gf-border/dottedborder': (context) => DottedBorder(),
   '/gf-bottomsheet/bottomsheet': (context) => BottomSheet(),
   '/gf-animation/animation': (context) => Animation(),
+  '/gf-fullintro/fullintro': (context) => IntroScreenPage(),
+  '/gf-halfintro/halfintro': (context) => HalfIntroScreenPage(),
 };

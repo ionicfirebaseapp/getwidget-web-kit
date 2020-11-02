@@ -39,7 +39,7 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
                 backgroundImage: AssetImage('lib/assets/images/img.png'),
               ),
               size: 25,
-              activebgColor: Colors.green,
+              activeBgColor: Colors.green,
               activeIcon: Icon(
                 Icons.check,
                 size: 15,
@@ -61,7 +61,7 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
                 backgroundImage: AssetImage('lib/assets/images/img1.png'),
               ),
               size: 25,
-              activebgColor: Colors.green,
+              activeBgColor: Colors.green,
               activeIcon: Icon(
                 Icons.check,
                 size: 15,

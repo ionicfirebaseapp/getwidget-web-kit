@@ -57,7 +57,7 @@ class _RadioButtonState extends State<RadioButton> {
 //                inactiveBorderColor: Colors.purple,
                   activeBorderColor: GFColors.SUCCESS,
 //                radioColor: Colors.black87,
-//                custombgColor: Colors.red,
+//                customBgColor: Colors.red,
                   value: 0,
                   groupValue: groupValue,
                   onChanged: (val) {
@@ -137,7 +137,7 @@ class _RadioButtonState extends State<RadioButton> {
 //                inactiveBorderColor: Colors.purple,
 //                activeBorderColor: Colors.pink,
 //                radioColor: Colors.black87,
-//                custombgColor: Colors.red,
+//                customBgColor: Colors.red,
                   value: 4,
                   groupValue: groupValue,
                   onChanged: (val) {
@@ -222,7 +222,7 @@ class _RadioButtonState extends State<RadioButton> {
 //                inactiveBorderColor: Colors.purple,
                     activeBorderColor: GFColors.SUCCESS,
 //                radioColor: Colors.black87,
-//                custombgColor: Colors.red,
+//                customBgColor: Colors.red,
                     value: 8,
                     groupValue: groupValue,
                     onChanged: (val) {
@@ -231,7 +231,7 @@ class _RadioButtonState extends State<RadioButton> {
                       });
                     },
                     inactiveIcon: null,
-                    custombgColor: GFColors.SUCCESS),
+                    customBgColor: GFColors.SUCCESS),
                 GFRadio(
                   type: GFRadioType.blunt,
                   size: GFSize.MEDIUM,
@@ -244,7 +244,7 @@ class _RadioButtonState extends State<RadioButton> {
                   },
                   inactiveIcon: null,
                   activeBorderColor: GFColors.SUCCESS,
-                  custombgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.SUCCESS,
                 ),
                 GFRadio(
                   type: GFRadioType.blunt,
@@ -258,7 +258,7 @@ class _RadioButtonState extends State<RadioButton> {
                   },
                   inactiveIcon: null,
                   activeBorderColor: GFColors.SUCCESS,
-                  custombgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.SUCCESS,
                 ),
                 GFRadio(
                   type: GFRadioType.blunt,
@@ -272,7 +272,7 @@ class _RadioButtonState extends State<RadioButton> {
                   },
                   inactiveIcon: null,
                   activeBorderColor: GFColors.SUCCESS,
-                  custombgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.SUCCESS,
                 )
               ],
             )),
@@ -301,7 +301,7 @@ class _RadioButtonState extends State<RadioButton> {
                   activeIcon: Icon(Icons.check),
                   radioColor: Colors.red,
                   size: GFSize.LARGE,
-                  activebgColor: GFColors.SUCCESS,
+                  activeBgColor: GFColors.SUCCESS,
                   inactiveBorderColor: GFColors.DARK,
                   activeBorderColor: GFColors.SUCCESS,
                   value: 12,
@@ -324,8 +324,8 @@ class _RadioButtonState extends State<RadioButton> {
                     });
                   },
                   inactiveIcon: Icon(Icons.sentiment_dissatisfied),
-                  custombgColor: GFColors.WARNING,
-                  activebgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.WARNING,
+                  activeBgColor: GFColors.SUCCESS,
                   activeBorderColor: GFColors.SUCCESS,
                 ),
                 GFRadio(
@@ -339,7 +339,7 @@ class _RadioButtonState extends State<RadioButton> {
                     });
                   },
                   inactiveIcon: null,
-                  custombgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.SUCCESS,
                   activeBorderColor: GFColors.SUCCESS,
                 ),
                 GFRadio(
@@ -354,7 +354,7 @@ class _RadioButtonState extends State<RadioButton> {
                   },
                   inactiveIcon: null,
                   activeBorderColor: GFColors.SUCCESS,
-                  custombgColor: GFColors.SUCCESS,
+                  customBgColor: GFColors.SUCCESS,
                 ),
               ],
             )),

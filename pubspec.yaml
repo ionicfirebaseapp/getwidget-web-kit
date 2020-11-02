@@ -145,3 +145,7 @@ flutter:
     - lib/assets/gif/bottomsheet.gif
     - lib/assets/images/gflogo.png
     - lib/assets/images/story.jpg
+    - lib/assets/images/i1.png
+    - lib/assets/images/i2.png
+    - lib/assets/images/i3.png
+    - lib/assets/images/i4.png

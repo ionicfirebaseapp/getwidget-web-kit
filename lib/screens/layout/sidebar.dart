@@ -31,6 +31,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   bool showButtonTypes = false;
   bool showButtonTypes1 = false;
   bool showButtonTypes2 = false;
+  bool showButtonTypes3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -611,6 +612,77 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/gf-introscreen/introscreen');
+              },
+              child: Text(
+                'GF IntroScreen',
+                style: hintStyleTextblackdull(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+                onTap: () {
+                  setState(() {
+                    // switch (controller.status) {
+                    //   case AnimationStatus.completed:
+                    //     controller.forward(from: 0);
+                    //     break;
+                    //   case AnimationStatus.dismissed:
+                    //     controller.forward();
+                    //     break;
+                    //   default:
+                    // }
+                    showButtonTypes3 = !showButtonTypes3;
+                  });
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('GF IntroScreen', style: hintStyleTextblackdull()),
+                    showButtonTypes
+                        ? Icon(Icons.keyboard_arrow_down)
+                        : Icon(Icons.keyboard_arrow_right)
+                  ],
+                )),
+            showButtonTypes3
+                ?
+                // SlideTransition(
+                //     position: offset,
+                //     child:
+                Container(
+                    height: 100,
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.40))
+                    ]),
+                    padding:
+                        EdgeInsets.only(top: 0, bottom: 0, left: 25, right: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-fullintro/fullintro');
+                          },
+                          child: Text('Full Width'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, '/gf-halfintro/halfintro');
+                          },
+                          child: Text('Half'),
+                        ),
+                      ],
+                    ),
+                  )
+                // )
+                : Container(),
             //    GestureDetector(
             //   onTap: () {
             //     Navigator.pushNamed(context, '/gf-stickyheader/stickyheader');

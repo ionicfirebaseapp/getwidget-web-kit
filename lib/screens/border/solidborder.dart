@@ -51,7 +51,7 @@ class _SolidBorderState extends State<SolidBorder> {
               child: GFBorder(
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 0],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),
@@ -63,7 +63,7 @@ class _SolidBorderState extends State<SolidBorder> {
               child: GFBorder(
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 0],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Image.asset(
                   'lib/assets/images/card.png',
                   width: MediaQuery.of(context).size.width,
@@ -93,7 +93,7 @@ class _SolidBorderState extends State<SolidBorder> {
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 0],
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),
@@ -106,7 +106,7 @@ class _SolidBorderState extends State<SolidBorder> {
                 radius: Radius.circular(20),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 0],
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 child: GFCard(
                   boxFit: BoxFit.cover,
                   image: Image.asset(
@@ -161,7 +161,7 @@ class _SolidBorderState extends State<SolidBorder> {
                   // width: 50,
                   height: 60,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [6, 0],
                     color: Color(0xFF19CA4B),
                     strokeWidth: 2,
@@ -172,7 +172,7 @@ class _SolidBorderState extends State<SolidBorder> {
                   width: 130,
                   height: 90,
                   child: GFBorder(
-                    type: GFBorderType.Oval,
+                    type: GFBorderType.oval,
                     dashedLine: [6, 0],
                     color: Color(0xFF19CA4B),
                     strokeWidth: 2,
@@ -193,7 +193,7 @@ class _SolidBorderState extends State<SolidBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [2, 0],
                     color: Color(0xFF19CA4B),
                     strokeWidth: 2,
@@ -208,7 +208,7 @@ class _SolidBorderState extends State<SolidBorder> {
                   width: 100,
                   height: 100,
                   child: GFBorder(
-                    type: GFBorderType.Circle,
+                    type: GFBorderType.circle,
                     dashedLine: [2, 0],
                     color: Color(0xFF19CA4B),
                     strokeWidth: 2,
