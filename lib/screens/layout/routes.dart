@@ -2,7 +2,6 @@ import 'package:gf_web/screens/accordion/accordion.dart';
 import 'package:gf_web/screens/alert/alert.dart';
 import 'package:gf_web/screens/animation/animation.dart';
 import 'package:gf_web/screens/appbar/appbar.dart';
-import 'package:gf_web/screens/border/border.dart';
 import 'package:gf_web/screens/border/dashedborder.dart';
 import 'package:gf_web/screens/border/dottedborder.dart';
 import 'package:gf_web/screens/border/solidborder.dart';
@@ -17,6 +16,8 @@ import 'package:gf_web/screens/badges/badges.dart';
 import 'package:gf_web/screens/cards/cards.dart';
 import 'package:gf_web/screens/checkbox-listtile/checkbox_listtile.dart';
 import 'package:gf_web/screens/checkbox/checkbox.dart';
+import 'package:gf_web/screens/dropdown/dropdown.dart';
+import 'package:gf_web/screens/dropdown/multiselect.dart';
 import 'package:gf_web/screens/floating-widget/floatingwidget.dart';
 import 'package:gf_web/screens/loader/loader.dart';
 import 'package:gf_web/screens/pages/home.dart';
@@ -26,6 +27,8 @@ import 'package:gf_web/screens/radio/radio.dart';
 import 'package:gf_web/screens/rating/rating.dart';
 import 'package:gf_web/screens/searchbar/searchbar.dart';
 import 'package:gf_web/screens/shimmer/shimmer.dart';
+import 'package:gf_web/screens/stickyheader/basic.dart';
+import 'package:gf_web/screens/stickyheader/custom.dart';
 import 'package:gf_web/screens/tabs/bottom-icon.dart';
 import 'package:gf_web/screens/tabs/bottom-labeled.dart';
 import 'package:gf_web/screens/tabs/icon-tabs.dart';
@@ -39,7 +42,6 @@ import 'package:gf_web/screens/images/image.dart';
 import 'package:gf_web/screens/carousel/carousel.dart';
 import 'package:gf_web/screens/tabs/tabs.dart';
 import 'package:gf_web/screens/tiles/tiles.dart';
-import 'package:gf_web/screens/intro-screen/fullintro.dart';
 import 'package:gf_web/screens/intro-screen/halfintro.dart';
 
 //Map route = Map<String, dynamic>();
@@ -85,6 +87,10 @@ final routes = {
   '/gf-border/dottedborder': (context) => DottedBorder(),
   '/gf-bottomsheet/bottomsheet': (context) => BottomSheet(),
   '/gf-animation/animation': (context) => Animation(),
-  '/gf-fullintro/fullintro': (context) => IntroScreenPage(),
-  '/gf-halfintro/halfintro': (context) => HalfIntroScreenPage(),
+  '/gf-introscreen/introscreen': (context) => HalfIntroScreenPage(),
+  '/gf-basicstickyheader/basicstickyheader': (context) => BasicStickyHeader(),
+  '/gf-customstickyheader/customstickyheader': (context) =>
+      CustomStickyHeader(),
+  '/gf-dropdown/dropdown': (context) => Dropdown(),
+  '/gf-multiselect/multiselect': (context) => Multiselect(),
 };

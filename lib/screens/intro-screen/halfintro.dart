@@ -31,7 +31,7 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
               Row(
                 children: [
                   Text(
-                    'half IntroScreen',
+                    'IntroScreen',
                     style: hintStyleTextblackbolder(),
                   ),
                 ],
@@ -52,75 +52,32 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
                   width: MediaQuery.of(context).size.width * 0.9,
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(40),
-                  border: Border.all(color: Colors.grey[200]),
+                  border: Border.all(color: Colors.grey[300]),
                   slides: slides(),
                   pageController: _pageController,
-                  // showIntroSCreenBottomNavigationBar: false,
-// introScreenBottomNavigationBar: false,
                   introScreenBottomNavigationBar:
                       GFIntroScreenBottomNavigationBar(
                     pageController: _pageController,
                     pageCount: slideList.length,
                     currentIndex: initialPage,
-
-                    // child: Text('dfghj'),
-                    // onForwardButtonTap: () {
-                    //   // print('fffffff');
-                    //   _pageController.nextPage(
-                    //       duration: const Duration(milliseconds: 500),
-                    //       curve: Curves.linear);
-                    // },
-                    // onBackButtonTap: () {
-                    //   // print('kkkkkkkkk');
-                    //   _pageController.previousPage(
-                    //       duration: const Duration(milliseconds: 500),
-                    //       curve: Curves.linear);
-                    // },
-                    // onDoneTap: (){
-                    //   print('done');
-                    // },
-                    // onSkipTap: (){
-                    //   print('skip');
-                    // },
-                    // backButtonTextStyle: TextStyle(
-                    //   fontSize: 12
-                    // ),
-
-                    // backButton: GFButton(onPressed: null, child: Text('back'),),
-                    // forwardButton: GFButton(onPressed: null, child: Text('next'),),
-                    // skipButton: GFButton(onPressed: null, child: Text('skip'),),
-                    // doneButton: GFButton(onPressed: null, child: Text('done'),),
-
                     backButtonText: 'Previous',
                     forwardButtonText: 'Next',
                     skipButtonText: 'Skip',
                     doneButtonText: 'Done',
-
                     navigationBarHeight: 50,
                     navigationBarWidth: 300,
-                    // navigationBarMargin: EdgeInsets.all(20),
-                    // navigationBarPadding: EdgeInsets.all(20),
                     navigationBarShape: RoundedRectangleBorder(
-                      // side: const BorderSide(color: Colors.blue, width: 4),
                       borderRadius: BorderRadius.circular(60),
                     ),
                     navigationBarColor: Colors.white,
-
                     showDivider: false,
-                    // dividerHeight: 2,
-                    // dividerThickness: 13,
-                    // dividerColor: GFColors.ALT,
-
                     dotHeight: 10,
                     dotWidth: 16,
                     dotShape: RoundedRectangleBorder(
-                        // side: BorderSide(color: Colors.grey[200], width: 1),
                         borderRadius: BorderRadius.circular(5)),
                     inactiveColor: Colors.grey[200],
                     activeColor: Colors.green,
                     dotMargin: EdgeInsets.symmetric(horizontal: 6),
-
-                    // showButton: false,
                     showPagination: true,
                   ),
                   currentIndex: null,
@@ -143,7 +100,6 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
         // color: Colors.teal,
         child: GFImageOverlay(
           width: MediaQuery.of(context).size.width,
-// margin: const EdgeInsets.all(16),
           padding: EdgeInsets.all(16),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -173,51 +129,46 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          // color: Colors.blue,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40), topRight: Radius.circular(40)),
-          color: Colors.blue,
-          // image: DecorationImage(
-          //   image: AssetImage('lib/assets/images/i2.png'),
-          //   fit: BoxFit.fill,
-          //   colorFilter: ColorFilter.mode(
-          //       Colors.black.withOpacity(0.2), BlendMode.darken),
-          // )
-        ),
+            // color: Colors.blue,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+            color: Colors.blue,
+            image: DecorationImage(
+              image: AssetImage('lib/assets/images/i2.png'),
+              fit: BoxFit.fill,
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.2), BlendMode.darken),
+            )),
       ),
       Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          // color: Colors.red,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40), topRight: Radius.circular(40)),
-          color: Colors.purple,
-          // image: DecorationImage(
-          //   image: AssetImage('lib/assets/images/i3.png'),
-
-          //   fit: BoxFit.fill,
-          //   colorFilter: ColorFilter.mode(
-          //       Colors.black.withOpacity(0.2), BlendMode.darken),
-          // )
-        ),
+            // color: Colors.red,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+            color: Colors.purple,
+            image: DecorationImage(
+              image: AssetImage('lib/assets/images/i3.png'),
+              fit: BoxFit.fill,
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.2), BlendMode.darken),
+            )),
       ),
       Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          // color: Colors.teal,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40), topRight: Radius.circular(40)),
-          color: Colors.green,
-          // image: DecorationImage(
-          //   // image: AssetImage('lib/assets/images/i4.png'),
-
-          //   fit: BoxFit.fill,
-          //   colorFilter: ColorFilter.mode(
-          //       Colors.black.withOpacity(0.2), BlendMode.darken),
-          // )
-        ),
+            // color: Colors.teal,
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+            color: Colors.green,
+            image: DecorationImage(
+              image: AssetImage('lib/assets/images/i4.png'),
+              fit: BoxFit.fill,
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.2), BlendMode.darken),
+            )),
       ),
     ];
     return slideList;

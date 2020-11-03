@@ -32,6 +32,8 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   bool showButtonTypes1 = false;
   bool showButtonTypes2 = false;
   bool showButtonTypes3 = false;
+  bool showButtonTypes4 = false;
+  bool showButtonTypes5 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -513,18 +515,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
-            // GestureDetector(
-            //   onTap: () {
-            //     Navigator.pushNamed(context, '/gf-border/border');
-            //   },
-            //   child: Text(
-            //     'GF Border',
-            //     style: hintStyleTextblackdull(),
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20,
-            // ),
+
             GestureDetector(
                 onTap: () {
                   setState(() {
@@ -555,7 +546,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                 //     position: offset,
                 //     child:
                 Container(
-                    height: 200,
+                    height: 120,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
                     ]),
@@ -621,6 +612,65 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                 style: hintStyleTextblackdull(),
               ),
             ),
+            // GestureDetector(
+            //     onTap: () {
+            //       setState(() {
+            //         // switch (controller.status) {
+            //         //   case AnimationStatus.completed:
+            //         //     controller.forward(from: 0);
+            //         //     break;
+            //         //   case AnimationStatus.dismissed:
+            //         //     controller.forward();
+            //         //     break;
+            //         //   default:
+            //         // }
+            //         showButtonTypes3 = !showButtonTypes3;
+            //       });
+            //     },
+            //     child: Row(
+            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //       children: <Widget>[
+            //         Text('GF IntroScreen', style: hintStyleTextblackdull()),
+            //         showButtonTypes
+            //             ? Icon(Icons.keyboard_arrow_down)
+            //             : Icon(Icons.keyboard_arrow_right)
+            //       ],
+            //     )),
+            // showButtonTypes3
+            //     ?
+            //     // SlideTransition(
+            //     //     position: offset,
+            //     //     child:
+            //     Container(
+            //         height: 100,
+            //         decoration: BoxDecoration(color: Colors.white, boxShadow: [
+            //           BoxShadow(color: Colors.black.withOpacity(0.40))
+            //         ]),
+            //         padding:
+            //             EdgeInsets.only(top: 0, bottom: 0, left: 25, right: 20),
+            //         child: Column(
+            //           crossAxisAlignment: CrossAxisAlignment.start,
+            //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //           children: <Widget>[
+            //             GestureDetector(
+            //               onTap: () {
+            //                 Navigator.pushNamed(
+            //                     context, '/gf-fullintro/fullintro');
+            //               },
+            //               child: Text('Full Width'),
+            //             ),
+            //             GestureDetector(
+            //               onTap: () {
+            //                 Navigator.pushNamed(
+            //                     context, '/gf-halfintro/halfintro');
+            //               },
+            //               child: Text('Half'),
+            //             ),
+            //           ],
+            //         ),
+            //       )
+            //     // )
+            //     : Container(),
             SizedBox(
               height: 20,
             ),
@@ -636,19 +686,81 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                     //     break;
                     //   default:
                     // }
-                    showButtonTypes3 = !showButtonTypes3;
+                    showButtonTypes4 = !showButtonTypes4;
                   });
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text('GF IntroScreen', style: hintStyleTextblackdull()),
+                    Text('GF StickyHeader', style: hintStyleTextblackdull()),
                     showButtonTypes
                         ? Icon(Icons.keyboard_arrow_down)
                         : Icon(Icons.keyboard_arrow_right)
                   ],
                 )),
-            showButtonTypes3
+            showButtonTypes4
+                ?
+                // SlideTransition(
+                //     position: offset,
+                //     child:
+                Container(
+                    height: 100,
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.40))
+                    ]),
+                    padding:
+                        EdgeInsets.only(top: 0, bottom: 0, left: 25, right: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context,
+                                '/gf-basicstickyheader/basicstickyheader');
+                          },
+                          child: Text('Basic'),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context,
+                                '/gf-customstickyheader/customstickyheader');
+                          },
+                          child: Text('Customized'),
+                        ),
+                      ],
+                    ),
+                  )
+                // )
+                : Container(),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+                onTap: () {
+                  setState(() {
+                    // switch (controller.status) {
+                    //   case AnimationStatus.completed:
+                    //     controller.forward(from: 0);
+                    //     break;
+                    //   case AnimationStatus.dismissed:
+                    //     controller.forward();
+                    //     break;
+                    //   default:
+                    // }
+                    showButtonTypes5 = !showButtonTypes5;
+                  });
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('GF Dropdown', style: hintStyleTextblackdull()),
+                    showButtonTypes
+                        ? Icon(Icons.keyboard_arrow_down)
+                        : Icon(Icons.keyboard_arrow_right)
+                  ],
+                )),
+            showButtonTypes5
                 ?
                 // SlideTransition(
                 //     position: offset,
@@ -667,34 +779,25 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
-                                context, '/gf-fullintro/fullintro');
+                                context, '/gf-dropdown/dropdown');
                           },
-                          child: Text('Full Width'),
+                          child: Text('Dropdown'),
                         ),
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
-                                context, '/gf-halfintro/halfintro');
+                                context, '/gf-multiselect/multiselect');
                           },
-                          child: Text('Half'),
+                          child: Text('Multiselect'),
                         ),
                       ],
                     ),
                   )
                 // )
                 : Container(),
-            //    GestureDetector(
-            //   onTap: () {
-            //     Navigator.pushNamed(context, '/gf-stickyheader/stickyheader');
-            //   },
-            //   child: Text(
-            //     'GF Sticky Header',
-            //     style: hintStyleTextblackdull(),
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20,
-            // ),
+            SizedBox(
+              height: 20,
+            ),
             GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/gf-bottomsheet/bottomsheet');

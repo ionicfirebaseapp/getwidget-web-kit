@@ -149,3 +149,19 @@ flutter:
     - lib/assets/images/i2.png
     - lib/assets/images/i3.png
     - lib/assets/images/i4.png
+    - lib/assets/icons/allign.png
+    - lib/assets/icons/Rotation.png
+    - lib/assets/icons/scaling.png
+    - lib/assets/icons/size.png
+    - lib/assets/icons/slide.png
+    - lib/assets/icons/gflogo.png
+    - lib/assets/images/e5.png
+    - lib/assets/images/e4.png
+    - lib/assets/images/e3.png
+    - lib/assets/images/e2.png
+    - lib/assets/images/e1.png
+    - lib/assets/images/s1.png
+    - lib/assets/images/s2.png
+    - lib/assets/images/s3.png
+    - lib/assets/images/s4.png
+    - lib/assets/images/s5.png
