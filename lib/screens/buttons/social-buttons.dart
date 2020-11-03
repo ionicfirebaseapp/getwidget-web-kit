@@ -30,10 +30,6 @@ class _SocialButtonsState extends State<SocialButtons> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Solid Buttons Full',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -56,7 +52,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      // Expanded(
                       GFButton(
                         buttonBoxShadow: true,
                         color: Color(0xFF3B5998),
@@ -72,11 +67,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                           color: GFColors.WHITE,
                         ),
                       ),
-                      // ),
                       SizedBox(
                         width: 5,
                       ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text("Twitter"),
@@ -90,11 +83,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFF00ACEE),
                         buttonBoxShadow: true,
                       ),
-                      // ),
                       SizedBox(
                         width: 5,
                       ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -110,11 +101,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFF25D366),
                         buttonBoxShadow: true,
                       ),
-                      // ),
                       SizedBox(
                         width: 5,
                       ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -130,11 +119,9 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFFDD4B39),
                         buttonBoxShadow: true,
                       ),
-                      // ),
                       SizedBox(
                         width: 5,
                       ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -150,7 +137,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0xFFEA4C89),
                         buttonBoxShadow: true,
                       ),
-                      // ),
                     ],
                   ),
                   SizedBox(
@@ -159,16 +145,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      // Expanded(
-
-                      // ),
-                      // Expanded(
-                      // SizedBox(
-                      //   height: 6,
-                      // ),
-                      //   SizedBox(
-                      //   height: 6,
-                      // ),
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -205,11 +181,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                       SizedBox(
                         width: 5,
                       ),
-                      // ),
-                      // SizedBox(
-                      //   height: 6,
-                      // ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -231,11 +202,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                       SizedBox(
                         width: 5,
                       ),
-                      // ),
-                      // SizedBox(
-                      //   height: 6,
-                      // ),
-                      // Expanded(
                       GFButton(
                         onPressed: () {},
                         child: Text(
@@ -251,25 +217,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                         color: Color(0XFFC8232C),
                         buttonBoxShadow: true,
                       ),
-                      // ),
-                      // SizedBox(
-                      //   height: 10,
-                      // ),
-                      // GFButton(
-                      //   child: Text(''),
-                      //   onPressed: () {},
-                      //   color: GFColors.WHITE,
-                      // ),
-                      // GFButton(
-                      //   child: Text(''),
-                      //   onPressed: () {},
-                      //   color: GFColors.WHITE,
-                      // ),
-                      // GFButton(
-                      //   child: Text(''),
-                      //   onPressed: () {},
-                      //   color: GFColors.WHITE,
-                      // )
                     ],
                   ),
                   SizedBox(
@@ -278,12 +225,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                 ],
               ),
             ),
-
-//social buttons icons
-            // Text(
-            //   'Social Buttons Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -448,11 +389,6 @@ class _SocialButtonsState extends State<SocialButtons> {
                 ],
               ),
             ),
-//shadow icons
-            // Text(
-            //   'Floating Social Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,

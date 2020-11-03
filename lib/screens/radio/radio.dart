@@ -50,14 +50,8 @@ class _RadioButtonState extends State<RadioButton> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 GFRadio(
-//                type: GFRadioButtonType.custom,
                   size: GFSize.LARGE,
-//                activebgColor: Colors.red,
-//                inactivebgColor: Colors.amber,
-//                inactiveBorderColor: Colors.purple,
                   activeBorderColor: GFColors.SUCCESS,
-//                radioColor: Colors.black87,
-//                customBgColor: Colors.red,
                   value: 0,
                   groupValue: groupValue,
                   onChanged: (val) {
@@ -132,12 +126,6 @@ class _RadioButtonState extends State<RadioButton> {
                 GFRadio(
                   type: GFRadioType.square,
                   size: GFSize.LARGE,
-//                activebgColor: Colors.red,
-//                inactivebgColor: Colors.amber,
-//                inactiveBorderColor: Colors.purple,
-//                activeBorderColor: Colors.pink,
-//                radioColor: Colors.black87,
-//                customBgColor: Colors.red,
                   value: 4,
                   groupValue: groupValue,
                   onChanged: (val) {
@@ -217,12 +205,7 @@ class _RadioButtonState extends State<RadioButton> {
                 GFRadio(
                     type: GFRadioType.blunt,
                     size: GFSize.LARGE,
-//                activebgColor: Colors.red,
-//                inactivebgColor: Colors.amber,
-//                inactiveBorderColor: Colors.purple,
                     activeBorderColor: GFColors.SUCCESS,
-//                radioColor: Colors.black87,
-//                customBgColor: Colors.red,
                     value: 8,
                     groupValue: groupValue,
                     onChanged: (val) {

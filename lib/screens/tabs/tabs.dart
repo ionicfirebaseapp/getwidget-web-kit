@@ -47,14 +47,11 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
-// GFCard(
-            // content: Column(
             Container(
               height: 40,
               margin: EdgeInsets.only(top: 20),
               child: GFSegmentTabs(
                 tabController: tabController,
-//              height: 38.0,
                 width: 280.0,
                 length: 4,
                 tabs: <Widget>[
@@ -93,14 +90,11 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                       width: 3.0,
                     ),
                   ),
-//                borderRadius: BorderRadius.circular(2.0)
                 ),
                 indicatorPadding: EdgeInsets.all(8.0),
                 indicatorWeight: 2.0,
                 border: Border.all(color: Colors.white, width: 2.0),
               ),
-//
-//
             ),
             Container(
               height: MediaQuery.of(context).size.height - 140,
@@ -110,57 +104,7 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                     color: GFColors.WHITE,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-//                         GFTabBar(
-//                           initialIndex: 0,
-//                           length: 4,
-//                           controller: tabController,
-//                           tabs: [
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.home,
-//                               ),
-//                             ),
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.music_note,
-//                               ),
-//                             ),
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.games,
-//                               ),
-//                             ),
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.notifications,
-//                               ),
-//                             ),
-// //                            GFIconButton(
-// //                              icon: Icon(Icons.home,),
-// //                              onPressed: (){},
-// //                            ),
-//                           ],
-//                           indicatorColor: GFColors.SUCCESS,
-// //        indicatorSize: TabBarIndicatorSize.label,
-//                           labelColor: GFColors.SUCCESS,
-//                           labelPadding: EdgeInsets.all(8.0),
-//                           tabBarColor: GFColors.DARK,
-//                           unselectedLabelColor: GFColors.WHITE,
-//                           labelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.white,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                           unselectedLabelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.black,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                         ),
-                      ],
+                      children: <Widget>[],
                     )),
                 Container(
                     height: 30,
@@ -174,51 +118,6 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                               border: Border(
                                   top: BorderSide(color: GFColors.LIGHT))),
                         ),
-//                         GFTabBar(
-//                           initialIndex: 0,
-//                           length: 4,
-//                           controller: tabController,
-//                           tabs: [
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.home,
-//                               ),
-//                             ),
-//                             Tab(
-//                               icon: Icon(Icons.music_note),
-//                             ),
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.games,
-//                               ),
-//                             ),
-//                             Tab(
-//                               icon: Icon(
-//                                 Icons.notifications,
-//                               ),
-//                             ),
-//                           ],
-//                           indicatorColor: Colors.teal,
-
-// //        indicatorSize: TabBarIndicatorSize.label,
-//                           labelColor: GFColors.SUCCESS,
-//                           labelPadding: EdgeInsets.all(8.0),
-//                           tabBarColor: GFColors.WHITE,
-//                           unselectedLabelColor: GFColors.LIGHT,
-//                           labelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.white,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-
-//                           unselectedLabelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.black,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                         ),
                       ],
                     )),
                 Container(
@@ -233,87 +132,6 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                               border: Border(
                                   top: BorderSide(color: GFColors.LIGHT))),
                         ),
-//                         GFTabBar(
-//                           initialIndex: 0,
-//                           length: 4,
-//                           controller: tabController,
-//                           tabs: [
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.home,
-//                                 ),
-//                                 Text(
-//                                   'Home',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(Icons.music_note,
-//                                     color: GFColors.LIGHT),
-//                                 Text(
-//                                   'Music',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.games,
-//                                 ),
-//                                 Text(
-//                                   'Games',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.notifications,
-//                                 ),
-//                                 Text(
-//                                   'Notifications',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                           ],
-//                           indicatorColor: Colors.teal,
-
-// //        indicatorSize: TabBarIndicatorSize.label,
-//                           labelColor: GFColors.SUCCESS,
-//                           labelPadding: EdgeInsets.all(8.0),
-//                           tabBarColor: GFColors.DARK,
-//                           unselectedLabelColor: GFColors.LIGHT,
-//                           labelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.white,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                           unselectedLabelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.black,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                         ),
                       ],
                     )),
                 Container(
@@ -328,94 +146,10 @@ class _TabsState extends State<Tabs> with TickerProviderStateMixin {
                               border: Border(
                                   top: BorderSide(color: GFColors.LIGHT))),
                         ),
-//                         GFTabBar(
-//                           initialIndex: 0,
-//                           length: 4,
-//                           controller: tabController,
-//                           tabs: [
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.home,
-//                                 ),
-//                                 Text(
-//                                   'Home',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.music_note,
-//                                 ),
-//                                 Text(
-//                                   'Music',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.games,
-//                                 ),
-//                                 Text(
-//                                   'Games',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                             Column(
-//                               mainAxisAlignment: MainAxisAlignment.center,
-//                               children: <Widget>[
-//                                 Icon(
-//                                   Icons.notifications,
-//                                 ),
-//                                 Text(
-//                                   'Notifications',
-//                                   style: TextStyle(
-//                                     fontSize: 10,
-//                                   ),
-//                                 )
-//                               ],
-//                             ),
-//                           ],
-//                           indicatorColor: Colors.teal,
-
-// //        indicatorSize: TabBarIndicatorSize.label,
-//                           labelColor: GFColors.SUCCESS,
-//                           labelPadding: EdgeInsets.all(8.0),
-//                           tabBarColor: GFColors.WHITE,
-//                           unselectedLabelColor: GFColors.LIGHT,
-//                           labelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.white,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                           unselectedLabelStyle: TextStyle(
-//                             fontWeight: FontWeight.w500,
-//                             fontSize: 13.0,
-//                             color: Colors.black,
-//                             fontFamily: 'OpenSansBold',
-//                           ),
-//                         ),
                       ],
                     )),
               ]),
             ),
-            // ),
-            // ),
             SizedBox(
               height: 30,
             ),

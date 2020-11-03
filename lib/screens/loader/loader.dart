@@ -272,7 +272,6 @@ class _LoaderState extends State<Loader> {
                   children: const <Widget>[
                     GFLoader(
                       type: GFLoaderType.custom,
-//                          size: GFSize.LARGE,
                       child: Image(
                         image: AssetImage('lib/assets/gif/loader.gif'),
                         width: 150,

@@ -36,32 +36,6 @@ class _BottomSheetState extends State<BottomSheet> {
             margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             child: Column(
               children: [
-                //  Container(
-                //       margin: EdgeInsets.symmetric(horizontal: 10),
-                //       height: 60,
-                //       padding: EdgeInsets.only(bottom: 15),
-                //       child: TextFormField(
-
-                //         initialValue: "Enter Message",
-                //         keyboardType: TextInputType.emailAddress,
-                //         decoration: InputDecoration(
-
-                //             errorBorder: OutlineInputBorder(
-                //                 borderSide: BorderSide(
-                //                     width: 0, color: Color(0xFFF44242))),
-                //             errorStyle: TextStyle(color: Color(0xFFF44242)),
-                //             contentPadding: EdgeInsets.all(10),
-                //             enabledBorder: const OutlineInputBorder(
-                //               borderSide: const BorderSide(color: Colors.grey, width: 0.0),
-                //             ),
-
-                //             focusedBorder: OutlineInputBorder(
-                //               borderSide: BorderSide(color: Colors.grey),
-                //             ),
-                //             fillColor: Colors.white,
-                //             focusColor: Colors.white),
-                //       ),
-                //     ),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   child: Row(

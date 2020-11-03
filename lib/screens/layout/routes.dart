@@ -44,8 +44,6 @@ import 'package:gf_web/screens/tabs/tabs.dart';
 import 'package:gf_web/screens/tiles/tiles.dart';
 import 'package:gf_web/screens/intro-screen/halfintro.dart';
 
-//Map route = Map<String, dynamic>();
-
 final routes = {
   '/home': (context) => HomePage(),
   '/gf-buttons/standard-button': (context) => StandardButtons(),

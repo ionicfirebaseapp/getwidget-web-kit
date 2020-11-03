@@ -9,7 +9,6 @@ class Header extends StatefulWidget {
 
 class _HeaderState extends State<Header> {
   launchURL(urlLink) async {
-    // const url = urlLink;
     if (await canLaunch(urlLink)) {
       await launch(urlLink);
     } else {
@@ -34,10 +33,6 @@ class _HeaderState extends State<Header> {
                     onTap: () {
                       Navigator.pushNamed(context, '/home');
                     },
-                    // child: Image.network(
-                    //   'https://ik.imagekit.io/ionicfirebaseapp/get-flutter-logo_FAN-82xCG.png',
-                    //   height: 40.0,
-                    // ),
                     child: Image.asset(
                       'lib/assets/logo.png',
                       height: 40,
@@ -47,7 +42,6 @@ class _HeaderState extends State<Header> {
                 flex: 1,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  // crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.only(),

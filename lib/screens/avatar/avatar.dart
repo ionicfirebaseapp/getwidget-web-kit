@@ -16,14 +16,8 @@ class _AvatarState extends State<Avatar> {
         demoImageUrl: 'lib/assets/gif/avatars.gif',
         body: ListView(
           children: <Widget>[
-            // Text(
-            //   'Avatar',
-            //   style: hintStyleTextblackbolder(),
-            // ),
             Padding(
-              padding: EdgeInsets.only(
-                  // left: 15,
-                  ),
+              padding: EdgeInsets.only(),
               child: GFTypography(
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
@@ -44,7 +38,6 @@ class _AvatarState extends State<Avatar> {
             SizedBox(
               height: 30,
             ),
-            // Text('With Buttons',  style: hintStyleTextblackbold(),),
             GFCard(
               content: Column(
                 children: <Widget>[

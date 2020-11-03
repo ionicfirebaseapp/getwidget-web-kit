@@ -30,10 +30,6 @@ class _BadgesState extends State<Badges> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'With Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -162,12 +158,6 @@ class _BadgesState extends State<Badges> {
                 ],
               ),
             ),
-
-//icons with badges
-            // Text(
-            //   'Icon with Badges',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,

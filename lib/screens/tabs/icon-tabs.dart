@@ -62,8 +62,6 @@ class _IconTabsState extends State<IconTabs> with TickerProviderStateMixin {
                 ),
               ],
               indicatorColor: Colors.teal,
-
-//        indicatorSize: TabBarIndicatorSize.label,
               labelColor: GFColors.SUCCESS,
               labelPadding: const EdgeInsets.all(8),
               tabBarColor: GFColors.WHITE,

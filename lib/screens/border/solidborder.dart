@@ -158,7 +158,6 @@ class _SolidBorderState extends State<SolidBorder> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  // width: 50,
                   height: 60,
                   child: GFBorder(
                     type: GFBorderType.oval,

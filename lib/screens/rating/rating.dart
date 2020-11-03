@@ -86,7 +86,6 @@ class _RatingState extends State<Rating> {
                 color: GFColors.DANGER,
               ),
               size: GFSize.SMALL,
-//              halfFilledIcon:Icon(Icons.favorite_border, color: Colors.amber,),
               value: _iconRating,
               onChanged: (value) {
                 setState(() {

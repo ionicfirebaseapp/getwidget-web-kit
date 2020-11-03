@@ -165,7 +165,6 @@ class _DottedBorderState extends State<DottedBorder> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  // width: 50,
                   height: 60,
                   child: GFBorder(
                     type: GFBorderType.oval,

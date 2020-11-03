@@ -54,8 +54,6 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                   itemCount: imageList.length,
                   itemBuilder: (context, index) => GFStickyHeaderBuilder(
                         direction: Axis.horizontal,
-                        // enableHeaderOverlap: true,
-                        // stickyContentPosition: GFPosition.end,
                         stickyContentBuilder:
                             (BuildContext context, double stuckValue) {
                           stuckValue = 1.0 - stuckValue.clamp(0.0, 1.0);
@@ -80,24 +78,10 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                             color: Colors.white),
                                       ),
                                     ),
-                                    // Offstage(
-                                    //   offstage: stuckValue <= 0.0,
-                                    //   child: Opacity(
-                                    //     opacity: stuckValue,
-                                    //     child: IconButton(
-                                    //       icon: const Icon(Icons.image,
-                                    //           color: Colors.white),
-                                    //       onPressed: () => Scaffold.of(context)
-                                    //           .showSnackBar(SnackBar(
-                                    //               content: Text('Favorite #$index'))),
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 ),
                               ),
                               Container(
-                                // height: 200,
                                 width: MediaQuery.of(context).size.width * 0.5,
                                 child: ListView.builder(
                                     physics: ScrollPhysics(),
@@ -114,21 +98,6 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              // GFRadioListTile(
-                                              //   titleText: 'Medium',
-                                              //   size: 20,
-                                              //   activeBorderColor: Colors.green,
-                                              //   focusColor: Colors.green,
-                                              //   type: GFRadioType.square,
-                                              //   value: 1,
-                                              //   groupValue: groupValue,
-                                              //   onChanged: (val) {
-                                              //     setState(() {
-                                              //       groupValue = val;
-                                              //     });
-                                              //   },
-                                              //   inactiveIcon: null,
-                                              // ),
                                               SizedBox(height: 15),
                                               Row(
                                                 children: [
@@ -231,13 +200,11 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                           );
                         },
                         content: Container(
-                          // margin: EdgeInsets.all(8),
                           height: 200,
                           width: MediaQuery.of(context).size.width * 0.1,
                           color: Colors.teal,
-                          child: Text('data'),
-                          // child: Image.asset(imageList[index],
-                          //     fit: BoxFit.fill, width: 100, height: 200),
+                          child: Image.asset(imageList[index],
+                              fit: BoxFit.fill, width: 100, height: 200),
                         ),
                       )),
             ),

@@ -49,7 +49,6 @@ class _SegmentTabState extends State<SegmentTab> with TickerProviderStateMixin {
               margin: const EdgeInsets.only(top: 20, left: 25, right: 25),
               child: GFSegmentTabs(
                 tabController: tabController,
-//              height: 38.0,
                 width: 280,
                 length: 3,
                 tabs: const <Widget>[
@@ -79,14 +78,11 @@ class _SegmentTabState extends State<SegmentTab> with TickerProviderStateMixin {
                       width: 3,
                     ),
                   ),
-//                borderRadius: BorderRadius.circular(2.0)
                 ),
                 indicatorPadding: const EdgeInsets.all(8),
                 indicatorWeight: 2,
                 border: Border.all(color: Colors.white, width: 2),
               ),
-//
-//
             ),
             Container(
                 height: MediaQuery.of(context).size.height - 140,

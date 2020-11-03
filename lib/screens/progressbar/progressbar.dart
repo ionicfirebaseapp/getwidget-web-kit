@@ -68,8 +68,6 @@ class _ProgressBarState extends State<ProgressBar> {
                 progressBarColor: GFColors.INFO,
                 animation: true,
                 animationDuration: 4000,
-
-//
               ),
             ),
             Container(
@@ -78,7 +76,6 @@ class _ProgressBarState extends State<ProgressBar> {
                 percentage: 0.5,
                 lineHeight: 20,
                 alignment: MainAxisAlignment.spaceBetween,
-
                 child: const Padding(
                   padding: EdgeInsets.only(right: 5),
                   child: Text(
@@ -87,7 +84,6 @@ class _ProgressBarState extends State<ProgressBar> {
                     style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                 ),
-//
                 progressHeadType: GFProgressHeadType.square,
                 backgroundColor: Colors.black26,
                 progressBarColor: GFColors.WARNING,
@@ -100,7 +96,6 @@ class _ProgressBarState extends State<ProgressBar> {
               child: GFProgressBar(
                 percentage: 0.3,
                 lineHeight: 20,
-//                progressHeadType: GFProgressHeadType.square,
                 child: const Text(
                   '30%',
                   textAlign: TextAlign.end,
@@ -130,7 +125,6 @@ class _ProgressBarState extends State<ProgressBar> {
             ),
             Container(
               child: GFProgressBar(
-//                width: 300,
                 width: 300,
                 alignment: MainAxisAlignment.spaceBetween,
                 radius: 90,

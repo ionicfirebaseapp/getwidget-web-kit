@@ -30,10 +30,6 @@ class _ImagesState extends State<Images> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Basic Images',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -84,10 +80,6 @@ class _ImagesState extends State<Images> {
                 ],
               ),
             ),
-            // Text(
-            //   'Circular Images',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -135,10 +127,6 @@ class _ImagesState extends State<Images> {
                 ],
               ),
             ),
-            // Text(
-            //   'Overlay Images',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -208,11 +196,7 @@ class _ImagesState extends State<Images> {
                           'Strong Overlay',
                           style: TextStyle(color: GFColors.WHITE),
                         ),
-                      )
-                      // ),
-                      // colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.60), BlendMode.darken),
-                      // image: AssetImage('lib/assets/images/image1.png'),
-                      ),
+                      )),
                 ],
               ),
             )

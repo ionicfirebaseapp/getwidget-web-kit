@@ -254,7 +254,6 @@ class _CheckBoxState extends State<CheckBox> {
                   ),
                   GFCheckbox(
                     size: GFSize.MEDIUM,
-//            activebgColor: GFColors.,
                     type: GFCheckboxType.custom,
                     onChanged: (val) {
                       setState(() {

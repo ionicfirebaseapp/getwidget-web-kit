@@ -97,7 +97,6 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
   List<Widget> slides() {
     slideList = [
       Container(
-        // color: Colors.teal,
         child: GFImageOverlay(
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.all(16),
@@ -129,7 +128,6 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-            // color: Colors.blue,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40), topRight: Radius.circular(40)),
             color: Colors.blue,
@@ -144,7 +142,6 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-            // color: Colors.red,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40), topRight: Radius.circular(40)),
             color: Colors.purple,
@@ -159,7 +156,6 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-            // color: Colors.teal,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40), topRight: Radius.circular(40)),
             color: Colors.green,

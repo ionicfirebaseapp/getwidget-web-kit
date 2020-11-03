@@ -61,30 +61,22 @@ class _ToggleState extends State<Toggle> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.DANGER,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.WARNING,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.INFO,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                           )
                         ],
@@ -124,33 +116,25 @@ class _ToggleState extends State<Toggle> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           GFToggle(
-                            onChanged: (v) {
-                              print('ios val $v');
-                            },
+                            onChanged: (v) {},
                             value: true,
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.DANGER,
-                            onChanged: (v) {
-                              print('ios val $v');
-                            },
+                            onChanged: (v) {},
                             value: true,
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.WARNING,
-                            onChanged: (v) {
-                              print('ios val $v');
-                            },
+                            onChanged: (v) {},
                             value: true,
                             type: GFToggleType.ios,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.INFO,
-                            onChanged: (v) {
-                              print('ios val $v');
-                            },
+                            onChanged: (v) {},
                             value: true,
                             type: GFToggleType.ios,
                           )
@@ -191,33 +175,25 @@ class _ToggleState extends State<Toggle> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.square,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.DANGER,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.square,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.WARNING,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.square,
                           ),
                           GFToggle(
                             enabledTrackColor: GFColors.INFO,
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.square,
                           )
@@ -258,25 +234,19 @@ class _ToggleState extends State<Toggle> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.custom,
                           ),
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.android,
                             boxShape: BoxShape.rectangle,
                             enabledTrackColor: GFColors.DANGER,
                           ),
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.ios,
                             boxShape: BoxShape.rectangle,
@@ -285,9 +255,7 @@ class _ToggleState extends State<Toggle> {
                                 const BorderRadius.all(Radius.circular(0)),
                           ),
                           GFToggle(
-                            onChanged: (val) {
-                              print('on change val $val');
-                            },
+                            onChanged: (val) {},
                             value: true,
                             type: GFToggleType.ios,
                             boxShape: BoxShape.rectangle,

@@ -13,7 +13,6 @@ class _SearchbarState extends State<Searchbar> {
           backgroundColor: GFColors.DARK,
           title: const Text('UI Kit'),
           searchBar: true,
-//        searchBarColorTheme: Colors.deepOrange,
           actions: <Widget>[
             GFIconButton(
               icon: Icon(

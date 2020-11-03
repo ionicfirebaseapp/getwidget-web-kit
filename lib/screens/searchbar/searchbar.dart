@@ -61,16 +61,7 @@ class _SearchBarState extends State<SearchBar> {
               height: 10,
             ),
             GFSearchBar(
-                // searchBoxInputDecoration: InputDecoration(
-                //   enabledBorder: OutlineInputBorder(
-                //       borderSide: BorderSide(
-                //         color: Colors.teal,
-                //       ),
-                //       borderRadius: BorderRadius.circular(50)),
-                // ),
                 searchList: list,
-//              hideSearchBoxWhenItemSelected: false,
-//              overlaySearchListHeight: 100.0,
                 searchQueryBuilder: (query, list) => list
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
@@ -82,14 +73,8 @@ class _SearchBarState extends State<SearchBar> {
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-//              noItemsFoundWidget: Container(
-//                color: Colors.green,
-//                child: Text("no items found..."),
-//              ),
                 onItemSelected: (item) {
-                  setState(() {
-                    print('$item');
-                  });
+                  setState(() {});
                 }),
             const Padding(
               padding: EdgeInsets.only(left: 15, top: 30, bottom: 10),
@@ -127,8 +112,6 @@ class _SearchBarState extends State<SearchBar> {
                       borderRadius: BorderRadius.circular(50)),
                 ),
                 searchList: list,
-//              hideSearchBoxWhenItemSelected: false,
-//              overlaySearchListHeight: 100.0,
                 searchQueryBuilder: (query, list) => list
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
@@ -140,27 +123,11 @@ class _SearchBarState extends State<SearchBar> {
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-//              noItemsFoundWidget: Container(
-//                color: Colors.green,
-//                child: Text("no items found..."),
-//              ),
                 onItemSelected: (item) {
-                  setState(() {
-                    print('$item');
-                  });
+                  setState(() {});
                 }),
             GFSearchBar(
-//              searchBoxInputDecoration: InputDecoration(
-//                enabledBorder: OutlineInputBorder(
-//                  borderSide: BorderSide(
-//                    color: Colors.teal,
-//                  ),
-//                  borderRadius: BorderRadius.circular(50)
-//                ),
-//              ),
                 searchList: list,
-//              hideSearchBoxWhenItemSelected: false,
-//              overlaySearchListHeight: 100.0,
                 searchQueryBuilder: (query, list) => list
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
@@ -172,14 +139,8 @@ class _SearchBarState extends State<SearchBar> {
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-//              noItemsFoundWidget: Container(
-//                color: Colors.green,
-//                child: Text("no items found..."),
-//              ),
                 onItemSelected: (item) {
-                  setState(() {
-                    print('selected item $item');
-                  });
+                  setState(() {});
                 }),
           ],
         ),

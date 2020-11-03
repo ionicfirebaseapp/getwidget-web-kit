@@ -15,28 +15,16 @@ class _AnimationState extends State<Animation>
   bool _large = false;
   double _size = 50.0;
   AnimationController controller;
-  // Animation<double> animation;
   bool _first = true;
   double _fontSize = 30;
   Color _color = GFColors.SUCCESS;
-  // Animation<Offset> offsetAnimation;
 
   @override
   void initState() {
     super.initState();
     controller =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
-    // animation =
-    //     new CurvedAnimation(parent: controller, curve: Curves.bounceInOut);
     controller.repeat();
-
-    // offsetAnimation = Tween<Offset>(
-    //   begin: Offset.zero,
-    //   end: const Offset(1.5, 0),
-    // ).animate(CurvedAnimation(
-    //   parent: controller,
-    //   curve: Curves.linear,
-    // ));
   }
 
   @override
@@ -92,7 +80,6 @@ class _AnimationState extends State<Animation>
                   controller.repeat();
                 },
                 child: GFAnimation(
-                  // turnsAnimation: animation,
                   controller: controller,
                   type: GFAnimationType.rotateTransition,
                   alignment: Alignment.center,
@@ -126,7 +113,6 @@ class _AnimationState extends State<Animation>
                   controller.repeat();
                 },
                 child: GFAnimation(
-                  // scaleAnimation: animation,
                   controller: controller,
                   type: GFAnimationType.scaleTransition,
                   child: Image.asset(
@@ -186,7 +172,6 @@ class _AnimationState extends State<Animation>
                 width: MediaQuery.of(context).size.width,
                 child: GFAnimation(
                   controller: controller,
-                  // slidePosition: offsetAnimation,
                   type: GFAnimationType.slideTransition,
                   child: Image.asset(
                     'lib/assets/icons/slide.png',

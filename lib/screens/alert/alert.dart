@@ -19,9 +19,6 @@ class _AlertState extends State<Alert> {
         body: GFFloatingWidget(
             verticalPosition: 150,
             showBlurness: showblur,
-//blurnessColor: Colors.black54,
-
-//
             child: alertWidget,
             body: ListView(
               children: <Widget>[
@@ -204,7 +201,6 @@ class _AlertState extends State<Alert> {
                 Container(
                     margin: const EdgeInsets.only(top: 20),
                     color: Colors.transparent,
-//                height: 300,
                     child: Center(
                       child: GFButton(
                           text: 'Tap to View',

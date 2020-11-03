@@ -17,15 +17,10 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    // animationController =
-    //     AnimationController(duration: Duration(seconds: 2), vsync: this);
-    // controller =
-    //     AnimationController(vsync: this, duration: Duration(milliseconds: 300));
     offset = Tween<Offset>(
       begin: Offset.zero,
       end: Offset(0.0, 0.1),
     ).animate(controller);
-    //  animation =   Tween(begin: 1.0, end: 0.0).animate(CurvedAnimation(parent: animationController, curve: Curves.fastLinearToSlowEaseIn));
   }
 
   bool showButtonTypes = false;
@@ -63,15 +58,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    // switch (controller.status) {
-                    //   case AnimationStatus.completed:
-                    //     controller.forward(from: 0);
-                    //     break;
-                    //   case AnimationStatus.dismissed:
-                    //     controller.forward();
-                    //     break;
-                    //   default:
-                    // }
                     showButtonTypes = !showButtonTypes;
                   });
                 },
@@ -85,11 +71,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes
-                ?
-                // SlideTransition(
-                //     position: offset,
-                //     child:
-                Container(
+                ? Container(
                     height: 200,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
@@ -122,12 +104,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                           },
                           child: Text('Square Buttons'),
                         ),
-                        //   GestureDetector(
-                        //    onTap: (){
-                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                        //    },
-                        //    child:  Text('Shadow Buttons'),
-                        //  ),
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
@@ -145,14 +121,12 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                       ],
                     ),
                   )
-                // )
                 : Container(),
 
             SizedBox(
               height: 20,
             ),
 
-            // Text('GF Badge', style: hintStyleTextblackdull(),),
             GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/gf-badges/badges');
@@ -225,27 +199,9 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             SizedBox(
               height: 20,
             ),
-            // GestureDetector(
-            //   onTap: () {
-            //     Navigator.pushNamed(context, '/gf-tabs/tabs');
-            //   },
-            //   child: Text(
-            //     'GF Tab',
-            //     style: hintStyleTextblackdull(),
-            //   ),
-            // ),
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    // switch (controller.status) {
-                    //   case AnimationStatus.completed:
-                    //     controller.forward(from: 0);
-                    //     break;
-                    //   case AnimationStatus.dismissed:
-                    //     controller.forward();
-                    //     break;
-                    //   default:
-                    // }
                     showButtonTypes1 = !showButtonTypes1;
                   });
                 },
@@ -259,11 +215,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes1
-                ?
-                // SlideTransition(
-                //     position: offset,
-                //     child:
-                Container(
+                ? Container(
                     height: 200,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
@@ -295,12 +247,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                           },
                           child: Text('Labeled Tabs'),
                         ),
-                        //   GestureDetector(
-                        //    onTap: (){
-                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                        //    },
-                        //    child:  Text('Shadow Buttons'),
-                        //  ),
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
@@ -318,7 +264,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                       ],
                     ),
                   )
-                // )
                 : Container(),
             SizedBox(
               height: 20,
@@ -519,15 +464,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    // switch (controller.status) {
-                    //   case AnimationStatus.completed:
-                    //     controller.forward(from: 0);
-                    //     break;
-                    //   case AnimationStatus.dismissed:
-                    //     controller.forward();
-                    //     break;
-                    //   default:
-                    // }
                     showButtonTypes2 = !showButtonTypes2;
                   });
                 },
@@ -541,11 +477,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes2
-                ?
-                // SlideTransition(
-                //     position: offset,
-                //     child:
-                Container(
+                ? Container(
                     height: 120,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
@@ -563,12 +495,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                           },
                           child: Text('Solid Border'),
                         ),
-                        //   GestureDetector(
-                        //    onTap: (){
-                        //      Navigator.pushNamed(context, '/gf-buttons/shadow-button');
-                        //    },
-                        //    child:  Text('Shadow Buttons'),
-                        //  ),
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
@@ -586,7 +512,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                       ],
                     ),
                   )
-                // )
                 : Container(),
             SizedBox(
               height: 20,
@@ -612,80 +537,13 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                 style: hintStyleTextblackdull(),
               ),
             ),
-            // GestureDetector(
-            //     onTap: () {
-            //       setState(() {
-            //         // switch (controller.status) {
-            //         //   case AnimationStatus.completed:
-            //         //     controller.forward(from: 0);
-            //         //     break;
-            //         //   case AnimationStatus.dismissed:
-            //         //     controller.forward();
-            //         //     break;
-            //         //   default:
-            //         // }
-            //         showButtonTypes3 = !showButtonTypes3;
-            //       });
-            //     },
-            //     child: Row(
-            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //       children: <Widget>[
-            //         Text('GF IntroScreen', style: hintStyleTextblackdull()),
-            //         showButtonTypes
-            //             ? Icon(Icons.keyboard_arrow_down)
-            //             : Icon(Icons.keyboard_arrow_right)
-            //       ],
-            //     )),
-            // showButtonTypes3
-            //     ?
-            //     // SlideTransition(
-            //     //     position: offset,
-            //     //     child:
-            //     Container(
-            //         height: 100,
-            //         decoration: BoxDecoration(color: Colors.white, boxShadow: [
-            //           BoxShadow(color: Colors.black.withOpacity(0.40))
-            //         ]),
-            //         padding:
-            //             EdgeInsets.only(top: 0, bottom: 0, left: 25, right: 20),
-            //         child: Column(
-            //           crossAxisAlignment: CrossAxisAlignment.start,
-            //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //           children: <Widget>[
-            //             GestureDetector(
-            //               onTap: () {
-            //                 Navigator.pushNamed(
-            //                     context, '/gf-fullintro/fullintro');
-            //               },
-            //               child: Text('Full Width'),
-            //             ),
-            //             GestureDetector(
-            //               onTap: () {
-            //                 Navigator.pushNamed(
-            //                     context, '/gf-halfintro/halfintro');
-            //               },
-            //               child: Text('Half'),
-            //             ),
-            //           ],
-            //         ),
-            //       )
-            //     // )
-            //     : Container(),
+
             SizedBox(
               height: 20,
             ),
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    // switch (controller.status) {
-                    //   case AnimationStatus.completed:
-                    //     controller.forward(from: 0);
-                    //     break;
-                    //   case AnimationStatus.dismissed:
-                    //     controller.forward();
-                    //     break;
-                    //   default:
-                    // }
                     showButtonTypes4 = !showButtonTypes4;
                   });
                 },
@@ -699,11 +557,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes4
-                ?
-                // SlideTransition(
-                //     position: offset,
-                //     child:
-                Container(
+                ? Container(
                     height: 100,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
@@ -731,7 +585,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                       ],
                     ),
                   )
-                // )
                 : Container(),
             SizedBox(
               height: 20,
@@ -739,15 +592,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    // switch (controller.status) {
-                    //   case AnimationStatus.completed:
-                    //     controller.forward(from: 0);
-                    //     break;
-                    //   case AnimationStatus.dismissed:
-                    //     controller.forward();
-                    //     break;
-                    //   default:
-                    // }
                     showButtonTypes5 = !showButtonTypes5;
                   });
                 },
@@ -761,11 +605,7 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                   ],
                 )),
             showButtonTypes5
-                ?
-                // SlideTransition(
-                //     position: offset,
-                //     child:
-                Container(
+                ? Container(
                     height: 100,
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(color: Colors.black.withOpacity(0.40))
@@ -793,7 +633,6 @@ class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
                       ],
                     ),
                   )
-                // )
                 : Container(),
             SizedBox(
               height: 20,

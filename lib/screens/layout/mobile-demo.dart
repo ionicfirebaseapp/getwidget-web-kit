@@ -15,11 +15,6 @@ class _MobileDemoState extends State<MobileDemo> {
 
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //   height: 300,
-    //   child: Image.asset(
-    //       widget.demoImageUrl ?? "lib/assets/std-buttons-mockup.gif"),
-    // );
     return Stack(
       children: <Widget>[
         Padding(
@@ -37,24 +32,8 @@ class _MobileDemoState extends State<MobileDemo> {
           child: Image.asset(
             widget.demoImageUrl ?? 'lib/assets/images/Artboard1.png',
             height: 400,
-            // width: 320,
           ),
         ),
-        // Container(
-
-        //   decoration: BoxDecoration(
-        //     borderRadius: BorderRadius.only(
-        //       bottomLeft: Radius.circular(20),
-        //       bottomRight: Radius.circular(20),
-
-        //     ),
-
-        //   ),
-        //   child: Image.asset(
-        //     'lib/assets/standard-buttons.gif',
-        //     height: 569,
-        //   ),
-        // )
       ],
     );
   }

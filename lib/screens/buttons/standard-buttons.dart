@@ -30,14 +30,11 @@ class _StandardButtonsState extends State<StandardButtons> {
             SizedBox(
               height: 30,
             ),
-            // Text('Solid Buttons',  style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
               ),
               child: GFTypography(
-                // text: 'Solid',
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
@@ -151,7 +148,6 @@ class _StandardButtonsState extends State<StandardButtons> {
             SizedBox(
               height: 20,
             ),
-
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -264,11 +260,9 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -393,8 +387,6 @@ class _StandardButtonsState extends State<StandardButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(' Button Sizes',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -452,12 +444,9 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(' Block Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -516,8 +505,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            //outline buttons
-            // Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -532,7 +519,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ),
               ),
             ),
-
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -633,7 +619,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -648,7 +633,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ),
               ),
             ),
-
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -749,7 +733,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text('Button Sizes',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -810,7 +793,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -875,8 +857,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-//outline 2x buttons
-// Text(' Solid Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -891,7 +871,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ),
               ),
             ),
-
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -995,7 +974,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text(' Disabled Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1010,7 +988,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ),
               ),
             ),
-
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -1111,7 +1088,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text('Outline Button Sizes',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1172,7 +1148,6 @@ class _StandardButtonsState extends State<StandardButtons> {
                 ],
               ),
             ),
-            // Text(' Block Outline Buttons',  style: hintStyleTextblackbold(),),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,

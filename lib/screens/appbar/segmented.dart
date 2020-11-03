@@ -31,18 +31,10 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
               GFSegmentTabs(
                 tabController: tabController,
                 tabBarColor: GFColors.LIGHT,
-//          indicatorSize: TabBarIndicatorSize.tab,
                 labelColor: GFColors.WHITE,
                 unselectedLabelColor: GFColors.DARK,
                 indicator: BoxDecoration(
                   color: GFColors.DARK,
-//            border: Border(
-//              bottom: BorderSide(
-//                color: GFColors.SUCCESS,
-//                width: 3.0,
-//              ),
-//            ),
-//                borderRadius: BorderRadius.circular(2.0)
                 ),
                 indicatorPadding: const EdgeInsets.all(8),
                 indicatorWeight: 2,
@@ -82,7 +74,6 @@ class _SegmentedAppbarState extends State<SegmentedAppbar>
               style: TextStyle(fontSize: 30.0),
             ),
           ),
-//   Container(child: Text('Tab 3'),),
         ]),
       );
 }

@@ -143,7 +143,6 @@ class _BottomLabeledTabsState extends State<BottomLabeledTabs>
                   ),
                 ],
                 indicatorColor: GFColors.SUCCESS,
-//        indicatorSize: TabBarIndicatorSize.label,
                 labelColor: GFColors.SUCCESS,
                 labelPadding: const EdgeInsets.all(8),
                 tabBarColor: GFColors.DARK,

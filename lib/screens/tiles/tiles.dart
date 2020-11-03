@@ -48,7 +48,6 @@ class _TilesState extends State<Tiles> {
               height: 20,
             ),
             GFCard(
-              // content: Text("fj"),
               title: GFListTile(
                 title: Text(
                   'Title',
@@ -60,7 +59,6 @@ class _TilesState extends State<Tiles> {
                 ),
                 description: Text(""),
                 icon: Icon(Icons.favorite),
-                // showDivider: false,
               ),
             ),
             GFCard(
@@ -76,7 +74,6 @@ class _TilesState extends State<Tiles> {
                 ),
                 description: Container(),
                 subtitle: Container(),
-                // showDivider: false,
               ),
             ),
             SizedBox(
@@ -113,7 +110,6 @@ class _TilesState extends State<Tiles> {
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
                   style: TextStyle(fontSize: 16.0),
                 ),
-                // showDivider: false,
               ),
             ),
             GFCard(
@@ -132,7 +128,6 @@ class _TilesState extends State<Tiles> {
                   'Caption',
                   style: TextStyle(fontSize: 19.0),
                 ),
-                // showDivider: false,
               ),
             ),
           ],

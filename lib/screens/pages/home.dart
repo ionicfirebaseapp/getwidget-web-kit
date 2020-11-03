@@ -12,21 +12,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Layout(
-            // demoImageUrl: '',
             body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              // GFCard(
-              //   color: Colors.lightBlue[50],
-              //   content: Row(
-              //     mainAxisAlignment: MainAxisAlignment.start,
-              //     children: <Widget>[Text('Info:')],
-              //   ),
-              // ),
-              // Text(
-              //   'Introduction',
-              //   style: TextStyle(fontSize: 20),
-              // ),
               SizedBox(
                 height: 20,
               ),

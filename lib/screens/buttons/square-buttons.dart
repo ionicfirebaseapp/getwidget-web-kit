@@ -30,10 +30,6 @@ class _SquareButtonsState extends State<SquareButtons> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Solid Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -163,11 +159,6 @@ class _SquareButtonsState extends State<SquareButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Disabled Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -294,11 +285,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -359,11 +348,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -431,11 +418,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-            //outline buttons
-            // Text(
-            //   'Solid Outline Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -571,11 +553,6 @@ class _SquareButtonsState extends State<SquareButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Disabled Outline Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -708,15 +685,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -780,15 +751,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   ' Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -853,11 +818,6 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-            //outline 2x buttons
-            // Text(
-            //   'Solid Outline Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -996,11 +956,6 @@ class _SquareButtonsState extends State<SquareButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Disabled Outline Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1133,15 +1088,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1205,15 +1154,9 @@ class _SquareButtonsState extends State<SquareButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   ' Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,

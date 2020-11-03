@@ -30,10 +30,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Solid Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -65,10 +61,6 @@ class _IconButtonsState extends State<IconButtons> {
                           ),
                           color: GFColors.WHITE,
                         ),
-                        // SvgPicture.asset(
-                        //   'lib/assets/icons/primary.svg',
-                        //   // color: getGFColor(GFColors.WHITE),
-                        // )
                       )),
                       SizedBox(
                         width: 5,
@@ -134,9 +126,6 @@ class _IconButtonsState extends State<IconButtons> {
                           color: GFColors.WHITE,
                         ),
                       )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
                     ],
                   ),
                   SizedBox(
@@ -202,7 +191,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -216,11 +204,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-            //outline icons
-            // Text(
-            //   'Outline Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -251,7 +234,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -268,7 +250,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -285,7 +266,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -302,7 +282,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -319,7 +298,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -343,7 +321,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -360,7 +337,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe908,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -377,7 +353,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -394,7 +369,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -411,12 +385,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-
-//outline 2x icons
-            // Text(
-            //   'Outline 2x Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -447,7 +415,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90c,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -464,7 +431,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90d,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -481,7 +447,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe90f,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -498,7 +463,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe911,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -515,7 +479,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe901,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -539,7 +502,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe907,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -556,7 +518,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe908,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -573,7 +534,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe902,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -590,7 +550,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -607,11 +566,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-//square icons
-            // Text(
-            //   'Square Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -784,7 +738,6 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
                       SizedBox(
@@ -801,11 +754,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-//pills icons
-            // Text(
-            //   'Pills Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -978,12 +926,8 @@ class _IconButtonsState extends State<IconButtons> {
                             0xe909,
                             fontFamily: 'icomoon',
                           ),
-                          // color: getGFColor(GFColors.WHITE),
                         ),
                       )),
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
                     ],
                   ),
                 ],
@@ -992,11 +936,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-//shadow icons
-            // Text(
-            //   'Shadow Icons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1186,226 +1125,6 @@ class _IconButtonsState extends State<IconButtons> {
             SizedBox(
               height: 20,
             ),
-
-//
-            // Text('Disabled Buttons',  style: hintStyleTextblackbold(),),
-            // GFCard(
-            //   content: Column(
-            //     children: <Widget>[
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Primary',
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/primary.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Secondary',
-            //             color: GFColors.SECONDARY,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/secondary.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Success',
-            //             color: GFColors.SUCCESS,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/success.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Warning',
-            //             color: GFColors.WARNING,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/warning.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'danger',
-            //             color: GFColors.DANGER,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/danger.svg')
-            //           ))
-            //         ],
-            //       ),
-            //       SizedBox(
-            //         height: 20,
-            //       ),
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Info',
-            //             color: GFColors.INFO,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/info.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Light',
-            //             color: GFColors.LIGHT,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/light.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Dark',
-            //             color: GFColors.DARK,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/dark.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed: (){},
-            //             text: 'Link',
-            //             color: GFColors.TRANSPARENT,
-            //             icon: SvgPicture.asset(
-            //                     'lib/assets/icons/link.svg')
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: Text(''))
-
-            //         ],
-            //       ),
-
-            //     ],
-            //   ),
-            // ),
-
-            // SizedBox(
-            //   height: 20,
-            // ),
-
-            // Text('Transparent Buttons',  style: hintStyleTextblackbold(),),
-            // GFCard(
-            //   content: Column(
-            //     children: <Widget>[
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Primary',
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Secondary',
-            //             color: GFColors.SECONDARY,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Success',
-            //             color: GFColors.SUCCESS,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Warning',
-            //             color: GFColors.WARNING,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'danger',
-            //             color: GFColors.DANGER,
-            //             type: GFButtonType.transparent,
-            //           ))
-            //         ],
-            //       ),
-            //       SizedBox(
-            //         height: 20,
-            //       ),
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Info',
-            //             color: GFColors.INFO,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Light',
-            //             color: GFColors.LIGHT,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Dark',
-            //             color: GFColors.DARK,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed: (){},
-            //             text: 'Link',
-            //             color: GFColors.TRANSPARENT,
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: Text(''))
-
-            //         ],
-            //       ),
-
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20,
-            // ),
-
-            // Text(
-            //   ' Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1484,15 +1203,9 @@ class _IconButtonsState extends State<IconButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   ' Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1592,7 +1305,6 @@ class _IconButtonsState extends State<IconButtons> {
                 ),
               ),
             ),
-
             GFCard(
               content: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -1605,10 +1317,6 @@ class _IconButtonsState extends State<IconButtons> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       GFIconButton(
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/primary.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe90c,
@@ -1619,10 +1327,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.SECONDARY,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/secondary.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe90d,
@@ -1633,10 +1337,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.SUCCESS,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/success.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe90f,
@@ -1647,10 +1347,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.WARNING,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/warning.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe911,
@@ -1661,10 +1357,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.DANGER,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/danger.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe901,
@@ -1683,10 +1375,6 @@ class _IconButtonsState extends State<IconButtons> {
                     children: <Widget>[
                       GFIconButton(
                           color: GFColors.INFO,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/info.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe907,
@@ -1697,10 +1385,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.LIGHT,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/light.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe908,
@@ -1711,10 +1395,6 @@ class _IconButtonsState extends State<IconButtons> {
                           onPressed: () {}),
                       GFIconButton(
                           color: GFColors.DARK,
-                          // icon: SvgPicture.asset(
-                          //   'lib/assets/icons/dark.svg',
-                          //   color: Colors.white,
-                          // ),
                           icon: Icon(
                             IconData(
                               0xe902,

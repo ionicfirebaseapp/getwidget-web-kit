@@ -73,7 +73,6 @@ class _DropdownState extends State<Dropdown>
                           dropdownButtonColor: Colors.white,
                           value: dropdownValue,
                           onChanged: (newValue) {
-                            print('value $newValue');
                             setState(() {
                               dropdownValue = newValue;
                             });

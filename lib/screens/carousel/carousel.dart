@@ -72,10 +72,8 @@ class _CarouselState extends State<Carousel> {
               items: assetImg.map(
                 (url) {
                   return GFImageOverlay(
-//                    height: 200,
                     boxFit: BoxFit.fitWidth,
                     color: Colors.transparent,
-//                        width: 300,
                     margin: EdgeInsets.only(
                       left: 15,
                       right: 15,
@@ -107,7 +105,6 @@ class _CarouselState extends State<Carousel> {
                                 ))
                           ],
                         )),
-//                    colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.60), BlendMode.darken),
                     image: AssetImage(url),
                   );
                 },
@@ -209,7 +206,6 @@ class _CarouselState extends State<Carousel> {
                 (url) {
                   return GFImageOverlay(
                     height: 200,
-//                        width: 300,
                     margin: EdgeInsets.only(left: 15, right: 15),
                     borderRadius: BorderRadius.all(Radius.circular(4)),
                     child: Padding(
@@ -278,7 +274,6 @@ class _CarouselState extends State<Carousel> {
                 (url) {
                   return GFImageOverlay(
                     height: 200,
-//                        width: 300,
                     margin: EdgeInsets.only(
                       left: 15,
                       right: 15,
@@ -411,7 +406,6 @@ class _CarouselState extends State<Carousel> {
                 (url) {
                   return GFImageOverlay(
                     height: 200,
-//                        width: 300,
                     margin: EdgeInsets.only(left: 15, right: 15),
                     borderRadius: BorderRadius.all(Radius.circular(4)),
                     child: Padding(

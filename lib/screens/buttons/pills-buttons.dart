@@ -30,10 +30,6 @@ class _PillButtonsState extends State<PillButtons> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Solid Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -160,11 +156,6 @@ class _PillButtonsState extends State<PillButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Disabled Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -291,117 +282,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text('Transparent Buttons',  style: hintStyleTextblackbold(),),
-            // GFCard(
-            //   content: Column(
-            //     children: <Widget>[
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Primary',
-            //             type: GFButtonType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Secondary',
-            //             color: GFColors.SECONDARY,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Success',
-            //             color: GFColors.SUCCESS,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Warning',
-            //             color: GFColors.WARNING,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'danger',
-            //             color: GFColors.DANGER,
-            //             type: GFType.transparent,
-            //           ))
-            //         ],
-            //       ),
-            //       SizedBox(
-            //         height: 20,
-            //       ),
-            //       Row(
-            //         children: <Widget>[
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Info',
-            //             color: GFColors.INFO,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Light',
-            //             color: GFColors.LIGHT,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed:null,
-            //             text: 'Dark',
-            //             color: GFColors.DARK,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: GFButton(
-            //             onPressed: (){},
-            //             text: 'Link',
-            //             color: GFColors.TRANSPARENT,
-            //             type: GFType.transparent,
-            //           )),
-            //           SizedBox(
-            //             width: 10,
-            //           ),
-            //           Expanded(child: Text(''))
-
-            //         ],
-            //       ),
-
-            //     ],
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20,
-            // ),
-
-            // Text(
-            //   ' Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -462,15 +345,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   ' Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -538,11 +415,6 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-//  outline buttons
-            // Text(
-            //   'Outline Solid Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -678,11 +550,6 @@ class _PillButtonsState extends State<PillButtons> {
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Disabled Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -818,15 +685,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -890,15 +751,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -960,11 +815,6 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-//outline 2x buttons
-            // Text(
-            //   'Outline2x Solid Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1117,10 +967,6 @@ class _PillButtonsState extends State<PillButtons> {
                 ),
               ),
             ),
-            // Text(
-            //   'Disabled Outline Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             GFCard(
               content: Column(
                 children: <Widget>[
@@ -1242,15 +1088,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Button Sizes',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -1314,15 +1154,9 @@ class _PillButtonsState extends State<PillButtons> {
                 ],
               ),
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            // Text(
-            //   'Outline Block Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,

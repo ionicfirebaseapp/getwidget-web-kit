@@ -79,14 +79,11 @@ class _MultiselectState extends State<Multiselect>
                 ),
               ),
               Container(
-                // height: 50,
                 child: Column(
                   children: [
                     GFMultiSelect(
                       items: dropList,
-                      onSelect: (value) {
-                        print('sel $value ');
-                      },
+                      onSelect: (value) {},
                       dropdownTitleTileText: 'Messi, Griezmann, Coutinho ',
                       dropdownTitleTileMargin: EdgeInsets.only(
                           top: 22, left: 18, right: 18, bottom: 5),
@@ -139,9 +136,7 @@ class _MultiselectState extends State<Multiselect>
                   children: [
                     GFMultiSelect(
                       items: dropList,
-                      onSelect: (value) {
-                        print('sel $value ');
-                      },
+                      onSelect: (value) {},
                       dropdownTitleTileText: 'Messi, Griezmann, Coutinho ',
                       dropdownTitleTileColor: Colors.grey[200],
                       dropdownTitleTileMargin: EdgeInsets.only(

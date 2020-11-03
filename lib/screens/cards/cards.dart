@@ -34,10 +34,6 @@ class _CardsState extends State<Cards> {
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Basic Cards',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -62,17 +58,13 @@ class _CardsState extends State<Cards> {
                     padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
                     child: GFCard(
                       boxFit: BoxFit.cover,
-
                       colorFilter: new ColorFilter.mode(
                           Colors.black.withOpacity(0.67), BlendMode.darken),
                       image: Image.asset(
                         'lib/assets/images/card.png',
                         width: MediaQuery.of(context).size.width,
                         fit: BoxFit.fitWidth,
-                        // width: 300,
-                        // height: 400,
                       ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                       titlePosition: GFPosition.end,
                       title: GFListTile(
                         title: Text('Card Title',
@@ -102,7 +94,6 @@ class _CardsState extends State<Cards> {
                         style: TextStyle(fontSize: 16.0, color: Colors.grey),
                       ),
                       buttonBar: GFButtonBar(
-                        // alignment: MainAxisAlignment.start,
                         children: <Widget>[
                           GFButton(
                             onPressed: () {},
@@ -127,7 +118,6 @@ class _CardsState extends State<Cards> {
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.fitWidth,
                     ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                     titlePosition: GFPosition.end,
                     title: GFListTile(
                       title:
@@ -155,7 +145,6 @@ class _CardsState extends State<Cards> {
                       style: TextStyle(fontSize: 16.0, color: Colors.grey),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.end,
                       children: <Widget>[
                         GFButton(
                           onPressed: null,
@@ -185,21 +174,18 @@ class _CardsState extends State<Cards> {
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.fitWidth,
                     ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                     titlePosition: GFPosition.end,
                     title: GFListTile(
                       title: Text(
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      // showDivider: false,
                     ),
                     content: Text(
                       "Some quick example text to build on the card",
                       style: TextStyle(fontSize: 16.0, color: Colors.grey),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.start,
                       children: <Widget>[
                         GFButton(
                           onPressed: () {},
@@ -219,21 +205,18 @@ class _CardsState extends State<Cards> {
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.fitWidth,
                     ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                     titlePosition: GFPosition.end,
                     title: GFListTile(
                       title: Text(
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      // showDivider: false,
                     ),
                     content: Text(
                       "Some quick example text to build on the card",
                       style: TextStyle(fontSize: 16.0, color: Colors.grey),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.start,
                       children: <Widget>[
                         GFButton(
                           onPressed: () {},
@@ -249,14 +232,9 @@ class _CardsState extends State<Cards> {
                 )
               ],
             ),
-
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Avatars',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -286,7 +264,6 @@ class _CardsState extends State<Cards> {
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.fitWidth,
                     ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                     titlePosition: GFPosition.end,
                     title: GFListTile(
                       avatar: GFAvatar(
@@ -338,9 +315,7 @@ class _CardsState extends State<Cards> {
                       'lib/assets/images/image1.png',
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.fitWidth,
-                      // height: 400.0,
                     ),
-//              imageOverlay: AssetImage("lib/assets/food.jpeg"),
                     titlePosition: GFPosition.end,
                     title: GFListTile(
                       avatar: GFAvatar(
@@ -361,7 +336,6 @@ class _CardsState extends State<Cards> {
                       style: TextStyle(fontSize: 16.0, color: Colors.grey),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(bottom: 10.0),
@@ -405,16 +379,9 @@ class _CardsState extends State<Cards> {
                 )
               ],
             ),
-
-//
-
             SizedBox(
               height: 30,
             ),
-            // Text(
-            //   'Full Image',
-            //   style: hintStyleTextblackbold(),
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 left: 15,
@@ -456,9 +423,6 @@ class _CardsState extends State<Cards> {
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),
-//                                    icon: GFAvatar(
-//                                        child: Icon(Icons.insert_emoticon)
-//                                    )
                     ),
                     content: Text(
                       "Flutter "
@@ -468,7 +432,6 @@ class _CardsState extends State<Cards> {
                       style: TextStyle(fontSize: 16.0, color: Colors.white),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.center,
                       children: <Widget>[
                         GFButton(
                           onPressed: () {},
@@ -500,9 +463,6 @@ class _CardsState extends State<Cards> {
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),
-//                                    icon: GFAvatar(
-//                                        child: Icon(Icons.insert_emoticon)
-//                                    )
                     ),
                     content: Text(
                       "Flutter "
@@ -512,7 +472,6 @@ class _CardsState extends State<Cards> {
                       style: TextStyle(fontSize: 16.0, color: Colors.white),
                     ),
                     buttonBar: GFButtonBar(
-                      // alignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Padding(
                           padding:

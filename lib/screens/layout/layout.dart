@@ -53,7 +53,6 @@ class _LayoutState extends State<Layout> {
                     children: <Widget>[
                       Container(
                         color: GFColors.LIGHT,
-                        // width: 1100,
                         child: Column(
                           children: <Widget>[
                             Padding(
@@ -70,31 +69,6 @@ class _LayoutState extends State<Layout> {
                                 ],
                               ),
                             ),
-                            // InkWell(
-                            //   child: Padding(
-                            //     padding: const EdgeInsets.only(
-                            //       left: 8.0,
-                            //     ),
-                            //     child: Row(
-                            //       mainAxisAlignment: MainAxisAlignment.center,
-                            //       children: <Widget>[
-                            //         Text(
-                            //           'Download & play with GetWIdget mobile app  ',
-                            //           style: TextStyle(color: Colors.red),
-                            //         ),
-                            //         // GFIconButton(
-                            //         //     icon: Icon(
-                            //         //       IconData(
-                            //         //         0xe904,
-                            //         //         fontFamily: 'icomoon',
-                            //         //       ),
-                            //         //       color: GFColors.WHITE,
-                            //         //     ),
-                            //         //     onPressed: () {}),
-                            //       ],
-                            //     ),
-                            //   ),
-                            // ),
                           ],
                         ),
                       ),
@@ -103,15 +77,12 @@ class _LayoutState extends State<Layout> {
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height - 140,
-                        // height: 500,
                         width: MediaQuery.of(context).size.width - 730,
                         child: widget.body,
                       ),
                     ],
                   )),
               Column(
-                // mainAxisAlignment: MainAxisAlignment.start,
-                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Center(
                     child: Text('Try our GetWidget mobile app'),
@@ -132,7 +103,6 @@ class _LayoutState extends State<Layout> {
                   ),
                   Container(
                     width: 430,
-//                color: Colors.red,
                     height: 500,
                     child: MobileDemo(demoImageUrl: widget.demoImageUrl),
                   ),

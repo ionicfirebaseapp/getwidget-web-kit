@@ -107,11 +107,8 @@ class _LabeledTabsState extends State<LabeledTabs>
                 ),
               ],
               indicatorColor: Colors.teal,
-
-//        indicatorSize: TabBarIndicatorSize.label,
               labelColor: GFColors.SUCCESS,
               labelPadding: const EdgeInsets.all(8),
-
               tabBarColor: GFColors.WHITE,
               unselectedLabelColor: GFColors.LIGHT,
               labelStyle: TextStyle(
@@ -120,7 +117,6 @@ class _LabeledTabsState extends State<LabeledTabs>
                 color: Colors.white,
                 fontFamily: 'OpenSansBold',
               ),
-
               unselectedLabelStyle: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 13,
