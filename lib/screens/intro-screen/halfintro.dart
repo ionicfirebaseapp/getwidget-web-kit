@@ -24,7 +24,7 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/floating.gif',
+        demoImageUrl: 'lib/assets/gif/Intro.gif',
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[

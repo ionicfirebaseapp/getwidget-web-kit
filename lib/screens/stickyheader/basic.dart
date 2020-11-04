@@ -28,7 +28,7 @@ class _BasicStickyHeaderState extends State<BasicStickyHeader>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/Checkboxlist.gif',
+        demoImageUrl: 'lib/assets/gif/Sticky.gif',
         body: ListView(
           children: <Widget>[
             Text(

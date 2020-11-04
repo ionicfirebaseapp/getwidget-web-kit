@@ -31,7 +31,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/Checkboxlist.gif',
+        demoImageUrl: 'lib/assets/gif/Sticky.gif',
         body: ListView(
           children: <Widget>[
             Text(
@@ -61,7 +61,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                             children: [
                               Container(
                                 height: 50,
-                                width: MediaQuery.of(context).size.width * 0.2,
+                                width: MediaQuery.of(context).size.width * 0.5,
                                 color: Color.lerp(
                                     Color(0xFF42335d).withOpacity(0.6),
                                     Color(0xFF42335d),

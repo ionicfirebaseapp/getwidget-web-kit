@@ -35,7 +35,7 @@ class _DropdownState extends State<Dropdown>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Layout(
-        demoImageUrl: 'lib/assets/gif/floating.gif',
+        demoImageUrl: 'lib/assets/gif/Dropdown.gif',
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[

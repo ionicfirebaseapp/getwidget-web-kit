@@ -122,6 +122,9 @@ flutter:
     - lib/assets/gif/accordion.gif
     - lib/assets/gif/searchbar.gif
     - lib/assets/gif/appbar.gif
+    - lib/assets/gif/Sticky.gif
+    - lib/assets/gif/Intro.gif
+    - lib/assets/gif/Dropdown.gif
     - lib/assets/images/c1.png
     - lib/assets/images/c2.png
     - lib/assets/images/c3.png
