@@ -34,7 +34,7 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
             ),
             GFCheckboxListTile(
               titleText: 'hi',
-              subtitleText: 'Happy Ugadi',
+              subTitleText: 'Happy Ugadi',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img.png'),
               ),
@@ -56,7 +56,7 @@ class _CheckboxListtileState extends State<CheckboxListtile> {
             ),
             GFCheckboxListTile(
               titleText: 'hi',
-              subtitleText: 'Happy Ugadi',
+              subTitleText: 'Happy Ugadi',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img1.png'),
               ),

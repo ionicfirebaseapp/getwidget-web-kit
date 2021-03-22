@@ -38,6 +38,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid ',
                   style: hintStyleTextblackbold(),
@@ -156,6 +157,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Disabled ',
                   style: hintStyleTextblackbold(),
@@ -271,6 +273,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Transparent ',
                   style: hintStyleTextblackbold(),
@@ -395,6 +398,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Button Sizes ',
                   style: hintStyleTextblackbold(),
@@ -455,6 +459,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Block',
                   style: hintStyleTextblackbold(),
@@ -513,6 +518,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid Outline ',
                   style: hintStyleTextblackbold(),
@@ -627,6 +633,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Disabled Outline',
                   style: hintStyleTextblackbold(),
@@ -741,6 +748,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Button Sizes',
                   style: hintStyleTextblackbold(),
@@ -801,6 +809,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Block Outline',
                   style: hintStyleTextblackbold(),
@@ -865,6 +874,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid Outline',
                   style: hintStyleTextblackbold(),
@@ -982,6 +992,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Disabled Outline',
                   style: hintStyleTextblackbold(),
@@ -1096,6 +1107,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Button Sizes',
                   style: hintStyleTextblackbold(),
@@ -1156,6 +1168,7 @@ class _StandardButtonsState extends State<StandardButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Block Outline Buttons',
                   style: hintStyleTextblackbold(),

@@ -10,7 +10,7 @@ class BottomLabeledTabs extends StatefulWidget {
 
 class _BottomLabeledTabsState extends State<BottomLabeledTabs>
     with TickerProviderStateMixin {
-  TabController tabController;
+  TabController? tabController;
 
   @override
   void initState() {
@@ -20,7 +20,7 @@ class _BottomLabeledTabsState extends State<BottomLabeledTabs>
 
   @override
   void dispose() {
-    tabController.dispose();
+    tabController!.dispose();
     super.dispose();
   }
 

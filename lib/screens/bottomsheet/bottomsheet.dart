@@ -28,7 +28,7 @@ class _BottomSheetState extends State<BottomSheet> {
               backgroundImage: AssetImage('lib/assets/images/img.png'),
             ),
             titleText: 'Eva Mendez',
-            subtitleText: '11 minutes ago',
+            subTitleText: '11 minutes ago',
           ),
         ),
         contentBody: SingleChildScrollView(
@@ -72,7 +72,7 @@ class _BottomSheetState extends State<BottomSheet> {
                                 AssetImage('lib/assets/images/img2.png'),
                             size: 20,
                           ),
-                          subtitleText: 'John Mendez',
+                          subTitleText: 'John Mendez',
                           icon: Container(
                             width: 66,
                             height: 30,

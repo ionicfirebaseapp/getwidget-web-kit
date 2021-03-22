@@ -38,6 +38,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid Buttons Full',
                   style: hintStyleTextblackbold(),
@@ -233,6 +234,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Social Buttons Icons',
                   style: hintStyleTextblackbold(),
@@ -397,6 +399,7 @@ class _SocialButtonsState extends State<SocialButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Floating Social Buttons',
                   style: hintStyleTextblackbold(),

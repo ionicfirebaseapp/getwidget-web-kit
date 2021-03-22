@@ -7,10 +7,10 @@ import 'header.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Layout extends StatefulWidget {
-  final Widget body;
-  final String demoImageUrl;
+  final Widget? body;
+  final String? demoImageUrl;
   const Layout({
-    Key key,
+    Key? key,
     this.body,
     this.demoImageUrl,
   }) : super(key: key);

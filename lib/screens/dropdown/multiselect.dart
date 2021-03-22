@@ -11,7 +11,7 @@ class Multiselect extends StatefulWidget {
 
 class _MultiselectState extends State<Multiselect>
     with SingleTickerProviderStateMixin {
-  TabController tabController;
+  late TabController tabController;
   int _value = 1;
   @override
   void initState() {
@@ -33,8 +33,8 @@ class _MultiselectState extends State<Multiselect>
     'Fati',
     'Dest',
   ];
-  String dropdown;
-  String selected, selectedIndex;
+  String? dropdown;
+  String? selected, selectedIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +75,7 @@ class _MultiselectState extends State<Multiselect>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               Container(
@@ -91,7 +91,7 @@ class _MultiselectState extends State<Multiselect>
                       dropdownUnderlineBorder:
                           const BorderSide(color: Colors.transparent, width: 2),
                       dropdownTitleTileBorder:
-                          Border.all(color: Colors.grey[200], width: 1),
+                          Border.all(color: Colors.grey[200]!, width: 1),
                       dropdownTitleTileBorderRadius: BorderRadius.circular(5),
                       expandedIcon: const Icon(
                         Icons.keyboard_arrow_down,
@@ -110,7 +110,7 @@ class _MultiselectState extends State<Multiselect>
                       type: GFCheckboxType.basic,
                       activeBgColor: GFColors.SUCCESS,
                       activeBorderColor: GFColors.SUCCESS,
-                      inactiveBorderColor: Colors.grey[200],
+                      inactiveBorderColor: Colors.grey[200]!,
                     ),
                   ],
                 ),
@@ -128,7 +128,7 @@ class _MultiselectState extends State<Multiselect>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               Container(
@@ -145,7 +145,7 @@ class _MultiselectState extends State<Multiselect>
                       dropdownUnderlineBorder:
                           const BorderSide(color: Colors.transparent, width: 2),
                       dropdownTitleTileBorder:
-                          Border.all(color: Colors.grey[300], width: 1),
+                          Border.all(color: Colors.grey[300]!, width: 1),
                       dropdownTitleTileBorderRadius: BorderRadius.circular(5),
                       expandedIcon: const Icon(
                         Icons.keyboard_arrow_down,
@@ -162,7 +162,7 @@ class _MultiselectState extends State<Multiselect>
                       margin: const EdgeInsets.all(6),
                       type: GFCheckboxType.basic,
                       activeBgColor: Colors.green.withOpacity(0.5),
-                      inactiveBorderColor: Colors.grey[200],
+                      inactiveBorderColor: Colors.grey[200]!,
                     ),
                   ],
                 ),

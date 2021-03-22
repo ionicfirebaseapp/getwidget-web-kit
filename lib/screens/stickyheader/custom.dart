@@ -106,7 +106,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                                     size: 23,
                                                     value: 1,
                                                     groupValue: groupValue,
-                                                    onChanged: (val) {
+                                                    onChanged: (dynamic val) {
                                                       setState(() {
                                                         groupValue = val;
                                                       });
@@ -129,7 +129,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                                     size: 23,
                                                     value: 2,
                                                     groupValue: groupValue,
-                                                    onChanged: (val) {
+                                                    onChanged: (dynamic val) {
                                                       setState(() {
                                                         groupValue = val;
                                                       });
@@ -152,7 +152,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                                     size: 23,
                                                     value: 3,
                                                     groupValue: groupValue,
-                                                    onChanged: (val) {
+                                                    onChanged: (dynamic val) {
                                                       setState(() {
                                                         groupValue = val;
                                                       });
@@ -175,7 +175,7 @@ class _CustomStickyHeaderState extends State<CustomStickyHeader>
                                                     size: 23,
                                                     value: 3,
                                                     groupValue: groupValue,
-                                                    onChanged: (val) {
+                                                    onChanged: (dynamic val) {
                                                       setState(() {
                                                         groupValue = val;
                                                       });

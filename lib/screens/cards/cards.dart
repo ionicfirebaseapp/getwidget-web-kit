@@ -42,6 +42,7 @@ class _CardsState extends State<Cards> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Basic',
                   style: hintStyleTextblackbold(),
@@ -243,6 +244,7 @@ class _CardsState extends State<Cards> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Avatars',
                   style: hintStyleTextblackbold(),
@@ -274,7 +276,7 @@ class _CardsState extends State<Cards> {
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      subtitle: Text(
+                      subTitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.grey),
                       ),
@@ -326,7 +328,7 @@ class _CardsState extends State<Cards> {
                         'Card Title',
                         style: TextStyle(fontSize: 19.0),
                       ),
-                      subtitle: Text(
+                      subTitle: Text(
                         'Subtitle',
                         style: TextStyle(fontSize: 16.0),
                       ),
@@ -390,6 +392,7 @@ class _CardsState extends State<Cards> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Full Image',
                   style: hintStyleTextblackbold(),
@@ -419,7 +422,7 @@ class _CardsState extends State<Cards> {
                             color: Colors.white,
                             fontWeight: FontWeight.w500),
                       ),
-                      subtitle: Text(
+                      subTitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),
@@ -459,7 +462,7 @@ class _CardsState extends State<Cards> {
                             color: Colors.white,
                             fontWeight: FontWeight.w500),
                       ),
-                      subtitle: Text(
+                      subTitle: Text(
                         'subtitle',
                         style: TextStyle(fontSize: 16.0, color: Colors.white),
                       ),

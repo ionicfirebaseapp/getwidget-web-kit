@@ -38,6 +38,7 @@ class _BadgesState extends State<Badges> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'With Buttons',
                   style: hintStyleTextblackbold(),
@@ -166,6 +167,7 @@ class _BadgesState extends State<Badges> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Icon with Badges',
                   style: hintStyleTextblackbold(),

@@ -43,7 +43,7 @@ class _SolidBorderState extends State<SolidBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -84,7 +84,7 @@ class _SolidBorderState extends State<SolidBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -151,7 +151,7 @@ class _SolidBorderState extends State<SolidBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Row(

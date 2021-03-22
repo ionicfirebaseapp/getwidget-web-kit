@@ -38,6 +38,7 @@ class _TilesState extends State<Tiles> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'With Label',
                   style: hintStyleTextblackbold(),
@@ -53,7 +54,7 @@ class _TilesState extends State<Tiles> {
                   'Title',
                   style: TextStyle(fontSize: 19.0),
                 ),
-                subtitle: Text(
+                subTitle: Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
                   style: TextStyle(fontSize: 16.0),
                 ),
@@ -73,7 +74,7 @@ class _TilesState extends State<Tiles> {
                   style: TextStyle(fontSize: 19.0),
                 ),
                 description: Container(),
-                subtitle: Container(),
+                subTitle: Container(),
               ),
             ),
             SizedBox(
@@ -87,6 +88,7 @@ class _TilesState extends State<Tiles> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'With Avatar',
                   style: hintStyleTextblackbold(),
@@ -106,7 +108,7 @@ class _TilesState extends State<Tiles> {
                   style: TextStyle(fontSize: 19.0),
                 ),
                 description: Container(),
-                subtitle: Text(
+                subTitle: Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
                   style: TextStyle(fontSize: 16.0),
                 ),
@@ -122,7 +124,7 @@ class _TilesState extends State<Tiles> {
                   'Title',
                   style: TextStyle(fontSize: 19.0),
                 ),
-                subtitle: Container(),
+                subTitle: Container(),
                 description: Container(),
                 icon: Text(
                   'Caption',

@@ -43,7 +43,7 @@ class _DottedBorderState extends State<DottedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -84,7 +84,7 @@ class _DottedBorderState extends State<DottedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -119,7 +119,7 @@ class _DottedBorderState extends State<DottedBorder> {
                       style: TextStyle(
                           color: Colors.grey, fontWeight: FontWeight.w500),
                     ),
-                    subtitle: Text(
+                    subTitle: Text(
                       'subtitle',
                       style: TextStyle(color: Colors.grey),
                     ),
@@ -158,7 +158,7 @@ class _DottedBorderState extends State<DottedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Row(

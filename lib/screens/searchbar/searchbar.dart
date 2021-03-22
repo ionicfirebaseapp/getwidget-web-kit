@@ -66,14 +66,14 @@ class _SearchBarState extends State<SearchBar> {
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
                     .toList(),
-                overlaySearchListItemBuilder: (item) => Container(
+                overlaySearchListItemBuilder: (dynamic item) => Container(
                       padding: const EdgeInsets.all(8),
                       child: Text(
                         item,
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-                onItemSelected: (item) {
+                onItemSelected: (dynamic item) {
                   setState(() {});
                 }),
             const Padding(
@@ -116,14 +116,14 @@ class _SearchBarState extends State<SearchBar> {
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
                     .toList(),
-                overlaySearchListItemBuilder: (item) => Container(
+                overlaySearchListItemBuilder: (dynamic item) => Container(
                       padding: const EdgeInsets.all(8),
                       child: Text(
                         item,
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-                onItemSelected: (item) {
+                onItemSelected: (dynamic item) {
                   setState(() {});
                 }),
             GFSearchBar(
@@ -132,14 +132,14 @@ class _SearchBarState extends State<SearchBar> {
                     .where((item) =>
                         item.toLowerCase().contains(query.toLowerCase()))
                     .toList(),
-                overlaySearchListItemBuilder: (item) => Container(
+                overlaySearchListItemBuilder: (dynamic item) => Container(
                       padding: const EdgeInsets.all(8),
                       child: Text(
                         item,
                         style: const TextStyle(fontSize: 18),
                       ),
                     ),
-                onItemSelected: (item) {
+                onItemSelected: (dynamic item) {
                   setState(() {});
                 }),
           ],

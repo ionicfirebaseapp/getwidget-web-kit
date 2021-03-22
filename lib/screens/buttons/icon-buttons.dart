@@ -38,6 +38,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid',
                   style: hintStyleTextblackbold(),
@@ -212,6 +213,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline',
                   style: hintStyleTextblackbold(),
@@ -393,6 +395,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline 2x',
                   style: hintStyleTextblackbold(),
@@ -574,6 +577,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Square',
                   style: hintStyleTextblackbold(),
@@ -762,6 +766,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Pills',
                   style: hintStyleTextblackbold(),
@@ -944,6 +949,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Shadow',
                   style: hintStyleTextblackbold(),
@@ -1133,6 +1139,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Button Sizes',
                   style: hintStyleTextblackbold(),
@@ -1214,6 +1221,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Block',
                   style: hintStyleTextblackbold(),
@@ -1299,6 +1307,7 @@ class _IconButtonsState extends State<IconButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Icons Only',
                   style: hintStyleTextblackbold(),

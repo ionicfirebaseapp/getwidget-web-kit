@@ -40,7 +40,7 @@ class _ProgressBarState extends State<ProgressBar> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -120,7 +120,7 @@ class _ProgressBarState extends State<ProgressBar> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(

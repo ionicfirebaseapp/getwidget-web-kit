@@ -9,7 +9,7 @@ class RadioListtile extends StatefulWidget {
 }
 
 class _RadioListtileState extends State<RadioListtile> {
-  int groupValue = 0;
+  int? groupValue = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _RadioListtileState extends State<RadioListtile> {
             ),
             GFRadioListTile(
               titleText: 'Hello',
-              subtitleText: 'Happy New Year',
+              subTitleText: 'Happy New Year',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img1.png'),
               ),
@@ -53,7 +53,7 @@ class _RadioListtileState extends State<RadioListtile> {
             ),
             GFRadioListTile(
               titleText: 'Hello',
-              subtitleText: 'Happy New Year',
+              subTitleText: 'Happy New Year',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img2.png'),
               ),

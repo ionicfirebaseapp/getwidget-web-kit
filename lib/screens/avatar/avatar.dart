@@ -22,6 +22,7 @@ class _AvatarState extends State<Avatar> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Avatar',
                   style: hintStyleTextblackbold(),

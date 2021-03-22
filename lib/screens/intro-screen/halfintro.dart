@@ -10,9 +10,9 @@ class HalfIntroScreenPage extends StatefulWidget {
 }
 
 class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
-  PageController _pageController;
-  List<Widget> slideList;
-  int initialPage;
+  late PageController _pageController;
+  List<Widget>? slideList;
+  late int initialPage;
   @override
   void initState() {
     _pageController = PageController(initialPage: 2);
@@ -52,13 +52,13 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
                   width: MediaQuery.of(context).size.width * 0.9,
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(40),
-                  border: Border.all(color: Colors.grey[300]),
-                  slides: slides(),
+                  border: Border.all(color: Colors.grey[300]!),
+                  slides: slides()!,
                   pageController: _pageController,
                   introScreenBottomNavigationBar:
                       GFIntroScreenBottomNavigationBar(
                     pageController: _pageController,
-                    pageCount: slideList.length,
+                    pageCount: slideList!.length,
                     currentIndex: initialPage,
                     backButtonText: 'Previous',
                     forwardButtonText: 'Next',
@@ -75,13 +75,13 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
                     dotWidth: 16,
                     dotShape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5)),
-                    inactiveColor: Colors.grey[200],
+                    inactiveColor: Colors.grey[200]!,
                     activeColor: Colors.green,
                     dotMargin: EdgeInsets.symmetric(horizontal: 6),
                     showPagination: true,
                   ),
-                  currentIndex: null,
-                  pageCount: null,
+                  currentIndex: 0,
+                  pageCount: 0,
                 ),
               ),
               SizedBox(
@@ -94,7 +94,7 @@ class _HalfIntroScreenPageState extends State<HalfIntroScreenPage> {
     );
   }
 
-  List<Widget> slides() {
+  List<Widget>? slides() {
     slideList = [
       Container(
         child: GFImageOverlay(

@@ -11,14 +11,14 @@ class Dropdown extends StatefulWidget {
 
 class _DropdownState extends State<Dropdown>
     with SingleTickerProviderStateMixin {
-  TabController tabController;
+  TabController? tabController;
   int _value = 1;
   @override
   void initState() {
     super.initState();
   }
 
-  String dropdownValue = 'FC Barcelona';
+  String? dropdownValue = 'FC Barcelona';
   List<dynamic> dropList = [
     'Running',
     'Walking',
@@ -28,8 +28,8 @@ class _DropdownState extends State<Dropdown>
     'Drinking',
     'Jogging'
   ];
-  String dropdown;
-  String selected, selectedIndex;
+  String? dropdown;
+  String? selected, selectedIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class _DropdownState extends State<Dropdown>
                               const BorderSide(color: Colors.black12, width: 1),
                           dropdownButtonColor: Colors.white,
                           value: dropdownValue,
-                          onChanged: (newValue) {
+                          onChanged: (dynamic newValue) {
                             setState(() {
                               dropdownValue = newValue;
                             });

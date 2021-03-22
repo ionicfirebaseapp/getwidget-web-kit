@@ -40,7 +40,7 @@ class _ShimmerState extends State<Shimmer> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFShimmer(
@@ -103,7 +103,7 @@ class _ShimmerState extends State<Shimmer> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFShimmer(

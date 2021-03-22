@@ -43,7 +43,7 @@ class _DashedBorderState extends State<DashedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -84,7 +84,7 @@ class _DashedBorderState extends State<DashedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Container(
@@ -122,7 +122,7 @@ class _DashedBorderState extends State<DashedBorder> {
                       backgroundImage: AssetImage('lib/assets/images/img.png'),
                     ),
                     titleText: 'Card Title',
-                    subtitleText: 'Sub Title',
+                    subTitleText: 'Sub Title',
                     icon: GFIconButton(
                       onPressed: null,
                       icon: GestureDetector(
@@ -161,7 +161,7 @@ class _DashedBorderState extends State<DashedBorder> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             Row(

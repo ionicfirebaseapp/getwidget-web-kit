@@ -10,8 +10,8 @@ class FabFloatingWidget extends StatefulWidget {
 class _FabFloatingWidgetState extends State<FabFloatingWidget>
     with TickerProviderStateMixin {
   TextEditingController controller1 = TextEditingController();
-  Animation animation;
-  AnimationController animationController;
+  Animation? animation;
+  late AnimationController animationController;
 
   @override
   void initState() {

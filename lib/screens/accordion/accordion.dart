@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:getwidget/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
 import 'package:gf_web/styles/styles.dart';
+import 'package:getwidget/getwidget.dart';
+
 
 class Accordion extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _AccordionState extends State<Accordion> {
             SizedBox(
               height: 30,
             ),
-            const Padding(
+             Padding(
               padding: EdgeInsets.only(left: 15, top: 30),
               child: GFTypography(
                 child: Text(
@@ -43,7 +44,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             SizedBox(
@@ -87,7 +88,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             SizedBox(
@@ -136,7 +137,7 @@ class _AccordionState extends State<Accordion> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             SizedBox(

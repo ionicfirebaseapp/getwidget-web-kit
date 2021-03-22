@@ -9,7 +9,7 @@ class IconTabs extends StatefulWidget {
 }
 
 class _IconTabsState extends State<IconTabs> with TickerProviderStateMixin {
-  TabController tabController;
+  TabController? tabController;
 
   @override
   void initState() {
@@ -19,7 +19,7 @@ class _IconTabsState extends State<IconTabs> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    tabController.dispose();
+    tabController!.dispose();
     super.dispose();
   }
 

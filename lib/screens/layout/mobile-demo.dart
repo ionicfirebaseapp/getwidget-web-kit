@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MobileDemo extends StatefulWidget {
-  final String demoImageUrl;
+  final String? demoImageUrl;
   const MobileDemo({
-    Key key,
+    Key? key,
     this.demoImageUrl,
   }) : super(key: key);
   @override
@@ -11,7 +11,7 @@ class MobileDemo extends StatefulWidget {
 }
 
 class _MobileDemoState extends State<MobileDemo> {
-  String imageUrl;
+  String? imageUrl;
 
   @override
   Widget build(BuildContext context) {

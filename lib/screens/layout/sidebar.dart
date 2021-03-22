@@ -8,11 +8,11 @@ class Sidebar extends StatefulWidget {
 }
 
 class _SidebarState extends State<Sidebar> with TickerProviderStateMixin {
-  Animation animation;
-  AnimationController animationController;
-  AnimationController controller;
-  Animation<Offset> offset;
-  AnimationController controller1;
+  Animation? animation;
+  AnimationController? animationController;
+  late AnimationController controller;
+  Animation<Offset>? offset;
+  AnimationController? controller1;
 
   @override
   void initState() {

@@ -38,6 +38,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Solid',
                   style: hintStyleTextblackbold(),
@@ -164,6 +165,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Disabled',
                   style: hintStyleTextblackbold(),
@@ -293,6 +295,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Button Sizes',
                   style: hintStyleTextblackbold(),
@@ -356,6 +359,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Block',
                   style: hintStyleTextblackbold(),
@@ -423,6 +427,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Solid',
                   style: hintStyleTextblackbold(),
@@ -558,6 +563,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Disabled',
                   style: hintStyleTextblackbold(),
@@ -696,6 +702,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Button Sizes',
                   style: hintStyleTextblackbold(),
@@ -762,6 +769,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Block',
                   style: hintStyleTextblackbold(),
@@ -823,6 +831,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline2x Solid',
                   style: hintStyleTextblackbold(),
@@ -961,6 +970,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Disabled Outline',
                   style: hintStyleTextblackbold(),
@@ -1099,6 +1109,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Buttons Sizes',
                   style: hintStyleTextblackbold(),
@@ -1165,6 +1176,7 @@ class _PillButtonsState extends State<PillButtons> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Outline Block',
                   style: hintStyleTextblackbold(),

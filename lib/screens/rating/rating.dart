@@ -46,7 +46,7 @@ class _RatingState extends State<Rating> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFRating(
@@ -75,7 +75,7 @@ class _RatingState extends State<Rating> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFRating(
@@ -109,7 +109,7 @@ class _RatingState extends State<Rating> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFRating(
@@ -137,7 +137,7 @@ class _RatingState extends State<Rating> {
                   });
                 },
                 child: const Text('Rate'),
-              ),
+              ), onChanged: (double rating) {  },
             ),
             SizedBox(
               height: 10,
@@ -155,7 +155,7 @@ class _RatingState extends State<Rating> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFRating(
@@ -180,7 +180,7 @@ class _RatingState extends State<Rating> {
                   });
                 },
                 child: Icon(Icons.insert_emoticon),
-              ),
+              ), onChanged: (double rating) {  },
             ),
             SizedBox(
               height: 20,

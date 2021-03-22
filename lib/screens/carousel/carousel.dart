@@ -53,6 +53,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Full Width',
                   style: hintStyleTextblackbold(),
@@ -126,6 +127,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Multiple Items',
                   style: hintStyleTextblackbold(),
@@ -186,6 +188,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Full Size',
                   style: hintStyleTextblackbold(),
@@ -254,6 +257,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Full Width',
                   style: hintStyleTextblackbold(),
@@ -326,6 +330,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Multiple Items',
                   style: hintStyleTextblackbold(),
@@ -386,6 +391,7 @@ class _CarouselState extends State<Carousel> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Full Size',
                   style: hintStyleTextblackbold(),

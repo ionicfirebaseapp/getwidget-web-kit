@@ -14,7 +14,7 @@ class _AnimationState extends State<Animation>
   bool selected = false;
   bool _large = false;
   double _size = 50.0;
-  AnimationController controller;
+  AnimationController? controller;
   bool _first = true;
   double _fontSize = 30;
   Color _color = GFColors.SUCCESS;
@@ -24,12 +24,12 @@ class _AnimationState extends State<Animation>
     super.initState();
     controller =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
-    controller.repeat();
+    controller!.repeat();
   }
 
   @override
   void dispose() {
-    if (controller != null) controller.dispose();
+    if (controller != null) controller!.dispose();
     super.dispose();
   }
 
@@ -72,12 +72,12 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GestureDetector(
                 onTap: () {
-                  controller.repeat();
+                  controller!.repeat();
                 },
                 child: GFAnimation(
                   controller: controller,
@@ -105,12 +105,12 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GestureDetector(
                 onTap: () {
-                  controller.repeat();
+                  controller!.repeat();
                 },
                 child: GFAnimation(
                   controller: controller,
@@ -137,7 +137,7 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GFAnimation(
@@ -165,7 +165,7 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               Container(
@@ -194,7 +194,7 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GFAnimation(
@@ -228,7 +228,7 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GFAnimation(
@@ -259,7 +259,7 @@ class _AnimationState extends State<Animation>
                   ),
                   type: GFTypographyType.typo5,
                   dividerWidth: 45,
-                  dividerColor: Color(0xFF19CA4B),
+                  dividerColor: Color(0xFF19CA4B), text: '',
                 ),
               ),
               GFAnimation(

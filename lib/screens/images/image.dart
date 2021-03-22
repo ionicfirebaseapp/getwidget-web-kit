@@ -38,6 +38,7 @@ class _ImagesState extends State<Images> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Basic',
                   style: hintStyleTextblackbold(),
@@ -88,6 +89,7 @@ class _ImagesState extends State<Images> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Circular',
                   style: hintStyleTextblackbold(),
@@ -135,6 +137,7 @@ class _ImagesState extends State<Images> {
                 type: GFTypographyType.typo5,
                 dividerWidth: 50,
                 dividerColor: Color(0xFF19CA4B),
+                text: '',
                 child: Text(
                   'Overlay',
                   style: hintStyleTextblackbold(),

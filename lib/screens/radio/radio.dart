@@ -42,7 +42,7 @@ class _RadioButtonState extends State<RadioButton> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFCard(
@@ -54,7 +54,7 @@ class _RadioButtonState extends State<RadioButton> {
                   activeBorderColor: GFColors.SUCCESS,
                   value: 0,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -66,7 +66,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.MEDIUM,
                   value: 1,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -79,7 +79,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.SMALL,
                   value: 2,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -92,7 +92,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: 20,
                   value: 3,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -116,7 +116,7 @@ class _RadioButtonState extends State<RadioButton> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFCard(
@@ -128,7 +128,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.LARGE,
                   value: 4,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -142,7 +142,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.MEDIUM,
                   value: 5,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -156,7 +156,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.SMALL,
                   value: 6,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -170,7 +170,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: 20,
                   value: 7,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -195,7 +195,7 @@ class _RadioButtonState extends State<RadioButton> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFCard(
@@ -208,7 +208,7 @@ class _RadioButtonState extends State<RadioButton> {
                     activeBorderColor: GFColors.SUCCESS,
                     value: 8,
                     groupValue: groupValue,
-                    onChanged: (val) {
+                    onChanged: (dynamic val) {
                       setState(() {
                         groupValue = val;
                       });
@@ -220,7 +220,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.MEDIUM,
                   value: 9,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -234,7 +234,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.SMALL,
                   value: 10,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -248,7 +248,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: 25,
                   value: 11,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -272,7 +272,7 @@ class _RadioButtonState extends State<RadioButton> {
                 ),
                 type: GFTypographyType.typo5,
                 dividerWidth: 45,
-                dividerColor: Color(0xFF19CA4B),
+                dividerColor: Color(0xFF19CA4B), text: '',
               ),
             ),
             GFCard(
@@ -289,7 +289,7 @@ class _RadioButtonState extends State<RadioButton> {
                   activeBorderColor: GFColors.SUCCESS,
                   value: 12,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -301,7 +301,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.MEDIUM,
                   value: 13,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -316,7 +316,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: GFSize.SMALL,
                   value: 14,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });
@@ -330,7 +330,7 @@ class _RadioButtonState extends State<RadioButton> {
                   size: 25,
                   value: 15,
                   groupValue: groupValue,
-                  onChanged: (val) {
+                  onChanged: (dynamic val) {
                     setState(() {
                       groupValue = val;
                     });

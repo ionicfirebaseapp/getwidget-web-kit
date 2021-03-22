@@ -10,7 +10,7 @@ class Alert extends StatefulWidget {
 
 class _AlertState extends State<Alert> {
   bool showblur = false;
-  Widget alertWidget;
+  Widget? alertWidget;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +49,7 @@ class _AlertState extends State<Alert> {
                     ),
                     type: GFTypographyType.typo5,
                     dividerWidth: 45,
-                    dividerColor: Color(0xFF19CA4B),
+                    dividerColor: Color(0xFF19CA4B), text: '',
                   ),
                 ),
                 Container(
@@ -123,7 +123,7 @@ class _AlertState extends State<Alert> {
                     ),
                     type: GFTypographyType.typo5,
                     dividerWidth: 45,
-                    dividerColor: Color(0xFF19CA4B),
+                    dividerColor: Color(0xFF19CA4B), text: '',
                   ),
                 ),
                 Container(
@@ -195,7 +195,7 @@ class _AlertState extends State<Alert> {
                     ),
                     type: GFTypographyType.typo5,
                     dividerWidth: 45,
-                    dividerColor: Color(0xFF19CA4B),
+                    dividerColor: Color(0xFF19CA4B), text: '',
                   ),
                 ),
                 Container(
