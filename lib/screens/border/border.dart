@@ -49,7 +49,7 @@ class _BorderState extends State<Border> {
                 radius: Radius.circular(30),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 0],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),
@@ -75,7 +75,7 @@ class _BorderState extends State<Border> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: GFBorder(
-                type: GFBorderType.RRect,
+                type: GFBorderType.rRect,
                 radius: Radius.circular(20),
                 color: Color(0xFFAA66CC),
                 child: Container(
@@ -108,7 +108,7 @@ class _BorderState extends State<Border> {
                 radius: Radius.circular(30),
                 color: Color(0xFF19CA4B),
                 dashedLine: [2, 1],
-                type: GFBorderType.Rect,
+                type: GFBorderType.rect,
                 child: Container(
                   height: 100,
                   color: Color(0xFFE9FFEF),

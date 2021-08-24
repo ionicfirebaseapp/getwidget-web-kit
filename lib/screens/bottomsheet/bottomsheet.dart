@@ -32,7 +32,7 @@ class _BottomSheetState extends State<BottomSheet> {
               backgroundImage: AssetImage('lib/assets/images/gflogo.png'),
             ),
             titleText: 'GetWidget',
-            subtitleText: 'Open source UI library',
+            subTitleText: 'Open source UI library',
           ),
         ),
         contentBody: Container(

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:gf_web/screens/layout/layout.dart';
@@ -10,182 +11,203 @@ class Badges extends StatefulWidget {
 
 class _BadgesState extends State<Badges> {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Layout(
-        demoImageUrl: 'lib/assets/gif/ezgif.com-resize.gif',
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          leading: InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              CupertinoIcons.back,
+              color: GFColors.SUCCESS,
+            ),
+          ),
+          backgroundColor: GFColors.DARK,
+          title: const Text(
+            'Badges',
+            style: TextStyle(fontSize: 17),
+          ),
+          centerTitle: true,
+        ),
         body: ListView(
           children: <Widget>[
-            Text(
-              'Badges',
-              style: hintStyleTextblackbolder(),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              'Badges can be used for an additional marker for any widget, e.g. show a number of items in a shopping cart.',
-              style: hintStyleTextblackdull(),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            // Text(
-            //   'With Buttons',
-            //   style: hintStyleTextblackbold(),
-            // ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: 15,
-              ),
+            const Padding(
+              padding: EdgeInsets.only(left: 15, top: 20),
               child: GFTypography(
+                text: 'With Buttons',
                 type: GFTypographyType.typo5,
-                dividerWidth: 50,
+                dividerWidth: 25,
                 dividerColor: Color(0xFF19CA4B),
-                child: Text(
-                  'With Buttons',
-                  style: hintStyleTextblackbold(),
-                ),
               ),
             ),
             GFCard(
               content: Column(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            size: GFSize.MEDIUM,
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Primary',
                         ),
-                        onPressed: () {},
-                        text: 'Primary',
                       ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
-                        ),
-                        onPressed: () {},
-                        text: 'Second',
-                        color: GFColors.SECONDARY,
+                      const SizedBox(
+                        width: 6,
                       ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Second',
+                          color: GFColors.SECONDARY,
                         ),
-                        onPressed: () {},
-                        text: 'Success',
-                        color: GFColors.SUCCESS,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Success',
+                          color: GFColors.SUCCESS,
                         ),
-                        onPressed: () {},
-                        text: 'Warning',
-                        color: GFColors.WARNING,
                       ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
-                        ),
-                        onPressed: () {},
-                        text: 'Danger',
-                        color: GFColors.DANGER,
+                      const SizedBox(
+                        width: 6,
                       ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Warning',
+                          color: GFColors.WARNING,
                         ),
-                        onPressed: () {},
-                        text: 'Info',
-                        color: GFColors.INFO,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Danger',
+                          color: GFColors.DANGER,
                         ),
-                        onPressed: () {},
-                        text: 'Light',
-                        color: GFColors.LIGHT,
                       ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
+                      const SizedBox(
+                        width: 6,
+                      ),
+                      Expanded(
+                        child: GFButtonBadge(
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Info',
+                          color: GFColors.INFO,
                         ),
-                        onPressed: () {},
-                        text: 'Dark',
-                        textStyle: TextStyle(color: Colors.white),
-                        color: GFColors.DARK,
-                      ),
-                      GFButtonBadge(
-                        icon: GFBadge(
-                          text: '6',
-                          shape: GFBadgeShape.pills,
-                        ),
-                        onPressed: () {},
-                        text: 'Link',
-                        color: GFColors.TRANSPARENT,
-                      ),
+                      )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: GFButtonBadge(
+                          position: GFPosition.start,
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Light',
+                          color: GFColors.LIGHT,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 6,
+                      ),
+                      Expanded(
+                        child: GFButtonBadge(
+                          position: GFPosition.start,
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Dark',
+                          textStyle: const TextStyle(color: GFColors.WHITE),
+                          color: GFColors.DARK,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 6,
+                      ),
+                      Expanded(
+                        child: GFButtonBadge(
+                          position: GFPosition.start,
+                          icon: const GFBadge(
+                            text: '6',
+                            shape: GFBadgeShape.pills,
+                          ),
+                          onPressed: () {},
+                          text: 'Link',
+                          color: GFColors.TRANSPARENT,
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(
                     height: 10,
                   ),
                 ],
               ),
             ),
-
-//icons with badges
-            // Text(
-            //   'Icon with Badges',
-            //   style: hintStyleTextblackbold(),
-            // ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: 15,
-              ),
+            const Padding(
+              padding: EdgeInsets.only(left: 15, top: 20),
               child: GFTypography(
+                text: 'Icon with Badges',
                 type: GFTypographyType.typo5,
-                dividerWidth: 50,
+                dividerWidth: 25,
                 dividerColor: Color(0xFF19CA4B),
-                child: Text(
-                  'Icon with Badges',
-                  style: hintStyleTextblackbold(),
-                ),
               ),
             ),
             GFCard(
               content: Column(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
@@ -195,144 +217,153 @@ class _BadgesState extends State<Badges> {
                           child: GFIconButton(
                             type: GFButtonType.transparent,
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               IconData(
-                                0xe90b,
-                                fontFamily: 'icomoon',
+                                0xe917,
+                                fontFamily: 'GFIconFonts',
                               ),
                               color: GFColors.PRIMARY,
                             ),
                           ),
-                          counterChild: GFBadge(
-                            text: '12',
+                          counterChild: const GFBadge(
+                            text: '1',
                             shape: GFBadgeShape.circle,
-                            size: GFSize.SMALL,
+                          )),
+                      GFIconBadge(
+                        child: GFIconButton(
+                          type: GFButtonType.transparent,
+                          onPressed: () {},
+                          icon: const Icon(
+                            IconData(
+                              0xe91a,
+                              fontFamily: 'GFIconFonts',
+                            ),
+                            color: GFColors.SECONDARY,
+                          ),
+                        ),
+                        counterChild: const GFBadge(
+                          text: '2',
+                          shape: GFBadgeShape.pills,
+                        ),
+                      ),
+                      GFIconBadge(
+                          child: GFIconButton(
+                            type: GFButtonType.transparent,
+                            onPressed: () {},
+                            icon: const Icon(
+                              IconData(
+                                0xe91c,
+                                fontFamily: 'GFIconFonts',
+                              ),
+                              color: GFColors.SUCCESS,
+                            ),
+                          ),
+                          counterChild: const GFBadge(
+                            text: '3',
+                            shape: GFBadgeShape.square,
                           )),
                       GFIconBadge(
                           child: GFIconButton(
                             type: GFButtonType.transparent,
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               IconData(
-                                0xe90c,
-                                fontFamily: 'icomoon',
+                                0xe924,
+                                fontFamily: 'GFIconFonts',
                               ),
-                              color: GFColors.SECONDARY,
+                              color: GFColors.WARNING,
                             ),
                           ),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe90e,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.SUCCESS,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe910,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.WARNING,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe901,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.DANGER,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.circle,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe906,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.INFO,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
+                          counterChild: const GFBadge(
+                            text: '4',
                             shape: GFBadgeShape.standard,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe907,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.LIGHT,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.square,
-                            size: GFSize.SMALL,
-                          )),
-                      GFIconBadge(
-                          child: GFIconButton(
-                              type: GFButtonType.transparent,
-                              onPressed: () {},
-                              icon: Icon(
-                                IconData(
-                                  0xe902,
-                                  fontFamily: 'icomoon',
-                                ),
-                                color: GFColors.DARK,
-                              )),
-                          counterChild: GFBadge(
-                            text: '12',
-                            shape: GFBadgeShape.pills,
-                            size: GFSize.SMALL,
                           )),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[],
+                    children: <Widget>[
+                      GFIconBadge(
+                        child: GFIconButton(
+                          type: GFButtonType.outline,
+                          onPressed: () {},
+                          icon: const Icon(
+                            IconData(
+                              0xe908,
+                              fontFamily: 'GFIconFonts',
+                            ),
+                            color: GFColors.DANGER,
+                          ),
+                        ),
+                        counterChild: const GFBadge(
+                          text: '11',
+                          shape: GFBadgeShape.circle,
+                        ),
+                        position: GFBadgePosition.topEnd(top: 0, end: 3),
+                      ),
+                      GFIconBadge(
+                        child: GFIconButton(
+                          color: GFColors.LIGHT,
+                          shape: GFIconButtonShape.circle,
+                          onPressed: () {},
+                          icon: const Icon(
+                            IconData(
+                              0xe911,
+                              fontFamily: 'GFIconFonts',
+                            ),
+                            color: GFColors.INFO,
+                          ),
+                        ),
+                        counterChild: const GFBadge(
+                          text: '12',
+                          shape: GFBadgeShape.circle,
+                        ),
+                        position: GFBadgePosition.bottomEnd(bottom: 0, end: 3),
+                      ),
+                      GFIconBadge(
+                        child: GFIconButton(
+                          color: GFColors.SUCCESS,
+                          onPressed: () {},
+                          icon: const Icon(
+                            IconData(
+                              0xe912,
+                              fontFamily: 'GFIconFonts',
+                            ),
+                            color: GFColors.LIGHT,
+                          ),
+                        ),
+                        counterChild: const GFBadge(
+                          text: '13',
+                          shape: GFBadgeShape.circle,
+                        ),
+                        position: GFBadgePosition.topStart(top: 0, start: 3),
+                      ),
+                      GFIconBadge(
+                        child: GFIconButton(
+                          color: GFColors.FOCUS,
+                          shape: GFIconButtonShape.square,
+                          onPressed: () {},
+                          icon: const Icon(
+                            IconData(
+                              0xe909,
+                              fontFamily: 'GFIconFonts',
+                            ),
+                            color: GFColors.LIGHT,
+                          ),
+                        ),
+                        counterChild: const GFBadge(
+                          text: '14',
+                          shape: GFBadgeShape.circle,
+                        ),
+                        position:
+                            GFBadgePosition.bottomStart(bottom: 0, start: 3),
+                      ),
+                    ],
                   )
                 ],
               ),
             ),
           ],
         ),
-      ),
-    );
-  }
+      );
 }

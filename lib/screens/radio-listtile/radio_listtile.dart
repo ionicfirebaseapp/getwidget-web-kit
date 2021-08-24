@@ -34,7 +34,7 @@ class _RadioListtileState extends State<RadioListtile> {
             ),
             GFRadioListTile(
               titleText: 'Hello',
-              subtitleText: 'Happy New Year',
+              subTitleText: 'Happy New Year',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img1.png'),
               ),
@@ -53,7 +53,7 @@ class _RadioListtileState extends State<RadioListtile> {
             ),
             GFRadioListTile(
               titleText: 'Hello',
-              subtitleText: 'Happy New Year',
+              subTitleText: 'Happy New Year',
               avatar: GFAvatar(
                 backgroundImage: AssetImage('lib/assets/images/img2.png'),
               ),
